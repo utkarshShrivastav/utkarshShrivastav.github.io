@@ -119,3 +119,23 @@ label{
     line-height: 1.8rem;
     color:var(--dark)
 }
+@media only screen and (max-width: 1280px) and (min-width: 767px) {
+    section {
+        padding: 2rem;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1.75fr 0.5fr;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+    section {
+        padding: 2rem 4rem;
+        text-align: left;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1.75fr 0.5fr 1.75fr;
+    }
+}
