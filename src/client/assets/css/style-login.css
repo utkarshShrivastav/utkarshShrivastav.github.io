@@ -1,0 +1,152 @@
+body{
+    background: var(--light-blue);
+}
+/* header */
+#other {
+    background-color: var(--white);
+    padding: 1.5rem 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#desktop {
+    display: none;
+}
+.main-nav figure {
+    margin: 0;
+    width: 10rem;
+    height: auto;
+}
+.main-nav i {
+    color: var(--dark-grey);
+    display: flex;
+    justify-self: end;
+    align-self: center;
+}
+/* section1 */
+.login{
+    height:calc(100vh-10rem);
+    margin: 10vh 0.8rem auto 0.8rem;
+    align-items: center;
+    padding: 0;
+    background-color: var(--white);
+
+}
+.login h1{
+    padding: 1.5rem 0;
+    margin: 0;
+    color:var(--blue);
+    border-bottom: 0.125rem solid var(--light-grey);
+}
+.login-form{
+    padding: 0.8rem;
+}
+.login-form input{
+    border: 0.125rem solid var(--light-grey);
+}
+.inputBox1{
+    display: flex;
+    background: var(--white);
+    border: 0.125rem solid var(--light-grey);
+}
+.inputBox1 .mobile{
+    margin: 0;
+    border:none
+}
+.inputBox1 i{
+    padding:0.5rem ;
+    font-size: 1.5rem;
+    display: flex;
+    align-self: center;
+    color:var(--light-grey);
+}
+.login .button{
+    background: var(--dark-blue);
+    display:grid;
+    grid-template-columns: auto 10%;
+    padding: 0.8rem 0;
+}
+.login .btn-bg-dark-blue{
+    font-family: nexa-bold;
+    font-size: 1.3rem;
+    letter-spacing: 0.125rem;
+}
+.login .button i{
+    color:var(--white);
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    transform: translateX(-10%);
+}
+.login button {
+    text-transform: capitalize;
+    transform: translateX(10%);
+} 
+
+.login p{
+    font-size: 0.9rem;
+    margin-top:2rem;
+}
+.login a{
+    font-family: nexa-bold;
+    color:var(--blue)
+}
+/* footer */
+footer{
+    padding:1.5rem 0.8rem;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+footer p{
+    text-align: center;
+    margin: 0;
+    font-family: nexa-bold;
+    color:var(--dark-blue)
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .login{
+      width:auto;
+      margin:20vh 5rem auto 5rem ;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    /* header */
+      /* header */
+      #other {
+        display: none;
+    }
+    #desktop {
+        background-color: var(--white);
+        padding: 3rem 4rem;
+        display: grid;
+        grid-template-columns: 0.5fr 1.25fr 1fr;
+    }
+    .headerList {
+        display: flex;
+        justify-content: space-between;
+    }
+    .headerList li{
+        margin: 0;
+        display:block;
+        margin: auto auto auto auto; 
+    }
+    .main-nav figure {
+        width: 12rem;
+    }
+    .main-nav .buttons {
+        display: block;
+        margin: auto;
+    }
+    /* section1 */
+    .login{
+      width:auto;
+      margin:20vh 20vw auto 20vw ;
+    }
+    .login{
+        text-align: center;
+    }
+    .login p{
+        font-size: 1.2rem;
+    }
+}

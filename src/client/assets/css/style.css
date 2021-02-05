@@ -1,0 +1,546 @@
+* {
+    box-sizing: border-box;
+}
+/* header */
+#other {
+    padding: 1.5rem 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#desktop {
+    display: none;
+}
+.main-nav figure {
+    margin: 0;
+    width: 10rem;
+    height: auto;
+}
+.main-nav i {
+    color: var(--dark-grey);
+    display: flex;
+    justify-self: end;
+    align-self: center;
+}
+
+/* section1 */
+.findAffordableHealthcare {
+    background: var(--light-blue);
+}
+.inputBox1 {
+    display: flex;
+    background: var(--white);
+}
+.inputBox1 i {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+    display: flex;
+    align-self: center;
+}
+.inputBox1 .location {
+    margin: 0;
+}
+.findAffordableHealthcare-form .btn-bg-dark-blue {
+    border-radius: 0;
+}
+/* section2 */
+.step {
+    border: 0.125rem solid var(--light-grey);
+    color: var(--light-grey);
+    padding: 0.8rem 0.5rem;
+    text-align: left;
+    margin-top: 0.625rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.step h5 {
+    margin: 0;
+    color: var(--light-grey);
+}
+.step span {
+    margin-left: 0.625rem;
+}
+.steps figcaption {
+    margin: 0.625rem 0;
+}
+#active h5 {
+    color: var(--light-blue);
+}
+#active span {
+    color: var(--dark-blue);
+}
+#active {
+    border: 0.125rem solid var(--dark-blue);
+}
+/* section3 */
+.worldClassExpertDoctors {
+    background: var(--dark-blue);
+}
+.worldClassExpertDoctors h4,
+.worldClassExpertDoctors p {
+    color: var(--white);
+}
+.worldClassExpertDoctors figure {
+    background: var(--white);
+    margin-bottom: 0;
+}
+.worldClassExpertDoctors img {
+    height: 45vh;
+    object-fit: cover;
+}
+.pictures figure {
+    border-bottom: 0.3125rem solid var(--light-blue);
+}
+.pictureInfo {
+    padding-bottom: 1rem;
+}
+.pictureInfo li {
+    text-align: left;
+    margin-left: 1.9rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+.pictureInfo .name {
+    font-family: nexa-bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--blue);
+    margin: 0.5rem 0 0.25rem 1.875rem;
+    position: relative;
+}
+.pictureInfo .name::before {
+    content: "__";
+    position: absolute;
+    bottom: 30%;
+    left: -1.6rem;
+}
+/* section4 */
+.image figure {
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+.image figure img {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    height: 45vh;
+    object-fit: cover;
+}
+.image figure .imageInfo {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    z-index: 5;
+    padding-left: 1rem;
+    position: relative;
+    background-image: linear-gradient(transparent, var(--dark-blue));
+}
+.imageInfo li {
+    text-align: left;
+    color: var(--white);
+    position: absolute;
+    bottom: 1rem;
+}
+.imageInfo .treatment {
+    font-family: nexa-bold;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 2.625rem;
+}
+/* section5 */
+.exclusiveServices {
+    background: #cccccc79;
+}
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.625rem;
+}
+.icons figure {
+    background: var(--white);
+    border-radius: 0.625rem;
+    margin: 0;
+}
+.icons figure img {
+    height: auto;
+    width: 50%;
+}
+/* section6 */
+.needHelp {
+    background: var(--light-blue);
+}
+.needHelp h2 {
+    color: var(--white);
+}
+/* footer */
+footer {
+    background: var(--dark-blue);
+    padding: 1.5rem 0.8rem;
+    text-align: center;
+}
+footer figure {
+    margin: 0;
+    width: 12rem;
+    display: block;
+    margin: 0 auto;
+}
+.footerList li {
+    margin-bottom: 0.3125rem;
+    color: var(--light-grey);
+}
+.social-media {
+    color: var(--light-grey);
+}
+.social-media {
+    margin: 0.625rem 0;
+}
+.social-media i {
+    padding: 0 0.8rem;
+    font-size: 1.25rem;
+}
+footer p {
+    font-size: 0.75rem;
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #other {
+        padding: 2rem;
+    }
+    /* section1 */
+    .findAffordableHealthcare-form {
+        display: grid;
+        grid-template-columns: 0.75fr 1.5fr 0.2fr;
+    }
+    .findAffordableHealthcare-form .search {
+        margin: 0 0 0 0.25rem;
+    }
+    /* section2 */
+    .steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "step1 figure"
+            "step2 figure"
+            "step3 figure"
+            "step4 figure"
+            "step5 figure"
+            "step6 figure"
+            "step7 figure";
+        grid-column-gap: 0.625rem;
+    }
+    .step1 {
+        grid-area: step1;
+    }
+    .step2 {
+        grid-area: step2;
+    }
+    .step3 {
+        grid-area: step3;
+    }
+    .step4 {
+        grid-area: step4;
+    }
+    .step5 {
+        grid-area: step5;
+    }
+    .step6 {
+        grid-area: step6;
+    }
+    .step7 {
+        grid-area: step7;
+    }
+    .steps figure {
+        grid-area: figure;
+    }
+    .steps img {
+        height: auto;
+    }
+    .step h5 {
+        margin: 0;
+    }
+    /* section3 */
+    .pictures {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0 1rem;
+    }
+    /* section4 */
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0 1rem;
+    }
+    .images img {
+        height: 20vh;
+    }
+    /* section5 */
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    /* footer */
+    footer {
+        padding: 2rem;
+    }
+    .footerList li {
+        font-size: 1rem;
+    }
+}
+/* computer */
+@media only screen and (min-width: 1025px) {
+    /* header */
+    #other {
+        display: none;
+    }
+    #desktop {
+        padding: 2rem 4rem;
+        display: grid;
+        grid-template-columns: 0.5fr 1.25fr 1fr;
+    }
+    .headerList {
+        display: flex;
+        justify-content: space-between;
+    }
+    .headerList li {
+        margin: 0;
+        display: block;
+        margin: auto auto auto auto;
+    }
+    .main-nav figure {
+        width: 12rem;
+    }
+    .main-nav .buttons {
+        display: block;
+        margin: auto 0 auto auto;
+    }
+    /* section1 */
+    .findAffordableHealthcare {
+        background-image: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
+        padding: 10rem 4rem;
+        white-space: pre-line;
+    }
+    .findAffordableHealthcare-form {
+        display: grid;
+        grid-template-columns: 0.75fr 1.25fr 0.5fr 1.25fr;
+    }
+    .findAffordableHealthcare-form .search {
+        margin: 0 0 0 0.3125rem;
+    }
+    /* section2 */
+    .steps {
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        grid-template-areas:
+            "step1  figure"
+            "step2  figure"
+            "step3  figure"
+            "step4  figure"
+            "step5  figure"
+            "step6  figure"
+            "step7  figure";
+        grid-column-gap: 0.625rem;
+    }
+    .step {
+        padding: 1rem 2rem;
+    }
+    .step1 {
+        grid-area: step1;
+    }
+    .step2 {
+        grid-area: step2;
+    }
+    .step3 {
+        grid-area: step3;
+    }
+    .step4 {
+        grid-area: step4;
+    }
+    .step5 {
+        grid-area: step5;
+    }
+    .step6 {
+        grid-area: step6;
+    }
+    .step7 {
+        grid-area: step7;
+    }
+    .steps figure {
+        grid-area: figure;
+        text-align: center;
+    }
+    .steps img {
+        width: 75%;
+        height: auto;
+    }
+    .step h5 {
+        margin: 0;
+    }
+    /* section3 */
+    .pictures {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0 1rem;
+    }
+    .pictureInfo .name {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-top: 0.3125rem;
+    }
+    .pictureInfo li {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin-right: 0.5rem;
+    }
+    /* section4 */
+    .images {
+        display: grid;
+        /* grid-auto-rows: 10rem;
+    grid-template-areas:
+        "image1 image2 image3"
+        "image1 image2 image3"
+        "image4 image2 image3"
+        "image4 image2 image6"
+        "image4 image5 image6"
+        "image4 image5 image6"
+        "image4 image5 image6"
+        "image4 image5 image6"; */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(10, 5rem);
+        grid-gap: 0;
+    }
+    .image figure {
+        margin: 0;
+    }
+    .image1 figure {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .image4 figure {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 11;
+    }
+    .image2 figure {
+        grid-column: 2/3;
+        grid-row: 1/6;
+    }
+    .image5 figure {
+        grid-column: 2/3;
+        grid-row: 6/11;
+    }
+    .image3 figure {
+        grid-column: 3/4;
+        grid-row: 1/5;
+    }
+    .image6 figure {
+        grid-column: 3/4;
+        grid-row: 5/11;
+    }
+
+    .image1 figure img {
+        height: 15rem;
+    }
+    .image2 figure img {
+        height: 25rem;
+    }
+    .image3 figure img {
+        height: 20rem;
+    }
+    .image4 figure img {
+        height: 35rem;
+    }
+    .image5 figure img {
+        height: 25rem;
+    }
+    .image6 figure img {
+        height: 30rem;
+    }
+    /* section5 */
+    .icons{
+        display:grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    /* section6 */
+    .needHelp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .needHelp h2 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .needHelp p {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .needHelp button {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        display: block;
+        margin: auto 0 auto auto;
+        font-size: 1.6rem;
+        box-sizing: content-box;
+        padding: 2rem 5rem;
+        width: auto;
+        height: auto;
+    }
+    footer {
+        padding: 3rem 4rem;
+        border-bottom: 0.3125rem solid var(--light-blue);
+    }
+}
+/* common */
+@media only screen and (min-width: 768px) {
+    footer {
+        background: var(--white);
+        display: grid;
+        grid-row-gap:2rem;
+        grid-template-areas:
+            "ul figure"
+            "p social";
+    }
+    footer figure {
+        grid-area: figure;
+        margin: 0 0 0 auto;
+        width: 12rem;
+    }
+    .footerList {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+    }
+    .footerList li {
+        color: var(--grey);
+    }
+    footer p {
+        grid-area: p;
+        margin: 0;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-end;
+        line-height: 1.1rem;
+    }
+    .social-media {
+        margin: 0;
+        grid-area: social;
+        display: flex;
+        justify-self: flex-end;
+        padding: 0 0 0 1.5rem;
+    }
+    .social-media i {
+        color: var(--dark-grey);
+        font-size: 1.8rem;
+        padding: 0 0 0 1rem;
+    }
+}

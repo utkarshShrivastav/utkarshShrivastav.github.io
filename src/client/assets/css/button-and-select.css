@@ -1,0 +1,28 @@
+.btn-bg-dark-blue{
+    background: var(--dark-blue);
+    color:var(--white);
+    letter-spacing: 0.125rem;
+}
+.btn-bg-blue{
+    background: var(--blue);
+    color:var(--white);
+    width:15rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    padding: 0;
+}
+.btn-bg-white{
+    background: var(--white);
+    color:var(--dark-blue);
+    padding: 0.675rem 1.5rem;
+    border:0.125rem solid var(--dark-blue);
+}
+@media only screen and (min-width:1025px){
+    .buttons .btn-bg-dark-blue{
+        padding: 0.8rem 1.5rem;
+    }
+}
+.select-bg-grey{
+    background: var(--light-grey);
+    text-align: center;
+}

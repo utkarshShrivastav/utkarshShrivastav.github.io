@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+/* header */
+.main-nav {
+    padding: 1.5rem 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#desktop {
+    display: none;
+}
+.main-nav figure {
+    margin: 0;
+    width: 10rem;
+    height: auto;
+}
+.main-nav i {
+    color: var(--dark-grey);
+    display: flex;
+    justify-self: end;
+    align-self: center;
+}
+/* section1 */
+.sorting-section{
+    margin-bottom:1.5rem ;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+.sorting-section h5{
+    font-family: nexa-light;
+    font-weight: 700;
+    text-align: left;
+}
+.doctor li{
+    margin: 0.5rem 0;
+}
+.name::before{
+    content:"___";
+    color:var(--blue);
+    position: absolute;
+    bottom: 30%;
+    left: -1.875rem;
+}
+.name{
+    font-family: nexa-bold;
+    color:var(--blue);
+    position: relative;
+    left:1.875rem;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+.specialization::before{
+    font-family:"Font Awesome 5 Free";
+    content: "\f0a3";
+    font-weight: 900;
+    color:var(--blue);
+    padding:0 0.5rem;
+}
+.certificate::before{
+    content:url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/certificate.png);
+}
+.hospital-name::before{
+    font-family:"Font Awesome 5 Free";
+    content: "\f0f8";
+    font-weight: 400;
+    color:var(--blue);
+}
+.experience::before{
+    font-family:"Font Awesome 5 Free";
+    content: "\f017";
+    font-weight: 400;
+    color:var(--blue);
+}
+.location::before{
+    font-family:"Font Awesome 5 Free";
+    content: "\f3c5";
+    font-weight: 900;
+    color:var(--blue);
+}
+.specialization::before,.certificate::before,.experience::before,.hospital-name::before,.location::before{
+    padding: 0 0.5rem;
+}
+.doctorInfo{
+    border: 0.125rem solid var(--light-grey);
+    margin-top: 1rem;
+}
+.doctorInfo .btn-bg-dark-blue{
+    border-radius: 0;
+}
+.doctor{
+    text-align: left;
+    padding: 1rem 0;
+}
+.doctorInfo figure{
+    margin-bottom: 0;
+    height:auto
+}
+.doctorInfo figure img{
+    height: 60vh;
+    object-fit: cover;
+}
+/* section2 */
+.needHelp {
+    background: var(--light-blue);
+}
+.needHelp h2 {
+    color: var(--white);
+}
+/* footer */
+footer {
+    background: var(--dark-blue);
+    padding: 1.5rem 0.8rem;
+    text-align: center;
+}
+footer figure {
+    margin: 0;
+    width: 12rem;
+    display: block;
+    margin: 0 auto;
+}
+footer h5{
+    color:var(--white);
+    margin: 1rem 0;
+}
+.footerList li,.social-media li {
+    margin-bottom: 0.3125rem;
+    color: var(--light-grey);
+}
+footer p {
+    font-size: 0.75rem;
+}
+
