@@ -3,16 +3,16 @@
 }
 /* header */
 #other {
-    padding: 1.5rem 0.8rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 1.5rem 0.8rem;
 }
 #desktop {
     display: none;
 }
 .main-nav figure {
     margin: 0;
-    width: 10rem;
+    width: 8rem;
     height: auto;
 }
 .main-nav i {
@@ -21,136 +21,134 @@
     justify-self: end;
     align-self: center;
 }
-
 /* section1 */
 .findAffordableHealthcare {
     background: var(--light-blue);
 }
-.inputBox1 {
+.findAffordableHealthcare .findAffordableHealthcare-form .inputBox1 {
     display: flex;
-    background: var(--white);
+    background: white;
 }
-.inputBox1 i {
-    font-size: 1.2rem;
+.findAffordableHealthcare-form .inputBox1 i {
     padding: 0 0.5rem;
     display: flex;
     align-self: center;
+    font-size: 1.2rem;
 }
-.inputBox1 .location {
+.findAffordableHealthcare-form .inputBox1 .location {
     margin: 0;
 }
-.findAffordableHealthcare-form .btn-bg-dark-blue {
+.findAffordableHealthcare-form .btn-bg-dark-blue{
     border-radius: 0;
 }
 /* section2 */
 .step {
     border: 0.125rem solid var(--light-grey);
     color: var(--light-grey);
-    padding: 0.8rem 0.5rem;
+    padding: 0.8rem 0.75rem;
     text-align: left;
-    margin-top: 0.625rem;
     border-radius: 0.5rem;
+    margin-top: 0.625rem;
     display: flex;
     align-items: center;
 }
 .step h5 {
-    margin: 0;
     color: var(--light-grey);
+    margin: 0;
 }
 .step span {
     margin-left: 0.625rem;
 }
-.steps figcaption {
-    margin: 0.625rem 0;
-}
-#active h5 {
-    color: var(--light-blue);
-}
-#active span {
-    color: var(--dark-blue);
-}
 #active {
     border: 0.125rem solid var(--dark-blue);
+}
+#active h5 {
+    color: var(--dark-blue);
+}
+#active span {
+    color: var(--light-blue);
 }
 /* section3 */
 .worldClassExpertDoctors {
     background: var(--dark-blue);
 }
-.worldClassExpertDoctors h4,
+.worldClassExpertDoctors h3,
 .worldClassExpertDoctors p {
     color: var(--white);
 }
-.worldClassExpertDoctors figure {
-    background: var(--white);
+.pictures figure {
     margin-bottom: 0;
+    background: var(--white);
+    padding-bottom: 1rem;
+    border-bottom: 0.35rem solid var(--light-blue);
 }
-.worldClassExpertDoctors img {
+.pictures figure img {
     height: 45vh;
     object-fit: cover;
 }
-.pictures figure {
-    border-bottom: 0.3125rem solid var(--light-blue);
-}
-.pictureInfo {
-    padding-bottom: 1rem;
-}
 .pictureInfo li {
-    text-align: left;
-    margin-left: 1.9rem;
     font-size: 1rem;
-    line-height: 1.1rem;
-    margin-bottom: 0.25rem;
+    line-height: 1.3rem;
+    text-align: left;
+    margin-left: 1.5rem;
 }
-.pictureInfo .name {
+.pictures .pictureInfo .name {
     font-family: nexa-bold;
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: var(--blue);
-    margin: 0.5rem 0 0.25rem 1.875rem;
+    margin: 0.5rem 0 0 1.5rem;
     position: relative;
 }
-.pictureInfo .name::before {
+.pictures .pictureInfo .name::before {
     content: "__";
     position: absolute;
-    bottom: 30%;
-    left: -1.6rem;
+    bottom: 0.5rem;
+    left: -1.5rem;
 }
-/* section4 */
-.image figure {
+/* section5 */
+.image {
     margin-bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
 }
-.image figure img {
+.image img {
     grid-row: 1/3;
     grid-column: 1/3;
     height: 45vh;
     object-fit: cover;
 }
-.image figure .imageInfo {
+.image .imageInfo {
     grid-column: 1/3;
     grid-row: 1/3;
     z-index: 5;
     padding-left: 1rem;
-    position: relative;
+    /* position: relative; */
     background-image: linear-gradient(transparent, var(--dark-blue));
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .imageInfo li {
     text-align: left;
     color: var(--white);
-    position: absolute;
-    bottom: 1rem;
+    display:flex;
+    padding-bottom: 0.625rem;
+    /* position: absolute;
+    bottom: 1rem; */
 }
-.imageInfo .treatment {
+.imageInfo .name {
     font-family: nexa-bold;
     font-size: 1.5rem;
-    position: absolute;
-    bottom: 2.625rem;
+    padding: 0;
+    /* position: absolute;
+    bottom: 2.625rem; */
 }
+
 /* section5 */
 .exclusiveServices {
-    background: #cccccc79;
+    background: #f3f3f3;
 }
 .icons {
     display: grid;
@@ -159,19 +157,25 @@
 }
 .icons figure {
     background: var(--white);
-    border-radius: 0.625rem;
     margin: 0;
+    border-radius: 0.8rem;
 }
-.icons figure img {
+.icons img {
+    display: block;
+    margin: auto;
     height: auto;
-    width: 50%;
+    width: 55%;
 }
+.icons h6 {
+    text-align: center;
+}
+
 /* section6 */
 .needHelp {
     background: var(--light-blue);
 }
 .needHelp h2 {
-    color: var(--white);
+    color: white;
 }
 /* footer */
 footer {
@@ -180,41 +184,37 @@ footer {
     text-align: center;
 }
 footer figure {
-    margin: 0;
-    width: 12rem;
-    display: block;
-    margin: 0 auto;
+    width: 15rem;
+    margin: auto;
+}
+.footerList {
+    margin: 1rem 0;
 }
 .footerList li {
-    margin-bottom: 0.3125rem;
     color: var(--light-grey);
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
 }
 .social-media {
-    color: var(--light-grey);
-}
-.social-media {
-    margin: 0.625rem 0;
+    margin: 1rem 0;
 }
 .social-media i {
-    padding: 0 0.8rem;
-    font-size: 1.25rem;
+    color: var(--light-grey);
+    padding: 0 1rem;
 }
 footer p {
     font-size: 0.75rem;
 }
 
-/* tablets */
+/*tablet-view */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    #other {
-        padding: 2rem;
-    }
     /* section1 */
     .findAffordableHealthcare-form {
         display: grid;
         grid-template-columns: 0.75fr 1.5fr 0.2fr;
     }
     .findAffordableHealthcare-form .search {
-        margin: 0 0 0 0.25rem;
+        margin: 0 0 0 0.125rem;
     }
     /* section2 */
     .steps {
@@ -261,35 +261,43 @@ footer p {
         margin: 0;
     }
     /* section3 */
-    .pictures {
+    .worldClassExpertDoctors .pictures {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 0 1rem;
+        grid-gap: 1rem;
+    }
+    .worldClassExpertDoctors .pictures figure {
+        margin: 0;
     }
     /* section4 */
     .images {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 0 1rem;
+        grid-column-gap: 1rem;
     }
-    .images img {
-        height: 20vh;
+    .image figure {
+        margin: 0;
     }
     /* section5 */
     .icons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1rem;
+        grid-gap: 0.8rem;
     }
-    /* footer */
+    .icons figure {
+        margin: 0;
+    }
+    .icons figure img{
+        width: 40%;
+    }
     footer {
         padding: 2rem;
     }
-    .footerList li {
-        font-size: 1rem;
+    .footerList li{
+        font-size: 1.1rem;
     }
 }
-/* computer */
+
 @media only screen and (min-width: 1025px) {
     /* header */
     #other {
@@ -315,6 +323,9 @@ footer p {
     .main-nav .buttons {
         display: block;
         margin: auto 0 auto auto;
+    }
+    .buttons .btn-bg-dark-blue{
+        padding: 0.8rem 1.5rem;
     }
     /* section1 */
     .findAffordableHealthcare {
@@ -387,87 +398,77 @@ footer p {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 0 1rem;
     }
+    .pictures figure img {
+        height: 55vh;
+    }
     .pictureInfo .name {
         font-size: 1.6rem;
         line-height: 2rem;
-        margin-top: 0.3125rem;
+        margin: 0.3125rem 0;
     }
     .pictureInfo li {
-        font-size: 1.2rem;
-        line-height: 1.4rem;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
         margin-right: 0.5rem;
     }
     /* section4 */
     .images {
         display: grid;
-        /* grid-auto-rows: 10rem;
-    grid-template-areas:
-        "image1 image2 image3"
-        "image1 image2 image3"
-        "image4 image2 image3"
-        "image4 image2 image6"
-        "image4 image5 image6"
-        "image4 image5 image6"
-        "image4 image5 image6"
-        "image4 image5 image6"; */
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(10, 5rem);
-        grid-gap: 0;
+        grid-auto-rows: 320px 100px 50px;
+        grid-template-areas:
+            "image1 image2 image3"
+            "image4 image2 image3"
+            "image4 image2 image6"
+            "image4 image5 image6"
+            "image4 image5 image6"
+            "image4 image5 image6";
+        grid-gap: 1rem;
+        /* height: 660px; */
     }
-    .image figure {
+    .image {
         margin: 0;
     }
-    .image1 figure {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 4;
+    .image img {
+        width: 100%;
+        height: 100%;
     }
-    .image4 figure {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 11;
+    .image1{
+        grid-area: image1;
     }
-    .image2 figure {
-        grid-column: 2/3;
-        grid-row: 1/6;
+    .image2{
+        grid-area: image2;
     }
-    .image5 figure {
-        grid-column: 2/3;
-        grid-row: 6/11;
+    .image3{
+        grid-area: image3;
     }
-    .image3 figure {
-        grid-column: 3/4;
-        grid-row: 1/5;
+    .image4{
+        grid-area:image4;
     }
-    .image6 figure {
-        grid-column: 3/4;
-        grid-row: 5/11;
+    .image5{
+        grid-area: image5;
     }
-
-    .image1 figure img {
-        height: 15rem;
+    .image6{
+        grid-area: image6;
     }
-    .image2 figure img {
-        height: 25rem;
-    }
-    .image3 figure img {
-        height: 20rem;
-    }
-    .image4 figure img {
-        height: 35rem;
-    }
-    .image5 figure img {
-        height: 25rem;
-    }
-    .image6 figure img {
-        height: 30rem;
-    }
+    /* .imageInfo{
+        transform: translateY(0.0625rem);
+    } */
+    /* .imageInfo {
+        position: relative;
+        bottom: 0;
+    } */
     /* section5 */
-    .icons{
-        display:grid;
-        grid-template-columns: repeat(6,1fr);
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .icons figure img {
+        width: 80%;
+    }
+    .icons h6 {
+        margin-bottom: 2rem;
+        font-size: 1.25rem;
     }
     /* section6 */
     .needHelp {
@@ -494,9 +495,13 @@ footer p {
         width: auto;
         height: auto;
     }
+    /* footer */
     footer {
         padding: 3rem 4rem;
         border-bottom: 0.3125rem solid var(--light-blue);
+    }
+    .footerList li{
+        font-size: 1.3rem;
     }
 }
 /* common */
@@ -504,7 +509,7 @@ footer p {
     footer {
         background: var(--white);
         display: grid;
-        grid-row-gap:2rem;
+        grid-row-gap: 2rem;
         grid-template-areas:
             "ul figure"
             "p social";
@@ -541,6 +546,6 @@ footer p {
     .social-media i {
         color: var(--dark-grey);
         font-size: 1.8rem;
-        padding: 0 0 0 1rem;
+        padding: 0 0 0 2rem;
     }
 }

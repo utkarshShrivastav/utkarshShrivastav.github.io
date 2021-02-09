@@ -1,0 +1,31 @@
+.btn-bg-dark-blue{
+    background: var(--dark-blue);
+    color:var(--white);
+    letter-spacing: 0.125rem;
+    padding: 0.8rem 2rem;
+}
+.btn-bg-blue{
+    background: var(--blue);
+    color:var(--white);
+    width:15rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    padding: 0;
+    border-radius: 0.3125rem;
+}
+.btn-bg-white{
+    background: var(--white);
+    color:var(--dark-blue);
+    padding: 0.675rem 1.5rem;
+    border:0.125rem solid var(--dark-blue);
+}
+
+/* select */
+.select-bg-grey{
+    background: var(--light-grey);
+}
+
+.select-bg-white{
+    font-family: nexa-bold;
+    color:var(--light-grey)
+}

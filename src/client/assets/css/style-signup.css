@@ -1,111 +1,90 @@
 * {
     box-sizing: border-box;
 }
-body{
+body {
     background: var(--light-blue);
-    display: flex;
-    flex-direction: column;
-    height: 100vh
-}
-.login{
-    flex-grow:1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
 }
 /* header */
+#header-view-2 {
+    display: none;
+}
 #header-view-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1.5rem 0.8rem;
     background: var(--white);
 }
-#header-view-2 {
-    display: none;
-}
 .main-nav figure {
     margin: 0;
-    width: 8rem;
     height: auto;
+    width: 8rem;
 }
 .main-nav i {
     color: var(--dark-grey);
     display: flex;
-    justify-self: end;
+    justify-self: flex-end;
     align-self: center;
 }
 /* section1 */
-
-.login h1{
-    color:var(--blue);
-    background: var(--white);
+.signup h1 {
+    flex-shrink: 1;
     padding: 1rem 0;
+    background-color: var(--white);
+    margin: 0;
+    color: var(--blue);
     border-bottom: 0.125rem solid var(--light-grey);
-    margin: 0;
 }
-.login-form {
-    padding: 0.8rem;
+.signup-form {
+    flex-shrink: 1;
     background: var(--white);
+    padding: 0.8rem;
 }
-.inputBox1{
-    display: flex;
+.signup-form input,
+.signup-form select {
+    flex-shrink: 1;
     border: 0.125rem solid var(--light-grey);
 }
-.inputBox1 .mobile-number{
-    margin: 0;
-}
-.inputBox1 i{
-    display: flex;
-    align-self: center;
-    color:var(--light-grey);
-    padding-right: 0.5rem;
-    font-size: 1.3rem;
-}
-.login-form-inputs .otp{
-    border: 0.125rem solid var(--light-grey);
-}
-.login-form-inputs input::placeholder{
+.signup-form input::placeholder {
     font-family: nexa-bold;
+    font-size: 1.1rem;
 }
-.login-form-inputs .btn-bg-dark-blue{
+.signup-form .btn-bg-dark-blue {
     width: 100%;
     position: relative;
     font-family: nexa-bold;
     font-size: 1.1rem;
     border-radius: 0;
 }
-.login-form-inputs .btn-bg-dark-blue::after{
+.signup-form .btn-bg-dark-blue::after {
     font-family: "Font Awesome 5 Free";
     content: "\f061";
     font-weight: 700;
     position: absolute;
-    padding-right:  0.5rem;
+    padding-right: 0.5rem;
     right: 0;
 }
-.login-form-inputs p{
+.signup-form p {
     font-size: 1rem;
-    padding-top: 2rem ;
+    padding-top: 2rem;
     margin: 0;
 }
-.login-form-inputs p a{
+.signup-form p a {
     font-family: nexa-bold;
-    color:var(--blue)
+    color: var(--blue);
 }
+
 /* footer */
-footer{
+footer {
     padding: 1.5rem 0.8rem;
+}
+footer h6 {
+    margin: 0;
     text-align: center;
 }
 
-footer h6{
-    margin: 0;
-}
-
-@media only screen and (min-width:1025px){
-      /* header */
-      #header-view-1 {
+@media only screen and (min-width: 1025px) {
+    /* header */
+    #header-view-1 {
         display: none;
     }
     #header-view-2 {
@@ -130,7 +109,14 @@ footer h6{
         display: block;
         margin: auto 0 auto auto;
     }
-    .buttons .btn-bg-dark-blue{
+    .buttons .btn-bg-dark-blue {
         padding: 0.8rem 1.5rem;
+    }
+    .signup{
+        width:50vw;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 }
