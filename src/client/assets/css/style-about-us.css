@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+p {
+    font-size: 1rem;
+}
+.btn-bg-blue {
+    font-family: nexa-bold;
+}
+
+/* header */
+#header-view-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem 0.8rem;
+}
+.main-nav figure {
+    width: 10rem;
+    margin: 0.3rem 0;
+}
+.main-nav i {
+    display: flex;
+    justify-self: end;
+    align-self: center;
+}
+#header-view-2 {
+    display: none;
+}
+
+/* section1 */
+.livingHealthyMatters {
+    padding: 0;
+    background-image: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+}
+.livingHealthyMatters .livingHealthyMatters-info {
+    background-color: #02143342;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.livingHealthyMatters .livingHealthyMatters-info li {
+    z-index: 5;
+    color: white;
+    font-size: 1rem;
+}
+.livingHealthyMatters .livingHealthyMatters-info .heading {
+    font-size: 1.6rem;
+    font-family: nexa-bold;
+    padding: 2rem 0;
+}
+
+/* section2 */
+.youHaveToBeginToTellTheStoryOfyourLifeAsYouNowWantItToBeAndDiscontinueTheTales
+    p {
+    margin-top: 1rem;
+}
+.youHaveToBeginToTellTheStoryOfyourLifeAsYouNowWantItToBeAndDiscontinueTheTales
+    .signature {
+    margin: 2rem;
+}
+
+/* section3 */
+.yourWellnessBuildsUponTheMedicalDaily {
+    background: black;
+}
+.yourWellnessBuildsUponTheMedicalDaily h4 {
+    color: var(--white);
+}
+.yourWellnessBuildsUponTheMedicalDaily .statistics {
+    padding: 2rem 0;
+}
+.yourWellnessBuildsUponTheMedicalDaily .statistics ul {
+    border: 0.125rem solid var(--grey);
+    padding: 2rem;
+    margin-bottom: 0.8rem;
+}
+.yourWellnessBuildsUponTheMedicalDaily .statistics .health-points {
+    margin-bottom: 0;
+}
+.yourWellnessBuildsUponTheMedicalDaily .statistics ul li {
+    font-size: 1rem;
+}
+.yourWellnessBuildsUponTheMedicalDaily .statistics ul .stats {
+    color: var(--white);
+    font-family: nexa-bold;
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+
+/* section6 */
+.joinOurTeam {
+    background: var(--light-blue);
+}
+.joinOurTeam h2 {
+    color: var(--white);
+}
+/* footer */
+footer {
+    background-color: var(--dark-blue);
+    padding: 1.5rem 0.8rem;
+}
+footer figure {
+    margin: 0;
+    width: 11rem;
+    margin: auto;
+}
+.footerList {
+    text-align: center;
+    margin: 0.8rem;
+}
+.footerList li {
+    margin-bottom: 0.3125rem;
+    color: var(--light-grey);
+}
+.social-media {
+    margin: 0.5rem 0 0.8rem;
+    text-align: center;
+}
+.social-media i {
+    color: var(--light-grey);
+    font-size: 1.25rem;
+    padding: 0 0.8rem;
+}
+footer p {
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    p {
+        font-size: 1.1rem;
+    }
+
+    /* section 2*/
+    .youHaveToBeginToTellTheStoryOfyourLifeAsYouNowWantItToBeAndDiscontinueTheTales {
+        display: grid;
+        grid-template-areas:
+            "h3 doctor"
+            "p doctor"
+            "signature .";
+        text-align: left;
+    }
+    .youHaveToBeginToTellTheStoryOfyourLifeAsYouNowWantItToBeAndDiscontinueTheTales
+        h3 {
+        grid-area: h3;
+    }
+    .youHaveToBeginToTellTheStoryOfyourLifeAsYouNowWantItToBeAndDiscontinueTheTales
+        .paragraph {
+        grid-area: p;
+    }
+    .youHaveToBeginToTellTheStoryOfyourLifeAsYouNowWantItToBeAndDiscontinueTheTales
+        .signature {
+        margin: 0;
+        width: 50%;
+    }
+    .doctorImage {
+        grid-area: doctor;
+    }
+    /* section3 */
+    .yourWellnessBuildsUponTheMedicalDaily {
+        text-align: left;
+    }
+    .yourWellnessBuildsUponTheMedicalDaily p {
+        margin-bottom: 5rem;
+    }
+    .yourWellnessBuildsUponTheMedicalDaily .statistics {
+        display: grid;
+        padding-bottom: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.8rem;
+    }
+    .yourWellnessBuildsUponTheMedicalDaily .statistics ul {
+        text-align: center;
+        margin-bottom: 0rem;
+    }
+    /* footer */
+    footer{
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    p {
+        font-size: 1.3rem;
+    }
+    /* header */
+    #header-view-1 {
+        display: none;
+    }
+    #header-view-2 {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        padding: 2rem 4rem;
+    }
+    .headerList {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-weight: 700;
+    }
+    .buttons .btn-bg-dark-blue {
+        padding: 0.8rem 0.75rem;
+    }
+    /* section1 */
+    .livingHealthyMatters {
+        background-position: top center;
+        height: 65vh;
+    }
+    .livingHealthyMatters .livingHealthyMatters-info {
+        text-align: center;
+    }
+    .livingHealthyMatters .livingHealthyMatters-info li {
+        font-size: 1.3rem;
+    }
+    .livingHealthyMatters .livingHealthyMatters-info .heading {
+        font-size: 2rem;
+        font-family: nexa-bold;
+        padding: 2rem 0;
+    }
+    /* section2 */
+    .youHaveToBeginToTellTheStoryOfyourLifeAsYouNowWantItToBeAndDiscontinueTheTales {
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        grid-template-areas:
+            "h3 doctor"
+            "p doctor"
+            "signature .";
+        text-align: left;
+    }
+    .youHaveToBeginToTellTheStoryOfyourLifeAsYouNowWantItToBeAndDiscontinueTheTales
+        h3 {
+        grid-area: h3;
+    }
+    .youHaveToBeginToTellTheStoryOfyourLifeAsYouNowWantItToBeAndDiscontinueTheTales
+        .paragraph {
+        grid-area: p;
+    }
+    .youHaveToBeginToTellTheStoryOfyourLifeAsYouNowWantItToBeAndDiscontinueTheTales
+        .signature {
+        margin: 0;
+        width: 50%;
+    }
+    .doctorImage {
+        grid-area: doctor;
+    }
+    .doctorImage img {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+    /* section3 */
+    .yourWellnessBuildsUponTheMedicalDaily{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "h3 statistics"
+        "p statistics"
+        "button statistics";
+        grid-gap: 0 1rem ;
+    }
+    .yourWellnessBuildsUponTheMedicalDaily h3{
+        grid-area: h3;
+    }
+    .yourWellnessBuildsUponTheMedicalDaily .statistics{
+        grid-area: statistics;
+        display: grid;
+        padding: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .yourWellnessBuildsUponTheMedicalDaily .statistics ul{
+        margin-bottom: 0;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+    .yourWellnessBuildsUponTheMedicalDaily p{
+        grid-area: p;
+    }
+    .yourWellnessBuildsUponTheMedicalDaily .btn-bg-blue{
+        grid-area: button;
+    }
+    /* section4 */
+    .joinOurTeam {
+        display: grid;
+        grid-template-areas:
+            "heading btn"
+            "p btn";
+        position: relative;
+    }
+    .joinOurTeam h2 {
+        grid-area: heading;
+        margin: 0 0 1rem 0;
+    }
+    .joinOurTeam p {
+        grid-area: p;
+        margin: 0;
+    }
+    .joinOurTeam .btn-bg-blue {
+        grid-area: btn;
+        grid-row: 1/3;
+        position: absolute;
+        right: 0;
+        font-size: 1.3rem;
+        padding: 0.8rem 2rem;
+    }
+    footer{
+        padding: 3rem 4rem;
+    }
+}
+
+/* common */
+@media only screen and (min-width:768px){
+    footer {
+        background: var(--white);
+        border-bottom: 0.5rem solid var(--blue);
+        display: grid;
+        grid-row-gap: 2rem;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            "ul figure"
+            "p social";
+    }
+    footer figure {
+        grid-area: figure;
+        margin: 0 0 0 auto;
+        width: 10rem;
+    }
+    .footerList {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerList li {
+        color: var(--grey);
+    }
+    footer p {
+        grid-area: p;
+        margin: 0;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-end;
+        line-height: 1.1rem;
+    }
+    .social-media {
+        margin: 0;
+        grid-area: social;
+        display: flex;
+        justify-self: flex-end;
+    }
+    .social-media i {
+        color: var(--dark-grey);
+        padding: 0 0 0 1rem;
+    }
+} 

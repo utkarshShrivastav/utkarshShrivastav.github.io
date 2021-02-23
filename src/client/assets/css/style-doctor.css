@@ -1,133 +1,551 @@
-*{
+* {
     box-sizing: border-box;
 }
 /* header */
-.main-nav {
-    padding: 1.5rem 0.8rem;
+#header-view-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 1.5rem 0.8rem;
 }
-#desktop {
+#header-view-2 {
     display: none;
 }
 .main-nav figure {
     margin: 0;
-    width: 10rem;
+    width: 8rem;
     height: auto;
 }
 .main-nav i {
-    color: var(--dark-grey);
     display: flex;
-    justify-self: end;
+    color: var(--dark-grey);
     align-self: center;
+    justify-self: flex-end;
 }
 /* section1 */
-.sorting-section{
-    margin-bottom:1.5rem ;
+.cardiacSurgeon {
+    display: none;
+}
+/* section2*/
+.sorting-section {
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 1.25fr 0.6fr;
 }
-.sorting-section h5{
-    font-family: nexa-light;
-    font-weight: 700;
+.sorting-section p {
+    color:var(--dark-blue);
     text-align: left;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0.8rem 0;
 }
-.doctor li{
-    margin: 0.5rem 0;
+.select-bg-grey {
+    margin: 0;
+    background: var(--light-grey);
 }
-.name::before{
-    content:"___";
-    color:var(--blue);
-    position: absolute;
-    bottom: 30%;
-    left: -1.875rem;
+/* section3 */
+.filter {
+    display: none;
 }
-.name{
-    font-family: nexa-bold;
-    color:var(--blue);
-    position: relative;
-    left:1.875rem;
-    font-size: 1.5rem;
-    padding-left: 0.5rem;
-}
-.specialization::before{
-    font-family:"Font Awesome 5 Free";
-    content: "\f0a3";
-    font-weight: 900;
-    color:var(--blue);
-    padding:0 0.5rem;
-}
-.certificate::before{
-    content:url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/certificate.png);
-}
-.hospital-name::before{
-    font-family:"Font Awesome 5 Free";
-    content: "\f0f8";
-    font-weight: 400;
-    color:var(--blue);
-}
-.experience::before{
-    font-family:"Font Awesome 5 Free";
-    content: "\f017";
-    font-weight: 400;
-    color:var(--blue);
-}
-.location::before{
-    font-family:"Font Awesome 5 Free";
-    content: "\f3c5";
-    font-weight: 900;
-    color:var(--blue);
-}
-.specialization::before,.certificate::before,.experience::before,.hospital-name::before,.location::before{
-    padding: 0 0.5rem;
-}
-.doctorInfo{
+/* section4 */
+.doctor {
     border: 0.125rem solid var(--light-grey);
     margin-top: 1rem;
 }
-.doctorInfo .btn-bg-dark-blue{
-    border-radius: 0;
+.doctor1 {
+    margin: 0;
 }
-.doctor{
+.doctorInfo {
+    margin: 1rem 0;
+}
+.doctorInfo li {
+    font-size: 1rem;
+    color: var(--blue);
     text-align: left;
-    padding: 1rem 0;
 }
-.doctorInfo figure{
+.name {
+    font-family: nexa-bold;
+    font-size: 1.4rem !important;
+    position: relative;
+    margin-left: 2.2rem;
+}
+.name::before {
+    content: "___";
+    position: absolute;
+    left: -2.2rem;
+    bottom: 30%;
+}
+.certificate::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f559";
+    font-weight: 900;
+}
+.specialization::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0a3";
+    font-weight: 900;
+}
+.experience::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f017";
+    font-weight: 900;
+}
+.hospital-name::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0f8";
+    font-weight: 900;
+}
+.location::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f3c5";
+    font-weight: 900;
+}
+.specialization,
+.certificate,
+.experience,
+.hospital-name,
+.location {
+    position: relative;
+    margin-left: 2.2rem;
+    display: flex;
+    align-self: center;
+}
+.specialization::before,
+.certificate::before,
+.experience::before,
+.hospital-name::before,
+.location::before {
+    position: absolute;
+    left: -1.6rem;
+    display: flex;
+    align-self: center;
+}
+.doctor-img {
     margin-bottom: 0;
-    height:auto
 }
-.doctorInfo figure img{
-    height: 60vh;
+.doctor-img img {
+    height: 45vh;
     object-fit: cover;
 }
-/* section2 */
+.doctor .btn-bg-dark-blue {
+    border-radius: 0;
+}
+/* section5 */
 .needHelp {
     background: var(--light-blue);
 }
 .needHelp h2 {
     color: var(--white);
 }
+
 /* footer */
+#footer-view-2 {
+    display: none;
+}
 footer {
-    background: var(--dark-blue);
     padding: 1.5rem 0.8rem;
+    background: var(--dark-blue);
     text-align: center;
 }
 footer figure {
-    margin: 0;
-    width: 12rem;
-    display: block;
-    margin: 0 auto;
+    width: 15rem;
+    margin: 0 auto 1rem;
 }
-footer h5{
-    color:var(--white);
+footer ul {
     margin: 1rem 0;
 }
-.footerList li,.social-media li {
-    margin-bottom: 0.3125rem;
-    color: var(--light-grey);
+footer ul li {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+footer h3 {
+    color: var(--white);
 }
 footer p {
     font-size: 0.75rem;
+}
+/* tablet */
+@media only screen and (min-width:768px) and (max-width:1024px){
+    #header-view-1{
+        padding: 2rem;
+    }
+    /* section3 and section4 arrangement */
+    .doctorInfoAndSortingArea {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    /* section3 */
+    .filterBy {
+        background: var(--background-grey);
+        padding: 1rem;
+        display: flex;
+        align-self: center;
+        width: 100%;
+    }
+    .filterBy h6{
+        margin: 0;
+    }
+    .filter {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+        padding-top: 0;
+        text-align: left;
+    }
+    .filter .location-filter .location-grid {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-column-gap: 0.8rem;
+        text-align: left;
+    }
+    .location-filter h5 {
+        font-family: nexa-light;
+    }
+    .location-filter h6 {
+        font-family: nexa-light;
+        color: var(--blue);
+        font-size: 1rem;
+        margin: 0;
+    }
+    .location-filter{
+        border-bottom: 0.125rem solid var(--light-grey);
+        padding-top: 1rem;
+    }
+    /* section4 */
+    .doctorList {
+        padding-top: 0;
+    }
+    .doctor {
+        display: grid;
+        grid-auto-columns: 1.5fr 0.5fr;
+        grid-template-areas:
+            "ul figure"
+            "button figure";
+    }
+    .doctor .doctorInfo {
+        grid-area: ul;
+    }
+    .doctorInfo .name {
+        font-size: 1.3rem !important;
+        margin-bottom:0.5rem ;
+        position: relative;
+    }
+    .doctorInfo li{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    .name::before {
+        position: absolute;
+    }
+    .doctor-img {
+        grid-area: figure;
+        margin: 0;
+    }
+    .doctor-img img {
+        height:100%;
+        object-fit: cover;
+    }
+    .doctor .btn-bg-dark-blue {
+        grid-area: button;
+        display: flex;
+        justify-self: flex-start;
+        align-self: center;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .doctor .doctorInfo {
+        display: grid;
+        grid-auto-columns: 2rem 1fr 1fr;
+        grid-row-gap: 0.25rem;
+        grid-template-areas:
+            "name name name"
+            ". certificate specialization "
+            ". experience location "
+            ". hospital . ";
+    }
+    .doctorInfo .name {
+        grid-area: name;
+        position: relative;
+        margin-left: 2.8rem;
+    }
+    .name::before {
+        position: absolute;
+        bottom: 40%;
+        left: -2.8rem;
+    }
+    .doctorInfo .experience {
+        grid-area: experience;
+    }
+    .doctorInfo .certificate {
+        grid-area: certificate;
+    }
+    .doctorInfo .specialization {
+        grid-area: specialization;
+    }
+    .doctorInfo .hospital-name {
+        grid-area: hospital;
+    }
+    .doctorInfo .location {
+        grid-area: location;
+    }
+    /* footer */
+    footer{
+        padding: 2rem;
+    }
+}
+/* desktop */
+@media only screen and (min-width: 1025px) {
+    /* header */
+    #header-view-1 {
+        display: none;
+    }
+    #header-view-2 {
+        display: grid;
+        padding: 2rem 4rem;
+        grid-template-columns: 0.5fr 1.25fr 1fr;
+    }
+    .headerList {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+    }
+    .main-nav figure {
+        margin: 0;
+        width: 12rem;
+    }
+    .main-nav figure img {
+        height: auto;
+    }
+    .main-nav .buttons {
+        display: block;
+        margin: auto 0 auto auto;
+    }
+    .buttons .btn-bg-dark-blue {
+        padding: 0.8rem 0.75rem
+    }
+    /* section1 */
+    .cardiacSurgeon {
+        display: block;
+        height: 40vh;
+        background: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transform: rotateY(180deg);
+        position: relative;
+    }
+    .cardiacSurgeon h5 {
+        background: #8fcaf1a9;
+        font-family: nexa-light;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 0 3rem;
+        align-items: center;
+        margin: 0;
+        transform: rotateY(180deg);
+    }
+    .cardiacSurgeon h5 span {
+        color: var(--dark-blue);
+        text-decoration: underline;
+        margin-left: 0.625rem;
+    }
+    /* section3 and section4 arrangement */
+    .doctorInfoAndSortingArea {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    /* section3 */
+    .filterBy {
+        background: var(--background-grey);
+        padding: 1rem;
+        display: flex;
+        align-self: center;
+        width: 100%;
+    }
+    .filterBy h6{
+        margin: 0;
+    }
+    .filter {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+        padding-top: 0;
+        text-align: left;
+    }
+    .filter .location-filter .location-grid {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-column-gap: 0.8rem;
+        text-align: left;
+    }
+    .location-filter h5 {
+        font-family: nexa-light;
+    }
+    .location-filter h6 {
+        font-family: nexa-light;
+        color: var(--blue);
+        font-size: 1rem;
+        margin: 0;
+    }
+    .location-filter{
+        border-bottom: 0.125rem solid var(--light-grey);
+        padding-top: 1rem;
+    }
+    /* section4 */
+    .doctorList {
+        padding-top: 0;
+    }
+    .doctor {
+        display: grid;
+        grid-auto-columns: 1.5fr 0.5fr;
+        grid-template-areas:
+            "ul figure"
+            "button figure";
+    }
+    .doctor .doctorInfo {
+        grid-area: ul;
+    }
+    .doctorInfo .name {
+        font-size: 1.8rem !important;
+        position: relative;
+    }
+    .name::before {
+        position: absolute;
+    }
+    .doctor-img {
+        grid-area: figure;
+        margin: 0;
+    }
+    .doctor-img img {
+        height:35vh;
+        object-fit: cover;
+    }
+    .doctor .btn-bg-dark-blue {
+        grid-area: button;
+        display: flex;
+        justify-self: flex-start;
+        align-self: center;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .doctor .doctorInfo {
+        display: grid;
+        grid-auto-columns: 2rem 1fr 1fr;
+        grid-row-gap: 0.8rem;
+        grid-template-areas:
+            "name name name"
+            ". certificate specialization "
+            ". experience location "
+            ". hospital . ";
+    }
+    .doctorInfo .name {
+        grid-area: name;
+        position: relative;
+        margin-left: 2.8rem;
+    }
+    .name::before {
+        position: absolute;
+        bottom: 60%;
+        left: -2.8rem;
+    }
+    .doctorInfo .experience {
+        grid-area: experience;
+    }
+    .doctorInfo .certificate {
+        grid-area: certificate;
+    }
+    .doctorInfo .specialization {
+        grid-area: specialization;
+    }
+    .doctorInfo .hospital-name {
+        grid-area: hospital;
+    }
+    .doctorInfo .location {
+        grid-area: location;
+    }
+
+    /* section5 */
+    .needHelp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .needHelp h2 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .needHelp p {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .needHelp button {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        display: block;
+        margin: auto 0 auto auto;
+        font-size: 1.6rem;
+        box-sizing: content-box;
+        padding: 2rem 5rem;
+        width: auto;
+        height: auto;
+    }
+    /* footer */
+    footer{
+        padding: 3rem 4rem;
+    }
+}
+
+ /* common*/
+ @media only screen and (min-width: 768px) {
+    #footer-view-1{
+        display: none;
+    }
+    #footer-view-2 {
+        background: var(--white);
+        display: grid;
+        grid-row-gap: 2rem;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            "ul figure"
+            "p social";
+    }
+    footer figure {
+        grid-area: figure;
+        margin: 0 0 0 auto;
+        width: 10rem;
+    }
+    .footerList {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerList li {
+        color: var(--grey);
+    }
+    footer p {
+        grid-area: p;
+        margin: 0;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-end;
+        line-height: 1.1rem;
+    }
+    .social-media {
+        margin: 0;
+        grid-area: social;
+        display: flex;
+        justify-self: flex-end;
+    }
+    .social-media i {
+        color: var(--dark-grey);
+        padding: 0 0 0 1rem;
+        font-size: 1.25rem;
+    }
 }
 

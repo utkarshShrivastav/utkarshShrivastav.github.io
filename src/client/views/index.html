@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tvastra</title>
+    <title>tvastra-index</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
@@ -18,25 +18,25 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="main-nav" id="other">
+        <nav class="main-nav" id="header-view-1">
             <figure>
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="">
             </figure>
             <i class="fas fa-bars"></i>
         </nav>
-        <nav class="main-nav" id="desktop">
+        <nav class="main-nav" id="header-view-2">
             <figure>
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="">
             </figure>
-            <ol class="headerList">
-                <li>Doctors</li>
-                <li>Hospitals</li>
-                <li>Treatments</li>
+            <ul class="headerList">
+                <li>Doctor</li>
+                <li>Hospital</li>
+                <li>Treatment</li>
                 <li>Other Services</li>
                 <li>About</li>
-            </ol>
+            </ul>
             <div class="buttons">
-                <a href="#"><button class="btn-bg-white">Sign Up / Login</button></a>
+                <a href="#"><button class="btn-bg-white">Login / Sign Up</button></a>
                 <a href="#"><button class="btn-bg-dark-blue">Get a Quote</button></a>
             </div>
         </nav>
@@ -45,16 +45,16 @@
     <!-- section1 -->
     <section class="findAffordableHealthcare">
         <h1>Find Affordable Healthcare</h1>
-        <p>Join the thouands of others who have exercised their rights to 
-            quality healthcare at a price you can afford
+        <p>Join the thousands of others who have exercised their rights
+            to quality healthcare at a price you can afford.
         </p>
         <form action="" class="findAffordableHealthcare-form">
-            <div class="inputBox1">
+            <div class="inputBox">
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="text" name="location" class="location" placeholder="Ahemdabad">
+                <input type="text" class="location" placeholder="Ahemdabad" name="location">
                 <i class="fas fa-crosshairs"></i>
             </div>
-            <input type="text" name="search" placeholder="Search for Doctor, hospitals and treatments" class="search">
+            <input type="text" class="search" placeholder="Search for Doctor, hospitals and treatments">
             <button type="submit" class="btn-bg-dark-blue">Search</button>
         </form>
     </section>
@@ -66,30 +66,30 @@
             service at its best.</p>
         <div class="steps">
             <div class="step step1" id="active">
-                <h5>01<span>Fix Consultation</span></h5>
+                <h5>01<span> Fix Consultation</span></h5>
             </div>
             <figure>
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png" alt="">
-                <figcaption>Fix Consultation</figcaption>
-                <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+                <h6>Fix Consultation</h6>
+                <p>Thi deplects that user will have to fix appointment first hen it selects a particular doctor.</p>
             </figure>
             <div class="step step2">
-                <h5>02<span>Upload Medical Reports</span></h5>
+                <h5>02<span> Upload Medical Reports</span></h5>
             </div>
             <div class="step step3">
-                <h5>03<span>Consult with doctor</span></h5>
+                <h5>03<span> Consult with doctor</span></h5>
             </div>
             <div class="step step4">
-                <h5>04<span>Fix Surgery</span></h5>
+                <h5>04<span> Fix Surgery</span></h5>
             </div>
             <div class="step step5">
-                <h5>05<span>Hospital sent estimates</span></h5>
+                <h5>05<span> Hospital sent estimates</span></h5>
             </div>
             <div class="step step6">
-                <h5>06<span>Payment</span></h5>
+                <h5>06<span> Payment</span></h5>
             </div>
             <div class="step step7">
-                <h5>07<span>Surgery Completed</span></h5>
+                <h5>07<span> Surgery Completed</span></h5>
             </div>
         </div>
     </section>
@@ -97,11 +97,11 @@
     <!-- section3 -->
     <section class="worldClassExpertDoctors">
         <h3>World Class Expert Doctors!</h3>
-        <p>The university of Texas Southeastern Medical center has been a long world-renowned research hospital. But
+        <p>The university of Texas Southwestern Medical center has been a long world-renowned research hospital. But
             untill the '80s, you couldn't go there. Now, with the addition of Aston Center and Zale Lipshy Hospital, UT
             Southeastern is also a mecca for patients.</p>
         <div class="pictures">
-            <figure>
+            <figure class="picture picture1">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg" alt="">
                 <ul class="pictureInfo">
                     <li class="name">Duke Sanson</li>
@@ -110,7 +110,7 @@
                     <li>Australia</li>
                 </ul>
             </figure>
-            <figure>
+            <figure class="picture picture2">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg" alt="">
                 <ul class="pictureInfo">
                     <li class="name">Georgea Peter</li>
@@ -119,7 +119,7 @@
                     <li>London</li>
                 </ul>
             </figure>
-            <figure>
+            <figure class="picture picture3">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg" alt="">
                 <ul class="pictureInfo">
                     <li class="name">Charlie Moon</li>
@@ -128,7 +128,7 @@
                     <li>New Delhi, India</li>
                 </ul>
             </figure>
-            <figure>
+            <figure class="picture picture4">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg" alt="">
                 <ul class="pictureInfo">
                     <li class="name">Rose Moon</li>
@@ -140,50 +140,51 @@
         </div>
     </section>
 
+    <!-- section4 -->
     <section class="featuredMedicalTreatment">
         <h3>Featured Medical Treatment</h3>
-        <p>Join the thouands of others who have exercised their rights to quality healthcare at a price you can afford
+        <p>Join the thousands of others who have exercised their rights to quality healthcare at a price you can afford.
         </p>
         <div class="images">
             <figure class="image image1">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg" alt="">
                 <ul class="imageInfo">
-                    <li class="name">Dentistry</li>
+                    <li class="treatment">Dentistry</li>
                     <li>50+ Specialists</li>
                 </ul>
             </figure>
             <figure class="image image2">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg" alt="">
                 <ul class="imageInfo">
-                    <li class="name">Cancer</li>
+                    <li class="treatment">Cancer</li>
                     <li>50+ Specialists</li>
                 </ul>
             </figure>
             <figure class="image image3">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg" alt="">
                 <ul class="imageInfo">
-                    <li class="name">Cardiologic Treatment</li>
+                    <li class="treatment">Cardiologic Treatment</li>
                     <li>50+ Specialists</li>
                 </ul>
             </figure>
             <figure class="image image4">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg" alt="">
                 <ul class="imageInfo">
-                    <li class="name">Multi Organ Transplant</li>
+                    <li class="treatment">Multi Organ Transplant</li>
                     <li>50+ Specialists</li>
                 </ul>
             </figure>
             <figure class="image image5">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg" alt="">
                 <ul class="imageInfo">
-                    <li class="name">Orthopedics Surgery</li>
+                    <li class="treatment">Orthopedics Surgery</li>
                     <li>50+ Specialists</li>
                 </ul>
             </figure>
             <figure class="image image6">
-                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg" alt="">
+                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--000.jpg" alt="">
                 <ul class="imageInfo">
-                    <li class="name">Infertility Treatment</li>
+                    <li class="treatment">Infertility Treatment</li>
                     <li>50+ Specialists</li>
                 </ul>
             </figure>
@@ -196,27 +197,27 @@
         <p>We want you to be comfartable and thus apart from threating you illness, we provide you with other services
             that you can see</p>
         <div class="icons">
-            <figure>
+            <figure class="icon icon1">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png" alt="">
                 <h6>TRAVEL</h6>
             </figure>
-            <figure>
+            <figure class="icon icon2">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png" alt="">
                 <h6>FOOD</h6>
             </figure>
-            <figure>
+            <figure class="icon icon3">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png" alt="">
                 <h6>ACCOMODATION</h6>
             </figure>
-            <figure>
+            <figure class="icon icon4">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-07.png" alt="">
                 <h6>LABS</h6>
             </figure>
-            <figure>
+            <figure class="icon icon5">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-10.png" alt="">
                 <h6>REPORTS</h6>
             </figure>
-            <figure>
+            <figure class="icon icon6">
                 <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-06.png" alt="">
                 <h6>AMBULANCE</h6>
             </figure>
@@ -225,9 +226,9 @@
 
     <!-- section6 -->
     <section class="needHelp">
-        <h2>Need Help?</h2>
-        <p>Just let us know, we will happy to assist you</p>
-        <button type="submit" class="btn-bg-blue">Submit your enquiry</button>
+        <h2>Need Help>?</h2>
+        <p>Just let us kno, we will happy to assist you</p>
+        <a href="#"><button class="btn-bg-blue">Submit you enquiry</button></a>
     </section>
 
     <!-- footer -->

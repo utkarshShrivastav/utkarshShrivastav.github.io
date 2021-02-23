@@ -1,14 +1,14 @@
 * {
     box-sizing: border-box;
 }
-body{
+body {
     background: var(--light-blue);
     display: flex;
     flex-direction: column;
-    height: 100vh
+    height: 100vh;
 }
-.login{
-    flex-grow:1;
+.login {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,8 +26,8 @@ body{
     display: none;
 }
 .main-nav figure {
-    margin: 0;
-    width: 8rem;
+    margin: 0.3rem 0;
+    width: 10rem;
     height: auto;
 }
 .main-nav i {
@@ -38,10 +38,10 @@ body{
 }
 /* section1 */
 
-.login h1{
-    color:var(--blue);
+.login h1 {
+    color: var(--blue);
     background: var(--white);
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     border-bottom: 0.125rem solid var(--light-grey);
     margin: 0;
 }
@@ -49,88 +49,82 @@ body{
     padding: 0.8rem;
     background: var(--white);
 }
-.inputBox1{
+.inputBox1 {
     display: flex;
     border: 0.125rem solid var(--light-grey);
+    margin-bottom: 0.625rem;
 }
-.inputBox1 .mobile-number{
+.inputBox1 .mobile-number {
     margin: 0;
 }
-.inputBox1 i{
+.inputBox1 i {
     display: flex;
     align-self: center;
-    color:var(--light-grey);
+    color: var(--light-grey);
     padding-right: 0.5rem;
     font-size: 1.3rem;
 }
-.login-form-inputs .otp{
+.login-form-inputs .otp {
     border: 0.125rem solid var(--light-grey);
 }
-.login-form-inputs input::placeholder{
+.login-form-inputs input::placeholder {
     font-family: nexa-bold;
 }
-.login-form-inputs .btn-bg-dark-blue{
+.login-form-inputs .btn-bg-dark-blue {
     width: 100%;
     position: relative;
     font-family: nexa-bold;
     font-size: 1.1rem;
     border-radius: 0;
 }
-.login-form-inputs .btn-bg-dark-blue::after{
+.login-form-inputs .btn-bg-dark-blue::after {
     font-family: "Font Awesome 5 Free";
     content: "\f061";
     font-weight: 700;
     position: absolute;
-    padding-right:  0.5rem;
+    padding-right: 0.5rem;
     right: 0;
 }
-.login-form-inputs p{
+.login-form-inputs p {
     font-size: 1rem;
-    padding-top: 2rem ;
+    padding-top: 1rem;
     margin: 0;
 }
-.login-form-inputs p a{
+.login-form-inputs p a {
     font-family: nexa-bold;
-    color:var(--blue)
+    color: var(--blue);
 }
 /* footer */
-footer{
+footer {
     padding: 1.5rem 0.8rem;
     text-align: center;
 }
 
-footer h6{
+footer p {
     margin: 0;
+    font-size: 1rem;
+    font-family: nexa-bold;
+    color: var(--dark-blue);
 }
 
-@media only screen and (min-width:1025px){
-      /* header */
-      #header-view-1 {
+@media only screen and (min-width: 1025px) {
+    /* header */
+    #header-view-1 {
         display: none;
     }
     #header-view-2 {
-        background-color: white;
-        padding: 2rem 4rem;
         display: grid;
-        grid-template-columns: 0.5fr 1.25fr 1fr;
+        grid-template-columns: auto 1fr auto;
+        padding: 2rem 4rem;
+        background: var(--white);
     }
     .headerList {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        align-items: center;
+        font-weight: 700;
     }
-    .headerList li {
-        margin: 0;
-        display: block;
-        margin: auto auto auto auto;
-    }
-    .main-nav figure {
-        width: 12rem;
-    }
-    .main-nav .buttons {
-        display: block;
-        margin: auto 0 auto auto;
-    }
-    .buttons .btn-bg-dark-blue{
-        padding: 0.8rem 1.5rem;
+    .buttons .btn-bg-dark-blue {
+        padding: 0.8rem 0.75rem;
     }
 }
