@@ -1,0 +1,21 @@
+.accent-btn {
+  background: var(--dark-blue);
+  border: 0.125rem solid var(--dark-blue);
+  color: var(--white);
+  padding: 0.675rem 1.875rem;
+  border-radius: 0;
+}
+
+.field-btn {
+  background: var(--blue);
+  border: 0.125rem solid var(--blue);
+  color: var(--white);
+  padding: 0.675rem 1.875rem;
+}
+
+.list-btn {
+  border: 0.125rem solid var(--dark-blue);
+  color: var(--dark-blue);
+  padding: 0.675rem 0.875rem;
+  background-color: var(--white);
+}/*# sourceMappingURL=button.css.map */

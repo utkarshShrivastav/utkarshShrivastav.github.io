@@ -1,0 +1,345 @@
+// css varaibles
+:root {
+  --dark-blue: #021433;
+  --blue: #0099ff;
+  --light-blue: #8fcaf1;
+  --dark-grey: #525659;
+  --grey: #636668;
+  --light-grey: #cccccc;
+  --white: #ffffff;
+  --background-grey: #f3f3f3;
+  --black: #000000;
+}
+
+// fonts
+@font-face {
+  font-family: nexa-bold;
+  src: url(../fonts/Nexa-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: nexa-light;
+  src: url(../fonts/Nexa-Light.otf) format("opentype");
+}
+
+// Global Tags
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+section {
+  padding: 1.5rem 0.8rem;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Nexa-Bold;
+  color: var(--dark-blue);
+}
+h1,
+h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+h3 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+h4 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+h5 {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+h6 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.625rem;
+}
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+}
+p {
+  font-family: Nexa-Light;
+  font-size: 1.15rem;
+  line-height: 1.4rem;
+  color: var(--dark-blue);
+  margin-bottom: 0.625rem;
+}
+input {
+  font-family: nexa-light;
+  padding: 0.8rem 0.75rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  width: 100%;
+  color: var(--grey);
+  border: none;
+  outline: none;
+  margin-bottom: 0.625rem;
+  &::placeholder {
+    font-size: 0.9rem;
+    color: var(--light-grey);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+select {
+  font-family: nexa-light;
+  padding: 0.8rem 0.75rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  width: 100%;
+  color: var(--grey);
+  border: none;
+  outline: none;
+  margin-bottom: 0.625rem;
+  &::placeholder {
+    font-size: 0.9rem;
+    color: var(--light-grey);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+textarea {
+  font-family: nexa-light;
+  padding: 0.8rem 0.75rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  width: 100%;
+  color: var(--dark-grey);
+  border: 0.125rem solid var(--light-grey);
+  outline: none;
+  margin-bottom: 0.625rem;
+  &::placeholder {
+    font-size: 0.9rem;
+    color: var(--light-grey);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+button {
+  font-family: nexa-light;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3125rem;
+  padding: 0.8rem 0.75rem;
+  display: flex;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+figcaption {
+  font-family: nexa-bold;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  margin-bottom: 0.3125rem;
+  color: var(--dark-blue);
+}
+span {
+  font-family: nexa-bold;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--grey);
+}
+ul li {
+  font-family: nexa-light;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: var(--grey);
+}
+label {
+  font-family: nexa-light;
+  font-size: 1.1rem;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  section {
+    padding: 2rem;
+  }
+  h1,
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  h5 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  h6 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 0.8rem;
+  }
+  h5,
+  h6 {
+    margin-bottom: 0.625rem;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+  input {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    &::placeholder {
+      font-size: 1.1rem;
+    }
+  }
+  select {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    &::placeholder {
+      font-size: 1.1rem;
+    }
+  }
+
+  textarea {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    &::placeholder {
+      font-size: 1.1rem;
+    }
+  }
+  button {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  figcaption {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  span {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  ul li {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  label {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  section {
+    padding: 3rem 0;
+  }
+  h1,
+  h2 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+  }
+  h4 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  h6 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 1rem;
+  }
+  h5,
+  h6 {
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  input {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    &::placeholder {
+      font-size: 1.1rem;
+    }
+  }
+  select {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    &::placeholder {
+      font-size: 1.1rem;
+    }
+  }
+
+  textarea {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    &::placeholder {
+      font-size: 1.1rem;
+    }
+  }
+  button {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  figcaption {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  span {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  ul li {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  label {
+    font-size: 1.3rem;
+  }
+}
