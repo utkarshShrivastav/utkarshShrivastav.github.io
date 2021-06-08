@@ -1,0 +1,103 @@
+body {
+  background: var(--light-blue);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .login {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
+
+.login {
+  .container {
+    background-color: var(--white);
+    h3 {
+      border-bottom: 0.12rem solid var(--light-grey);
+      color: var(--blue);
+      padding: 1rem 0;
+      margin: 0;
+    }
+    .login-details {
+      padding: 0.75rem;
+      .inputBox {
+        display: flex;
+        border: 0.12rem solid var(--light-grey);
+        margin-bottom: 0.625rem;
+        input {
+          border: 0;
+          margin: 0;
+        }
+        i {
+          padding: 0 0.5rem;
+          font-size: 1.25rem;
+          display: flex;
+          align-items: center;
+          color: var(--light-grey);
+        }
+      }
+      #otp {
+        border: 0.12rem solid var(--light-grey);
+      }
+      #accent-btn {
+        font-family: nexa-bold;
+        letter-spacing: 0.125rem;
+        width: 100%;
+        position: relative;
+        &::after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f061";
+          font-weight: 700;
+          position: absolute;
+          right: 0;
+          padding: 0 0.5rem 0 0;
+        }
+        margin-bottom: 2rem;
+      }
+      span {
+        font-size: 1rem;
+
+        a {
+          color: var(--blue);
+        }
+      }
+    }
+  }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+  span {
+    padding: 0rem 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .login{
+        width:80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1350x){
+    .login{
+        width:50%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:1351px){
+    .login{
+        width:45%;
+        margin: auto;
+    }
+}
+

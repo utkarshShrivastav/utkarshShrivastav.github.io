@@ -1,4 +1,8 @@
-#header-view-1{
+header{
+    background-color: var(--white);
+}
+
+#header-1{
     padding: 1.5rem 0.8rem;
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -13,25 +17,27 @@
         font-size: 1.25rem;
     }
 }
-#header-view-2{
+#header-2{
     display: none;
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px){
-    #header-view-1{
+    #header-1{
         padding: 2rem
     }
 }
 
 @media only screen and (min-width:1025px) and (max-width:1350px){
     header{
-        max-width: 1100px;
-        padding: 2rem 0;
-        margin: auto;
-        #header-view-1{
+        background-color: var(--white);
+       
+        #header-1{
             display: none;
         }
-        #header-view-2{
+        #header-2{
+            max-width: 1100px;
+            padding: 2rem 0;
+            margin: auto;
             display: grid;
             grid-template-columns: 1fr 3fr auto;
             grid-column-gap: 2rem ;
@@ -49,13 +55,16 @@
                 justify-content: space-between;
                 li{
                     font-size: 1.25rem;
+                    a{
+                        color:var(--dark-blue)
+                    }
                 }
             }
             .buttons{
                 display: flex;
-                .accent-btn{
+                #accent-btn{
                     padding: 0.675rem 0.875rem;
-                    margin-left: 0.5rem;
+                    margin-left: 0.5rem !important;
                     border-radius: 00.3125rem;
                 }
                 button{
@@ -70,16 +79,18 @@
 
 @media only screen and (min-width:1351px){
     header{
-        max-width: 1340px;
-        padding: 2rem 0;
-        margin: auto;
-        #header-view-1{
+        background-color: var(--white);
+       
+        #header-1{
             display: none;
         }
-        #header-view-2{
+        #header-2{
+            max-width: 1340px;
+            padding: 2rem 0;
+            margin: auto;
             display: grid;
             grid-template-columns: 1fr 3fr auto;
-            grid-column-gap: 5rem ;
+            grid-column-gap: 2rem ;
             figure{
                 width:10rem;
                 display: flex;
@@ -94,13 +105,16 @@
                 justify-content: space-between;
                 li{
                     font-size: 1.25rem;
+                    a{
+                        color:var(--dark-blue)
+                    }
                 }
             }
             .buttons{
                 display: flex;
-                .accent-btn{
+                #accent-btn{
                     padding: 0.675rem 0.875rem;
-                    margin-left: 0.5rem;
+                    margin-left: 0.5rem !important;
                     border-radius: 00.3125rem;
                 }
                 button{
@@ -112,3 +126,5 @@
     }
    
 }
+
+

@@ -1,0 +1,241 @@
+.about-section {
+  background-color: var(--light-blue);
+  height: 30vh;
+  background-image: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-section .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-section .container .content #title {
+  font-family: nexa-bold;
+  font-size: 1.6rem;
+  margin-bottom: 0.625rem;
+}
+.about-section .container .content li {
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.details-section .container {
+  margin: 0 0.8rem;
+}
+.details-section .container #details .active,
+.details-section .container #details .inactive {
+  display: grid;
+  grid-column-gap: 0.5rem;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  padding: 0.625rem 0;
+}
+.details-section .container #details .active h5,
+.details-section .container #details .inactive h5 {
+  color: var(--blue);
+  margin-bottom: 0;
+  text-align: left;
+}
+.details-section .container #details .active i,
+.details-section .container #details .inactive i {
+  color: var(--blue);
+}
+.details-section .container #details .active .fa-chevron-up,
+.details-section .container #details .active .fa-chevron-down,
+.details-section .container #details .inactive .fa-chevron-up,
+.details-section .container #details .inactive .fa-chevron-down {
+  background-color: var(--light-blue);
+  font-size: 0.625rem;
+  padding: 0.25rem;
+  border-radius: 100%;
+}
+.details-section .container #details .active-detail {
+  background-color: var(--light-blue);
+  text-align: left;
+  padding: 0.5rem;
+}
+.details-section .container #details .active-detail p {
+  font-size: 1rem;
+  margin: 0;
+}
+.details-section .container #details .inactive-detail {
+  display: none;
+}
+
+.needHelp {
+  background-color: var(--light-blue);
+}
+.needHelp .container h2 {
+  color: var(--white);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-section {
+    height: 25vh;
+    background-position: center left;
+  }
+  .about-section .container {
+    text-align: center;
+  }
+  .about-section .container .content #title {
+    font-size: 2rem;
+  }
+  .about-section .container .content li {
+    font-size: 1.2rem;
+  }
+
+  .details-section .container #details .active h5,
+.details-section .container #details .inactive h5 {
+    padding: 0.5rem;
+  }
+  .details-section .container #details .active-detail {
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1350px) {
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: left;
+  }
+
+  .about-section {
+    height: 25vh;
+  }
+  .about-section .container {
+    text-align: center;
+  }
+  .about-section .container .content #title {
+    font-size: 2.2rem;
+  }
+  .about-section .container .content li {
+    font-size: 1.2rem;
+  }
+
+  .details-section .container {
+    margin: auto;
+  }
+  .details-section .container #details .active,
+.details-section .container #details .inactive {
+    padding: 1rem;
+  }
+  .details-section .container #details .active h5,
+.details-section .container #details .inactive h5 {
+    padding: 0.5rem 0;
+  }
+  .details-section .container #details .active .fa-chevron-down,
+.details-section .container #details .active .fa-chevron-up,
+.details-section .container #details .inactive .fa-chevron-down,
+.details-section .container #details .inactive .fa-chevron-up {
+    padding: 0.5rem !important;
+  }
+  .details-section .container #details .active-detail {
+    padding: 1rem;
+  }
+  .details-section .container #details .active-detail p {
+    font-size: 1.15rem !important;
+    line-height: 1.8rem !important;
+  }
+
+  .needHelp .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .needHelp .container h2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: var(--white);
+    text-align: left;
+    padding: 0 0 2rem 0;
+  }
+  .needHelp .container #field-btn {
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 2/2;
+    margin: 0 0 0 auto;
+    height: 100%;
+  }
+  .needHelp .container p {
+    text-align: left;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media only screen and (min-width: 1351px) {
+  .container {
+    max-width: 1340px;
+    margin: auto;
+    text-align: left;
+  }
+
+  .about-section {
+    height: 25vh;
+  }
+  .about-section .container {
+    text-align: center;
+  }
+  .about-section .container .content #title {
+    font-size: 2.2rem;
+  }
+  .about-section .container .content li {
+    font-size: 1.2rem;
+  }
+
+  .details-section .container {
+    margin: auto;
+  }
+  .details-section .container #details .active,
+.details-section .container #details .inactive {
+    padding: 1rem;
+  }
+  .details-section .container #details .active h5,
+.details-section .container #details .inactive h5 {
+    padding: 0.5rem 0;
+  }
+  .details-section .container #details .active .fa-chevron-down,
+.details-section .container #details .active .fa-chevron-up,
+.details-section .container #details .inactive .fa-chevron-down,
+.details-section .container #details .inactive .fa-chevron-up {
+    padding: 0.5rem !important;
+  }
+  .details-section .container #details .active-detail {
+    padding: 1rem;
+  }
+  .details-section .container #details .active-detail p {
+    font-size: 1.15rem !important;
+    line-height: 1.8rem !important;
+  }
+
+  .needHelp .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .needHelp .container h2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: var(--white);
+    text-align: left;
+    padding: 0 0 2rem 0;
+  }
+  .needHelp .container #field-btn {
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 2/2;
+    margin: 0 0 0 auto;
+    height: 100%;
+  }
+  .needHelp .container p {
+    text-align: left;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+}/*# sourceMappingURL=faq.css.map */

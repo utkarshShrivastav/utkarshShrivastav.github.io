@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/scss/reset.css">
+    <link rel="stylesheet" href="../assets/scss/theme.css">
+    <link rel="stylesheet" href="../assets/scss/header.css">
+    <link rel="stylesheet" href="../assets/scss/faq.css">
+    <link rel="stylesheet" href="../assets/scss/button.css">
+    <link rel="stylesheet" href="../assets/scss/footer.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <nav class="main-nav" id="header-1">
+          <figure>
+            <img
+              src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+              alt=""
+            />
+          </figure>
+          <i class="fas fa-bars"></i>
+        </nav>
+      </div>
+      <div class="container">
+        <nav class="main-nav" id="header-2">
+          <figure>
+            <img
+              src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+              alt=""
+            />
+          </figure>
+          <ul class="headerList">
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Hospitals</a></li>
+            <li><a href="#">Treatments</a></li>
+            <li><a href="#">Other Services</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="buttons">
+            <button id="list-btn">Login / Sign Up</button>
+            <button id="accent-btn">Get a Quote</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- section1 -->
+    <section class="about-section">
+      <div class="container">
+        <ul class="content">
+          <li id="title">FAQ</li>
+          <li>Home / FAQ</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- section2 -->
+    <section class="details-section">
+      <div class="container">
+        <ul id="details">
+          <li
+            id="payments"
+            class="active"
+            onclick="detailSelector1('payments','payments-detail','payments-icon')"
+          >
+            <h5>How do I make Payments?</h5>
+            <i class="fas fa-chevron-up" id="payments-icon"></i>
+          </li>
+          <li id="payments-detail" class="active-detail">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+              in ullam fugit vitae neque adipisci assumenda quis similique ad
+              distinctio!
+            </p>
+          </li>
+
+          <li
+            id="wallet"
+            class="inactive"
+            onclick="detailSelector1('wallet','wallet-detail','wallet-icon')"
+          >
+            <h5>
+              There is not enough money in my Portea Wallet for making a
+              payment. What do I do?
+            </h5>
+            <i class="fas fa-chevron-down" id="wallet-icon"></i>
+          </li>
+          <li id="wallet-detail" class="inactive-detail">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+              in ullam fugit vitae neque adipisci assumenda quis similique ad
+              distinctio!
+            </p>
+          </li>
+
+          <li
+            id="transfer"
+            class="inactive"
+            onclick="detailSelector1('transfer','transfer-detail','transfer-icon')"
+          >
+            <h5>
+              Can I transfer balance in Portea Wallet balance to another user?
+            </h5>
+            <i class="fas fa-chevron-down" id="transfer-icon"></i>
+          </li>
+
+          <li id="transfer-detail" class="inactive-detail">
+            <p>
+              Lorem ipsuWork Esit amet consectetur adipisicing elit. Eligendi in
+              ullam fugit vitae neqWork Eci assumenda quis similique ad
+              distinctWork Ep>
+            </p>
+          </li>
+
+          <li
+            id="similar"
+            class="inactive"
+            onclick="detailSelector1('similar','similar-detail','similar-icon')"
+          >
+            <h5>Is Portea Money the same as Portea Wallet?</h5>
+            <i class="fas fa-chevron-down" id="similar-icon"></i>
+          </li>
+          <li id="similar-detail" class="inactive-detail">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+              in ullam fugit vitae neque adipisci assumenda quis similique ad
+              distinctio!
+            </p>
+          </li>
+
+          <li
+            id="refund"
+            class="inactive"
+            onclick="detailSelector1('refund','refund-detail','refund-icon')"
+          >
+            <h5>Refund</h5>
+            <i class="fas fa-chevron-down" id="refund-icon"></i>
+          </li>
+          <li id="refund-detail" class="inactive-detail">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+              in ullam fugit vitae neque adipisci assumenda quis similique ad
+              distinctio!
+            </p>
+          </li>
+
+          <li
+            id="id"
+            class="inactive"
+            onclick="detailSelector1('id','id-detail','id-icon')"
+          >
+            <h5>What is a Family ID?</h5>
+            <i class="fas fa-chevron-down" id="id-icon"></i>
+          </li>
+          <li id="id-detail" class="inactive-detail">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+              in ullam fugit vitae neque adipisci assumenda quis similique ad
+              distinctio!
+            </p>
+          </li>
+
+          <li
+            id="addition"
+            class="inactive"
+            onclick="detailSelector1('addition','addition-detail','addition-icon')"
+          >
+            <h5>Who can be added as Family?</h5>
+            <i class="fas fa-chevron-down" id="addition-icon"></i>
+          </li>
+          <li id="addition-detail" class="inactive-detail">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+              in ullam fugit vitae neque adipisci assumenda quis similique ad
+              distinctio!
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- section3 -->
+    <section class="needHelp">
+      <div class="container">
+        <h2>Need Help?</h2>
+        <p>Just let us know, we will happy to assist you</p>
+        <a href="#"
+          ><button type="submit" id="field-btn">Submit your enquiry</button></a
+        >
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <figure>
+          <img
+            src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png"
+            alt=""
+          />
+        </figure>
+        <ul class="footerList">
+          <li><a href="#">Doctors</a></li>
+          <li><a href="#">Hospitals</a></li>
+          <li><a href="#">Treatments</a></li>
+          <li><a href="#">Other Services</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+        <div class="social-media">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <span>All Rights are Reserved. &copy tvastra 2018</span>
+      </div>
+    </footer>
+    <script src="../../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/scss/reset.css" />
+    <link rel="stylesheet" href="../assets/scss/theme.css" />
+    <link rel="stylesheet" href="../assets/scss/header.css" />
+    <link rel="stylesheet" href="../assets/scss/about-hospital.css" />
+    <link rel="stylesheet" href="../assets/scss/button.css" />
+    <link rel="stylesheet" href="../assets/scss/footer.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <nav class="main-nav" id="header-1">
+          <figure>
+            <img
+              src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+              alt=""
+            />
+          </figure>
+          <i class="fas fa-bars"></i>
+        </nav>
+      </div>
+      <div class="container">
+        <nav class="main-nav" id="header-2">
+          <figure>
+            <img
+              src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+              alt=""
+            />
+          </figure>
+          <ul class="headerList">
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Hospitals</a></li>
+            <li><a href="#">Treatments</a></li>
+            <li><a href="#">Other Services</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="buttons">
+            <button id="list-btn">Login / Sign Up</button>
+            <button id="accent-btn">Get a Quote</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- section1 -->
+    <section class="about-section">
+      <div class="container">
+        <ul class="content">
+          <li id="title">About Apollo Hospital</li>
+          <li>Home / Hospital Profile</li>
+        </ul>
+      </div>
+    </section>
+    <!-- section2 -->
+    <section class="details-section">
+      <div class="container">
+        <ul class="details-list">
+          <li id="figure-detail">
+            <figure>
+              <img
+                src="https://media.istockphoto.com/photos/emergency-department-picture-id538726573?k=6&m=538726573&s=612x612&w=0&h=srnvZXMNZ0d4OB09zbctUsObWEvNZ7C3Uw0ssguXX6A="
+                alt=""
+              />
+              <a href="#"
+                ><button id="accent-btn">Book an appointment</button></a
+              >
+            </figure>
+          </li>
+          <li id="hospital-detail">
+            <h2>Apollo Hospital</h2>
+            <div class="inputBox">
+              <i class="fas fa-map-marker-alt"></i>
+              <label for="fa-map-marker-alt" class="map-label"
+                >Delhi Mathura Road, Sarita Vihar, Delhi 110076</label
+              >
+              <i class="fas fa-bed"></i>
+              <label for="fas fa-bed" class="bed-label">113 beds</label>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              repellendus obcaecati, nihil impedit non minus quis possimus,
+              architecto perferendis iusto suscipit?
+            </p>
+          </li>
+          <li id="other-details">
+            <ul id="details">
+              <li
+                id="specialization"
+                class="active"
+                onclick="detailSelector2('specialization','specialization-detail','specialization-icon')"
+              >
+                <i class="fas fa-award"></i>
+                <h5>Specialization</h5>
+                <i class="fas fa-chevron-up" id="specialization-icon"></i>
+              </li>
+              <li id="specialization-detail" class="active-detail">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi in ullam fugit vitae neque adipisci assumenda quis
+                  similique ad distinctio!
+                </p>
+              </li>
+
+              <li
+                id="treatments"
+                class="inactive"
+                onclick="detailSelector2('treatments','treatments-detail','treatments-icon')"
+              >
+                <i class="fas fa-stethoscope"></i>
+                <h5>Famous Treatments</h5>
+                <i class="fas fa-chevron-down" id="treatments-icon"></i>
+              </li>
+              <li id="treatments-detail" class="inactive-detail">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi in ullam fugit vitae neque adipisci assumenda quis
+                  similique ad distinctio!
+                </p>
+              </li>
+
+              <li
+                id="doctor"
+                class="inactive"
+                onclick="detailSelector2('doctor','doctor-detail','doctor-icon')"
+              >
+                <i class="fas fa-user-md"></i>
+                <h5>Famous Doctors</h5>
+                <i class="fas fa-chevron-down" id="doctor-icon"></i>
+              </li>
+
+              <li id="doctor-detail" class="inactive-detail">
+                <p>
+                  Lorem ipsuWork Esit amet consectetur adipisicing elit.
+                  Eligendi in ullam fugit vitae neqWork Eci assumenda quis
+                  similique ad distinctWork Ep>
+                </p>
+              </li>
+
+              <li
+                id="infrastructure"
+                class="inactive"
+                onclick="detailSelector2('infrastructure','infrastructure-detail','infrastructure-icon')"
+              >
+                <i class="fas fa-hospital"></i>
+                <h5>Infrastructure</h5>
+                <i class="fas fa-chevron-down" id="infrastructure-icon"></i>
+              </li>
+              <li id="infrastructure-detail" class="inactive-detail">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi in ullam fugit vitae neque adipisci assumenda quis
+                  similique ad distinctio!
+                </p>
+              </li>
+
+              <li
+                id="location"
+                class="inactive"
+                onclick="detailSelector2('location','location-detail','location-icon')"
+              >
+                <i class="fas fa-map-marker-alt"></i>
+                <h5>Complete Address</h5>
+                <i class="fas fa-chevron-down" id="location-icon"></i>
+              </li>
+              <li id="location-detail" class="inactive-detail">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi in ullam fugit vitae neque adipisci assumenda quis
+                  similique ad distinctio!
+                </p>
+              </li>
+
+              <li
+                id="packages"
+                class="inactive"
+                onclick="detailSelector2('packages','packages-detail','packages-icon')"
+              >
+                <i class="fas fa-h-square"></i>
+                <h5>Hospital Packages</h5>
+                <i class="fas fa-chevron-down" id="packages-icon"></i>
+              </li>
+              <li id="packages-detail" class="inactive-detail">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi in ullam fugit vitae neque adipisci assumenda quis
+                  similique ad distinctio!
+                </p>
+              </li>
+              <li
+                id="fees"
+                class="inactive"
+                onclick="detailSelector2('fees','fees-detail','fees-icon')"
+              >
+                <i class="fas fa-rupee-sign"></i>
+                <h5>Avg Fees</h5>
+                <i class="fas fa-chevron-down" id="fees-icon"></i>
+              </li>
+              <li id="fees-detail" class="inactive-detail">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi in ullam fugit vitae neque adipisci assumenda quis
+                  similique ad distinctio!
+                </p>
+              </li>
+
+              <li
+                id="membership"
+                class="inactive"
+                onclick="detailSelector2('membership','membership-detail','membership-icon')"
+              >
+                <i class="fas fa-id-card"></i>
+                <h5>Membership</h5>
+                <i class="fas fa-chevron-down" id="membership-icon"></i>
+              </li>
+              <li id="membership-detail" class="inactive-detail">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi in ullam fugit vitae neque adipisci assumenda quis
+                  similique ad distinctio!
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- section3 -->
+    <section class="needHelp">
+      <div class="container">
+        <h2>Need Help?</h2>
+        <p>Just let us know, we will happy to assist you</p>
+        <a href="#"
+          ><button type="submit" id="field-btn">Submit your enquiry</button></a
+        >
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <figure>
+          <img
+            src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png"
+            alt=""
+          />
+        </figure>
+        <ul class="footerList">
+          <li><a href="#">Doctors</a></li>
+          <li><a href="#">Hospitals</a></li>
+          <li><a href="#">Treatments</a></li>
+          <li><a href="#">Other Services</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+        <div class="social-media">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <span>All Rights are Reserved. &copy tvastra 2018</span>
+      </div>
+    </footer>
+    <script src="../../script.js"></script>
+  </body>
+</html>

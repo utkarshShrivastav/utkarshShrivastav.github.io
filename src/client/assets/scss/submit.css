@@ -1,0 +1,85 @@
+@charset "UTF-8";
+body {
+  background: var(--light-blue);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+body .submit {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.submit .container {
+  background-color: var(--white);
+}
+.submit .container h3 {
+  border-bottom: 0.12rem solid var(--light-grey);
+  color: var(--blue);
+  padding: 1rem 0;
+  margin: 0;
+}
+.submit .container .submit-details {
+  padding: 0.75rem 0.75rem 0;
+}
+.submit .container .submit-details input {
+  border: 0.12rem solid var(--light-grey);
+}
+.submit .container .submit-details #accent-btn {
+  font-family: nexa-bold;
+  letter-spacing: 0.125rem;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.submit .container .submit-details #accent-btn::after {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  padding: 0 0.5rem 0 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+}
+footer span {
+  padding: 0rem 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .submit {
+    width: 80%;
+    margin: auto;
+  }
+  .submit .submit-details {
+    padding: 1.25rem 1.25rem 0 !important;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1350x) {
+  .submit {
+    width: 50%;
+    margin: auto;
+  }
+  .submit .submit-details {
+    padding: 1.75rem 1.75rem 0 !important;
+  }
+}
+@media only screen and (min-width: 1351px) {
+  .submit {
+    width: 45%;
+    margin: auto;
+  }
+  .submit .submit-details {
+    padding: 2rem 2rem 0 !important;
+  }
+}/*# sourceMappingURL=submit.css.map */

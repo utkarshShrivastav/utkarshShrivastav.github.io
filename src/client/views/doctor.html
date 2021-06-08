@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>doctor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/scss/reset.css" />
+    <link rel="stylesheet" href="../assets/scss/theme.css" />
+    <link rel="stylesheet" href="../assets/scss/header.css" />
+    <link rel="stylesheet" href="../assets/scss/doctor.css" />
+    <link rel="stylesheet" href="../assets/scss/button.css" />
+    <link rel="stylesheet" href="../assets/scss/footer.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <nav class="main-nav" id="header-1">
+          <figure>
+            <img
+              src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+              alt=""
+            />
+          </figure>
+          <i class="fas fa-bars"></i>
+        </nav>
+      </div>
+      <div class="container">
+        <nav class="main-nav" id="header-2">
+          <figure>
+            <img
+              src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+              alt=""
+            />
+          </figure>
+          <ul class="headerList">
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Hospitals</a></li>
+            <li><a href="#">Treatments</a></li>
+            <li><a href="#">Other Services</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="buttons">
+            <button id="list-btn">Login / Sign Up</button>
+            <button id="accent-btn">Get a Quote</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- section1 -->
+    <section class="image-section">
+      <div class="container">
+        <h1>Cardiac Surgeon in <a href="#">Delhi</a></h1>
+      </div>
+    </section>
+
+    <!-- section2 -->
+    <section class="sorting-section">
+      <div class="container">
+        <span>Home / Doctors List</span>
+        <select name="sorting-area" id="sorting-area">
+          <option value="sort by" disabled hidden selected>Sort By</option>
+          <option value="experience">Experience</option>
+          <option value="hospital">Hospital</option>
+          <option value="location">Location</option>
+        </select>
+      </div>
+    </section>
+
+    <div class="main-section">
+      <div class="container">
+        <!-- section3 -->
+        <section class="filter-section">
+          <h6>Filter By</h6>
+          <ul class="filters">
+            <li id="location">
+              <div class="heading">
+                <span>Location</span>
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="option-box">
+                <input
+                type="checkbox"
+                name="option1-location"
+                id="option1-location"
+                value="DLF Cyber City"
+              />
+              <label for="option1-location">DLF Cyber City</label>
+              <input
+                type="checkbox"
+                name="option2-location"
+                id="option2-location"
+                value="Dwaraka"
+              />
+              <label for="option2-location">Dwaraka</label>
+              <input
+                type="checkbox"
+                name="option3-location"
+                id="option3-location"
+                value="Lajpat Nagar"
+              />
+              <label for="option3-location">Lajpat Nagar</label>
+              <input
+                type="checkbox"
+                name="option4-location"
+                id="option4-location"
+                value="Palam Vihar"
+              />
+              <label for="option4-location">Palam Vihar</label>
+              <input
+                type="checkbox"
+                name="option5-location"
+                id="option5-location"
+                value="Panjabi Baag"
+              />
+              <label for="option5-location">Panjabi Baag</label>
+              <input
+                type="checkbox"
+                name="option6-location"
+                id="option6-location"
+                value="Pusa Road"
+              />
+              <label for="option6-location">Pusa Road</label>
+              </div>
+              <a href="#">+ Show more</a>
+            </li>
+            <li id="treatment">
+              <div class="heading">
+                <h6>Treatment</h6>
+                <i class="fas fa-search"></i>
+              </div>
+              <input
+                type="checkbox"
+                name="option1-treatment"
+                id="option1-treatment"
+                value="Multi Organ Transplant"
+              />
+              <label for="option1-treatment">Multi Organ Transplant</label>
+              <input
+                type="checkbox"
+                name="option2-treatment"
+                id="option2-treatment"
+                value="Orthopedics Surgery"
+              />
+              <label for="option2-treatment">Orthopedics Surgery</label>
+              <input
+                type="checkbox"
+                name="option3-treatment"
+                id="option3-treatment"
+                value="Infertility Treatment"
+              />
+              <label for="option3-treatment">Infertility Treatment</label>
+              <input
+                type="checkbox"
+                name="option4-treatment"
+                id="option4-treatment"
+                value="Dentistry"
+              />
+              <label for="option4-treatment">Dentistry</label>
+              <input
+                type="checkbox"
+                name="option5-treatment"
+                id="option5-treatment"
+                value="cardiology"
+              />
+              <label for="option5-treatment">Cardiology</label>
+              <input
+                type="checkbox"
+                name="option6-treatment"
+                id="option6-treatment"
+                value="Cancer"
+              />
+              <label for="option6-treatment">Cancer</label>
+              <a href="#">+ Show more</a>
+            </li>
+            <li id="hospital">
+              <div class="heading">
+                <h6>Hospitals</h6>
+                <i class="fas fa-search"></i>
+              </div>
+              <input
+                type="checkbox"
+                name="option1-hospitals"
+                id="option1-hospitals"
+                value="Apollo Hospital"
+              />
+              <label for="option1-hospitals">Apollo Hospital</label>
+              <input
+                type="checkbox"
+                name="option2-hospitals"
+                id="option2-hospitals"
+                value="Manipal North Side Hospital"
+              />
+              <label for="option2-hospitals">Manipal North Side Hospital</label>
+              <input
+                type="checkbox"
+                name="option3-hospitals"
+                id="option3-hospitals"
+                value="Northstar"
+              />
+              <label for="option3-hospitals">Northstar</label>
+              <input
+                type="checkbox"
+                name="option4-hospitals"
+                id="option4-hospitals"
+                value="AIIMs"
+              />
+              <label for="option4-hospitals">AIIMs</label>
+              <input
+                type="checkbox"
+                name="option5-hospitals"
+                id="option5-hospitals"
+                value="Fortis Hospital"
+              />
+              <label for="option5-hospitals">Fortis Hospital</label>
+              <input
+                type="checkbox"
+                name="option6-hospitals"
+                id="option6-hospitals"
+                value="Elbit Diagnostics"
+              />
+              <label for="option6-hospitals">Elbit Diagnostics</label>
+              <a href="#">+ Show more</a>
+            </li>
+            <li id="experience">
+              <div class="heading">
+                <h6>Years of Experience</h6>
+                <i class="fas fa-search"></i>
+              </div>
+              <input
+                type="checkbox"
+                name="option1-experience"
+                id="option1-experience"
+                value="30+"
+              />
+              <label for="option1-experience">30+</label>
+              <input
+                type="checkbox"
+                name="option2-experience"
+                id="option2-experience"
+                value="25+"
+              />
+              <label for="option2-experience">25+</label>
+              <input
+                type="checkbox"
+                name="option3-experience"
+                id="option3-experience"
+                value="20+"
+              />
+              <label for="option3-experience">20+</label>
+              <input
+                type="checkbox"
+                name="option4-experience"
+                id="option4-experience"
+                value="15+"
+              />
+              <label for="option4-experience">15+</label>
+              <input
+                type="checkbox"
+                name="option5-experience"
+                id="option5-experience"
+                value="10+"
+              />
+              <label for="option5-experience">10+</label>
+              <input
+                type="checkbox"
+                name="option6-experience"
+                id="option6-experience"
+                value="5+"
+              />
+              <label for="option6-experience">5+</label>
+              <a href="#">+ Show more</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- section4 -->
+        <section class="doctor-card">
+          <div id="card-1" class="card">
+            <ul class="card-details">
+              <li id="name">Charlie Moon</li>
+              <li id="practice">
+                <i class="fas fa-certificate"></i>
+                <span>Cardiac Surgeon</span>
+              </li>
+              <li id="hospital">
+                <i class="fas fa-hospital"></i>
+                <span>Apollo Hospital, Delhi</span>
+              </li>
+              <li id="specialization">
+                <i class="fas fa-award"></i>
+                <span>MBBS, MD, FRCP, Fellowship</span>
+              </li>
+              <li id="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>New Delhi, India</span>
+              </li>
+              <li class="experience">
+                <i class="fas fa-clock"></i>
+                <span>8 Years of Experience</span>
+              </li>
+            </ul>
+            <a href="#"><button id="accent-btn">Book an Appointment</button></a>
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+
+          <div id="card-2" class="card">
+            <ul class="card-details">
+              <li id="name">Duke Sanson</li>
+              <li id="practice">
+                <i class="fas fa-certificate"></i>
+                <span>Neuro Surgeon</span>
+              </li>
+              <li id="hospital">
+                <i class="fas fa-hospital"></i>
+                <span>Apollo Hospital, Delhi</span>
+              </li>
+              <li id="specialization">
+                <i class="fas fa-award"></i>
+                <span>Chain Department of Neurological Surgery</span>
+              </li>
+              <li id="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>New Delhi, India</span>
+              </li>
+              <li class="experience">
+                <i class="fas fa-clock"></i>
+                <span>8 Years of Experience</span>
+              </li>
+            </ul>
+            <a href="#"><button id="accent-btn">Book an Appointment</button></a>
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+
+          <div id="card-3" class="card">
+            <ul class="card-details">
+              <li id="name">Georgea Peter</li>
+              <li id="practice">
+                <i class="fas fa-certificate"></i>
+                <span>Breast Cancer Surgeon</span>
+              </li>
+              <li id="hospital">
+                <i class="fas fa-hospital"></i>
+                <span>Apollo Hospital, Delhi</span>
+              </li>
+              <li id="specialization">
+                <i class="fas fa-award"></i>
+                <span>Director, UT, Southwest</span>
+              </li>
+              <li id="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>New Delhi, India</span>
+              </li>
+              <li class="experience">
+                <i class="fas fa-clock"></i>
+                <span>8 Years of Experience</span>
+              </li>
+            </ul>
+            <a href="#"><button id="accent-btn">Book an Appointment</button></a>
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+
+          <div id="card-4" class="card">
+            <ul class="card-details">
+              <li id="name">Rose Moon</li>
+              <li id="practice">
+                <i class="fas fa-certificate"></i>
+                <span>Plastic Surgeon</span>
+              </li>
+              <li id="hospital">
+                <i class="fas fa-hospital"></i>
+                <span>Apollo Hospital, Delhi</span>
+              </li>
+              <li id="specialization">
+                <i class="fas fa-award"></i>
+                <span>Department of Plastic and Reconstructive Surgery</span>
+              </li>
+              <li id="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>New Delhi, India</span>
+              </li>
+              <li class="experience">
+                <i class="fas fa-clock"></i>
+                <span>8 Years of Experience</span>
+              </li>
+            </ul>
+            <a href="#"><button id="accent-btn">Book an Appointment</button></a>
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+
+          <div id="card-5" class="card">
+            <ul class="card-details">
+              <li id="name">Charlie Moon</li>
+              <li id="practice">
+                <i class="fas fa-certificate"></i>
+                <span>Cardiac Surgeon</span>
+              </li>
+              <li id="hospital">
+                <i class="fas fa-hospital"></i>
+                <span>Apollo Hospital, Delhi</span>
+              </li>
+              <li id="specialization">
+                <i class="fas fa-award"></i>
+                <span>MBBS, MD, FRCP, Fellowship</span>
+              </li>
+              <li id="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>New Delhi, India</span>
+              </li>
+              <li class="experience">
+                <i class="fas fa-clock"></i>
+                <span>8 Years of Experience</span>
+              </li>
+            </ul>
+            <a href="#"><button id="accent-btn">Book an Appointment</button></a>
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+
+          <div id="card-6" class="card">
+            <ul class="card-details">
+              <li id="name">Duke Sanson</li>
+              <li id="practice">
+                <i class="fas fa-certificate"></i>
+                <span>Neuro Surgeon</span>
+              </li>
+              <li id="hospital">
+                <i class="fas fa-hospital"></i>
+                <span>Apollo Hospital, Delhi</span>
+              </li>
+              <li id="specialization">
+                <i class="fas fa-award"></i>
+                <span>Chain Department of Neurological Surgery</span>
+              </li>
+              <li id="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>New Delhi, India</span>
+              </li>
+              <li class="experience">
+                <i class="fas fa-clock"></i>
+                <span>8 Years of Experience</span>
+              </li>
+            </ul>
+            <a href="#"><button id="accent-btn">Book an Appointment</button></a>
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- section5 -->
+    <section class="needHelp">
+      <div class="container">
+        <h2>Need Help?</h2>
+        <p>Just let us know, we will happy to assist you</p>
+        <a href="#"
+          ><button type="submit" id="field-btn">Submit your enquiry</button></a
+        >
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <figure>
+          <img
+            src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png"
+            alt=""
+          />
+        </figure>
+        <ul class="footerList">
+          <li><a href="#">Doctors</a></li>
+          <li><a href="#">Hospitals</a></li>
+          <li><a href="#">Treatments</a></li>
+          <li><a href="#">Other Services</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+        <div class="social-media">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <span>All Rights are Reserved. &copy tvastra 2018</span>
+      </div>
+    </footer>
+  </body>
+</html>
