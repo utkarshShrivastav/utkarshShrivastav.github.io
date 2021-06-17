@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>about-us</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -12,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../assets/scss/reset.css" />
+    <link rel="stylesheet" href="../assets/scss/theme.css" />
+    <link rel="stylesheet" href="../assets/scss/header.css" />
+    <link rel="stylesheet" href="../assets/scss/about-us.css" />
+    <link rel="stylesheet" href="../assets/scss/footer.css" />
+    <link rel="stylesheet" href="../assets/scss/button.css" />
   </head>
   <body>
     <!-- header -->
@@ -52,12 +58,14 @@
 
     <!-- section1 -->
     <section class="livingHealthyMatters">
-      <div class="container">
-        <h1>Living Helathy Matters</h1>
-        <p>
-          Our specialists asire to bridge the gap between your benefits plan and
-          the health needs.
-        </p>
+      <div class="pseudo-container">
+        <div class="container">
+          <h1>Living Helathy Matters</h1>
+          <p>
+            Our specialists asire to bridge the gap between your benefits plan
+            and the health needs.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -84,19 +92,31 @@
           omnis numquam eligendi.
         </p>
         <figure class="signature">
-          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/signature.png" alt="" />
+          <img
+            src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/signature.png"
+            alt=""
+          />
         </figure>
         <figure class="model">
-          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/femaleDoctor.png
-          " alt="" />
+          <img
+            src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/femaleDoctor.png
+          "
+            alt=""
+          />
         </figure>
       </div>
     </section>
 
     <!-- section3 -->
     <section class="wellness">
+      <video autoplay muted loop id="myVideo">
+        <source
+          src="https://workspace.konfinity.com/swapnil/tvastra-wiki/-/wikis/uploads/e06d816e6aca8019010592c7780543a4/The+New+Stamford+Hospital+TV+Commercial.mp4"
+          type="video/mp4"
+        />
+      </video>
       <div class="container">
-        <h2>Your wellness builds upon the medical daily.</h2>
+        <h3>Your wellness builds upon the medical daily.</h3>
         <p>
           Find your best self here. Dicover new ways to live an inspiring life
           through natural beauty, nutrition and diet, an active lifestyle, and
@@ -112,23 +132,23 @@
           </li>
           <li id="stat2">
             <span id="value">5k</span>
-            <span>Medical Assistants</span>
+            <span id="key">Medical Assistants</span>
           </li>
           <li id="stat3">
             <span id="value">9.8</span>
-            <span>Alexa Score</span>
+            <span id="key">Alexa Score</span>
           </li>
           <li id="stat4">
             <span id="value">3.2k</span>
-            <span>Doctors Available</span>
+            <span id="key">Doctors Available</span>
           </li>
           <li id="stat5">
             <span id="value">45k</span>
-            <span>Cure Rate</span>
+            <span id="key">Cure Rate</span>
           </li>
           <li id="stat6">
             <span id="value">75</span>
-            <span>Health Points</span>
+            <span id="key">Health Points</span>
           </li>
         </ul>
       </div>
@@ -136,11 +156,11 @@
 
     <!-- section4 -->
     <section class="joinOurTeam">
-        <div class="container">
-            <h2>Join our team</h2>
-            <p>We ar always looking for good and talented people.</p>
-            <button type="submit" id="field-btn">Submit your CV</button>
-        </div>
+      <div class="container">
+        <h2>Join our team</h2>
+        <p>We ar always looking for good and talented people.</p>
+        <button type="submit" id="field-btn">Submit your CV</button>
+      </div>
     </section>
 
     <!-- footer -->

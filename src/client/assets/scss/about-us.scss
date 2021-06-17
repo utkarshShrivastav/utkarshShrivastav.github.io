@@ -1,0 +1,394 @@
+.livingHealthyMatters {
+  background: url(https://workspace.konfinity.com/swapnil/tvastra-wiki/-/wikis/uploads/2669210401b13f31567350af785a25b1/aboutUs_hero.jpeg);
+  height: 480px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  .pseudo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-faded-dark-blue);
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 0.8rem;
+    h1,
+    p {
+      color: var(--white);
+    }
+  }
+}
+.storyOfLife {
+  h2,
+  p {
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 2rem;
+  }
+  figure {
+    margin: 2rem 0 0 0;
+  }
+  .signature {
+    img {
+      width: 65%;
+    }
+  }
+}
+.wellness {
+    video{
+        display: none;
+    }
+  background: var(--black);
+  h3,
+  p {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  #field-btn {
+    font-family: nexa-bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .stats {
+    li {
+      padding: 2rem;
+      border: 0.12rem solid var(--grey);
+      border-radius: 0.25rem;
+      margin-top: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      #value {
+        color: var(--white);
+        font-size: 1.7rem;
+      }
+      #key {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+.joinOurTeam {
+  background-color: var(--light-blue);
+  h2 {
+    color: var(--white);
+  }
+  #field-btn {
+    font-family: nexa-bold;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .storyOfLife {
+    .container {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 1fr 0.6fr;
+      grid-template-areas:
+        "h2 figure"
+        "p1 figure"
+        "p2 figure"
+        "p3 figure"
+        "sign figure";
+      h2 {
+        grid-area: h2;
+      }
+      p {
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+      }
+      #p1 {
+        grid-area: p1;
+      }
+      #p2 {
+        grid-area: p2;
+      }
+      #p3 {
+        grid-area: p3;
+      }
+      .signature {
+        grid-area: sign;
+        img {
+          height: auto;
+          width: 65%;
+        }
+      }
+      .model {
+        grid-area: figure;
+        img {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .wellness {
+    text-align: left;
+    .container {
+      p {
+        margin: 0;
+      }
+      #field-btn {
+        margin: 4rem 0;
+      }
+      .stats {
+        display: grid;
+        grid-gap: 0.75rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        li {
+          text-align: center;
+          margin: 0;
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1350px) {
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+  .storyOfLife {
+    .container {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 1fr 0.75fr;
+      grid-column-gap: 5rem;
+      grid-template-areas:
+        "h2 figure"
+        "p1 figure"
+        "p2 figure"
+        "p3 figure"
+        "sign figure";
+      h2 {
+        grid-area: h2;
+      }
+      p {
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+      }
+      #p1 {
+        grid-area: p1;
+      }
+      #p2 {
+        grid-area: p2;
+      }
+      #p3 {
+        grid-area: p3;
+      }
+      .signature {
+        grid-area: sign;
+        img {
+          height: auto;
+          width: 65%;
+        }
+      }
+      .model {
+        grid-area: figure;
+        img {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .wellness {
+    text-align: left;
+    
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+      grid-template-areas:
+        "h2 stats"
+        "p stats"
+        "button stats";
+      h2 {
+        grid-area: h2;
+      }
+      p {
+        grid-area: p;
+        margin: 0;
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+      }
+      #field-btn {
+        grid-area: button;
+        margin: 4rem 0;
+      }
+      .stats {
+        grid-area: stats;
+        display: grid;
+        grid-gap: 0.75rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        li {
+          text-align: center;
+          margin: 0;
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .joinOurTeam {
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      h2 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        color: var(--white);
+        text-align: left;
+        padding: 0 0 2rem 0;
+      }
+      #field-btn {
+        align-items: center;
+        grid-row: 1/2;
+        grid-column: 2/2;
+        margin: 0 0 0 auto;
+        height: 100%;
+      }
+
+      p {
+        text-align: left;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin: 0;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1351px) {
+  .container {
+    max-width: 1340px;
+    margin: auto;
+  }
+  .storyOfLife {
+    .container {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 1fr 0.75fr;
+      grid-column-gap: 4rem;
+      grid-template-areas:
+        "h2 figure"
+        "p1 figure"
+        "p2 figure"
+        "p3 figure"
+        "sign figure";
+      h2 {
+        grid-area: h2;
+      }
+      p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+      #p1 {
+        grid-area: p1;
+      }
+      #p2 {
+        grid-area: p2;
+      }
+      #p3 {
+        grid-area: p3;
+      }
+      .signature {
+        grid-area: sign;
+        img {
+          height: auto;
+          width: 35%;
+        }
+      }
+      .model {
+        grid-area: figure;
+
+        img {
+          height: auto;
+          width: 65%;
+         display: block;
+         margin: auto;
+        }
+      }
+    }
+  }
+
+  .wellness {
+    text-align: left;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+      grid-template-areas:
+        "h2 stats"
+        "p stats"
+        "button stats";
+      h2 {
+        grid-area: h2;
+      }
+      p {
+        grid-area: p;
+        margin: 0;
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+      }
+      #field-btn {
+        grid-area: button;
+        margin: 4rem 0;
+      }
+      .stats {
+        grid-area: stats;
+        display: grid;
+        grid-gap: 0.75rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        li {
+          text-align: center;
+          margin: 0;
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .joinOurTeam {
+    .container {
+      max-width: 1340px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      h2 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        color: var(--white);
+        text-align: left;
+        padding: 0 0 2rem 0;
+      }
+      #field-btn {
+        align-items: center;
+        grid-row: 1/2;
+        grid-column: 2/2;
+        margin: 0 0 0 auto;
+        height: 100%;
+      }
+
+      p {
+        text-align: left;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin: 0;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+}

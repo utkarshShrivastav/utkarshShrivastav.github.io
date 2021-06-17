@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>contact</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -12,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../assets/scss/reset.css" />
+    <link rel="stylesheet" href="../assets/scss/theme.css" />
+    <link rel="stylesheet" href="../assets/scss/header.css" />
+    <link rel="stylesheet" href="../assets/scss/contact.css" />
+    <link rel="stylesheet" href="../assets/scss/footer.css" />
+    <link rel="stylesheet" href="../assets/scss/button.css" />
   </head>
   <body>
     <!-- header -->
@@ -61,55 +67,72 @@
     </section>
 
     <!-- section2 -->
-    <section class="contact-details-section">
+    <section class="map">
       <div class="container">
-        <ul class="details">
-          <li id="location">
-            <i class="fas fa-home"></i>
-            <span id="address">Noida, India</span>
-            <span id="landmark">Sector 45</span>
-          </li>
-          <li id="telephone">
-            <i class="fas fa-phone-alt"></i>
-            <span id="number">00 (440) 9865562</span>
-            <span id="details">Mon to Fri 9am to 6pm</span>
-          </li>
-          <li id="email">
-            <i class="fas fa-home"></i>
-            <span id="email-id">support@tvastra.com</span>
-            <span id="details">Send us your query anytime!</span>
-          </li>
-        </ul>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14018.380122427636!2d77.3411412!3d28.5518897!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5dc86585451%3A0x51174afe6e4b2bd!2sSector-45%2C%20Noida%2C%20Uttar%20Pradesh%20201303!5e0!3m2!1sen!2sin!4v1623858331659!5m2!1sen!2sin"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </div>
     </section>
 
-    <!-- section3 -->
-    <section id="query-section">
-      <div class="container">
-        <form action="" class="query-form">
+    <div class="container contact">
+      <!-- section3 -->
+      <section class="details">
+        <ul class="contact-details">
+          <li id="address">
+            <i class="fas fa-home"></i>
+            <span id="detail-1">Noida, India</span>
+            <span id="detail-2">Sector 45</span>
+          </li>
+          <li id="phone">
+            <i class="fas fa-phone-alt"></i>
+            <span id="detail-1">00(440)9865562</span>
+            <span id="detail-2">Mon to Fri 9am to 6pm</span>
+          </li>
+          <li id="id">
+            <i class="fas fa-home"></i>
+            <span id="detail-1">support@tvastra.com</span>
+            <span id="detail-2">Send us your query anytime</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- section4 -->
+      <section class="feedback">
+        <form action="" class="feedback-form">
           <input
             type="text"
             name="name"
-            placeholder="Enter your name"
             id="name"
+            placeholder="Enter your name"
           />
           <input
             type="email"
             name="email"
-            placeholder="Enter email address"
             id="email"
+            placeholder="Enter email address"
           />
           <input
             type="text"
             name="subject"
-            placeholder="Enter subject"
             id="subject"
+            placeholder="Enter subject"
           />
-          <textarea name="message" id="message" placeholder="Enter Message"></textarea>
-          <button type="submit" id="field-btn">Send Message</button>
+          <input
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Enter Message"
+          />
+          <button id="field-btn">Send Message</button>
         </form>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- footer -->
     <footer>

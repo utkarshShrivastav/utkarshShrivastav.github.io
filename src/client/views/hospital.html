@@ -12,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../assets/scss/reset.css" />
+    <link rel="stylesheet" href="../assets/scss/theme.css" />
+    <link rel="stylesheet" href="../assets/scss/header.css" />
+    <link rel="stylesheet" href="../assets/scss/button.css" />
+    <link rel="stylesheet" href="../assets/scss/hospital.css" />
+    <link rel="stylesheet" href="../assets/scss/footer.css" />
   </head>
   <body>
     <!-- header -->
@@ -52,8 +58,10 @@
 
     <!-- section1 -->
     <section class="image-section">
-      <div class="container">
-        <h1>Hospitals in <a href="#">Delhi</a></h1>
+      <div class="pseudo-container">
+        <div class="container">
+          <h1>Hospitals in <a href="#">Delhi</a></h1>
+        </div>
       </div>
     </section>
 
@@ -62,7 +70,7 @@
       <div class="container">
         <span>Home / Doctors List</span>
         <select name="sorting-area" id="sorting-area">
-          <option value="sort by" disabled hidden selected>SOrt By</option>
+          <option value="sort by" disabled hidden selected>Sort By</option>
           <option value="experience">Experience</option>
           <option value="hospital">Hospital</option>
           <option value="location">Location</option>
@@ -71,299 +79,379 @@
     </section>
 
     <!-- section3 -->
-    <section class="filter-section">
-      <h5>Filter By</h5>
-      <ul class="filters">
-        <li id="location">
-          <div class="heading">
-            <h6>Location</h6>
-            <i class="fas fa-search"></i>
+    <div class="container" id="conjoint-section">
+      <section class="filter-section">
+        <h6>Filter By</h6>
+        <ul class="filters">
+          <li id="location">
+            <div class="heading">
+              <span>Location</span>
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="option-box">
+              <input
+                type="checkbox"
+                name="option1-location"
+                id="option1-location"
+                value="DLF Cyber City"
+              />
+              <label for="option1-location">DLF Cyber City</label>
+              <input
+                type="checkbox"
+                name="option2-location"
+                id="option2-location"
+                value="Dwaraka"
+              />
+              <label for="option2-location">Dwaraka</label>
+              <input
+                type="checkbox"
+                name="option3-location"
+                id="option3-location"
+                value="Lajpat Nagar"
+              />
+              <label for="option3-location">Lajpat Nagar</label>
+              <input
+                type="checkbox"
+                name="option4-location"
+                id="option4-location"
+                value="Palam Vihar"
+              />
+              <label for="option4-location">Palam Vihar</label>
+              <input
+                type="checkbox"
+                name="option5-location"
+                id="option5-location"
+                value="Panjabi Baag"
+              />
+              <label for="option5-location">Panjabi Baag</label>
+              <input
+                type="checkbox"
+                name="option6-location"
+                id="option6-location"
+                value="Pusa Road"
+              />
+              <label for="option6-location">Pusa Road</label>
+            </div>
+            <a href="#">+ Show more</a>
+          </li>
+  
+          <li id="department">
+            <div class="heading">
+              <span>Department</span>
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="option-box">
+              <input
+                type="checkbox"
+                name="option1-department"
+                id="option1-department"
+                value="Department 1"
+              />
+              <label for="option1-department">Department 1</label>
+              <input
+                type="checkbox"
+                name="option2-department"
+                id="option2-department"
+                value="Department 2"
+              />
+              <label for="option2-department">Department 2</label>
+              <input
+                type="checkbox"
+                name="option3-department"
+                id="option3-department"
+                value="Department 3"
+              />
+              <label for="option3-department">Department 3</label>
+              <input
+                type="checkbox"
+                name="option4-department"
+                id="option4-department"
+                value="Department 4"
+              />
+              <label for="option4-department">Department 4</label>
+              <input
+                type="checkbox"
+                name="option5-department"
+                id="option5-department"
+                value="Department 5"
+              />
+              <label for="option5-department">Department 5</label>
+              <input
+                type="checkbox"
+                name="option6-department"
+                id="option6-department"
+                value="Department 6"
+              />
+              <label for="option6-department">Department 6</label>
+            </div>
+            <a href="#">+ Show more</a>
+          </li>
+  
+          <li id="treatment">
+            <div class="heading">
+              <span>Treatment</span>
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="option-box">
+              <input
+                type="checkbox"
+                name="option1-treatment"
+                id="option1-treatment"
+                value="Multi Organ Transplant"
+              />
+              <label for="option1-treatment">Multi Organ Transplant</label>
+              <input
+                type="checkbox"
+                name="option2-treatment"
+                id="option2-treatment"
+                value="Orthopedics Surgery"
+              />
+              <label for="option2-treatment">Orthopedics Surgery</label>
+              <input
+                type="checkbox"
+                name="option3-treatment"
+                id="option3-treatment"
+                value="Infertility Treatment"
+              />
+              <label for="option3-treatment">Infertility Treatment</label>
+              <input
+                type="checkbox"
+                name="option4-treatment"
+                id="option4-treatment"
+                value="Dentistry"
+              />
+              <label for="option4-treatment">Dentistry</label>
+              <input
+                type="checkbox"
+                name="option5-treatment"
+                id="option5-treatment"
+                value="cardiology"
+              />
+              <label for="option5-treatment">Cardiology</label>
+              <input
+                type="checkbox"
+                name="option6-treatment"
+                id="option6-treatment"
+                value="Cancer"
+              />
+              <label for="option6-treatment">Cancer</label>
+            </div>
+            <a href="#">+ Show more</a>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- section4 -->
+      <section class="hospital-details">
+        <div id="card1" class="card">
+          <div class="content">
+            <ul class="card-details">
+              <li id="name">Apollo Hospital</li>
+              <li id="detail-1">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Delhi Mathura Road, Sarita Vihar, Delhi 110076</span>
+              </li>
+              <li id="detail-2">
+                <i class="fas fa-bed"></i>
+                <span>100 beds</span>
+              </li>
+              <li id="detail-3">
+                <i class="fas fa-stethoscope"></i>
+                <span>Famous Treatments</span>
+              </li>
+            </ul>
+            <div class="treatments">
+              <button class="btn-treatment">
+                <a href="#">Multi Organ Transplant</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Orthoppedics Expert</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Infertility Treatment</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Dentistry</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Cardiology</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Cancer</a>
+              </button>
+              <button class="btn-treatment" id="extra">
+                <a href="#">+40 more</a>
+              </button>
+            </div>
           </div>
-          <input
-            type="checkbox"
-            name="option1-location"
-            id="option1-location"
-            value="DLF Cyber City"
-          />
-          <label for="option1-location">DLF Cyber City</label>
-          <input
-            type="checkbox"
-            name="option2-location"
-            id="option2-location"
-            value="Dwaraka"
-          />
-          <label for="option2-location">Dwaraka</label>
-          <input
-            type="checkbox"
-            name="option3-location"
-            id="option3-location"
-            value="Lajpat Nagar"
-          />
-          <label for="option3-location">Lajpat Nagar</label>
-          <input
-            type="checkbox"
-            name="option4-location"
-            id="option4-location"
-            value="Palam Vihar"
-          />
-          <label for="option4-location">Palam Vihar</label>
-          <input
-            type="checkbox"
-            name="option5-location"
-            id="option5-location"
-            value="Panjabi Baag"
-          />
-          <label for="option5-location">Panjabi Baag</label>
-          <input
-            type="checkbox"
-            name="option6-location"
-            id="option6-location"
-            value="Pusa Road"
-          />
-          <label for="option6-location">Pusa Road</label>
-          <a href="#">+ Show more</a>
-        </li>
-
-        <li id="department">
-          <div class="heading">
-            <h6>Department</h6>
-            <i class="fas fa-search"></i>
+          <button id="accent-btn">
+            <a href="#">Call Now</a>
+          </button>
+          <figure>
+            <img
+              src="https://images.newindianexpress.com/uploads/user/imagelibrary/2021/4/21/w900X450/Apollo_Hospital_Indraprastha.jpg"
+              alt=""
+            />
+          </figure>
+        </div>
+  
+        <div id="card2" class="card">
+          <div class="content">
+            <ul class="card-details">
+              <li id="name">Fortis Hospital</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Delhi Mathura Road, Sarita Vihar, Delhi 110076</span>
+              </li>
+              <li>
+                <i class="fas fa-bed"></i>
+                <span>100 beds</span>
+              </li>
+              <li>
+                <i class="fas fa-stethoscope"></i>
+                <span>Famous Treatments</span>
+              </li>
+            </ul>
+            <div class="treatments">
+              <button class="btn-treatment">
+                <a href="#">Multi Organ Transplant</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Orthoppedics Expert</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Infertility Treatment</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Dentistry</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Cardiology</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Cancer</a>
+              </button>
+              <button class="btn-treatment" id="extra">
+                <a href="#">+40 more</a>
+              </button>
+            </div>
           </div>
-          <input
-            type="checkbox"
-            name="option1-department"
-            id="option1-department"
-            value="Department 1"
-          />
-          <label for="option1-department">Department 1</label>
-          <input
-            type="checkbox"
-            name="option2-department"
-            id="option2-department"
-            value="Department 2"
-          />
-          <label for="option2-department">Department 2</label>
-          <input
-            type="checkbox"
-            name="option3-department"
-            id="option3-department"
-            value="Department 3"
-          />
-          <label for="option3-department">Department 3</label>
-          <input
-            type="checkbox"
-            name="option4-department"
-            id="option4-department"
-            value="Department 4"
-          />
-          <label for="option4-department">Department 4</label>
-          <input
-            type="checkbox"
-            name="option5-department"
-            id="option5-department"
-            value="Department 5"
-          />
-          <label for="option5-department">Department 5</label>
-          <input
-            type="checkbox"
-            name="option6-department"
-            id="option6-department"
-            value="Department 6"
-          />
-          <label for="option6-department">Department 6</label>
-          <a href="#">+ Show more</a>
-        </li>
-
-        <li id="treatment">
-          <div class="heading">
-            <h6>Treatment</h6>
-            <i class="fas fa-search"></i>
+          <button id="accent-btn">
+            <a href="#">Call Now</a>
+          </button>
+          <figure>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+          </figure>
+        </div>
+  
+        <div id="card3" class="card">
+          <div class="content">
+            <ul class="card-details">
+              <li id="name">Rockland Hospital</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Delhi Mathura Road, Sarita Vihar, Delhi 110076</span>
+              </li>
+              <li>
+                <i class="fas fa-bed"></i>
+                <span>100 beds</span>
+              </li>
+              <li>
+                <i class="fas fa-stethoscope"></i>
+                <span>Famous Treatments</span>
+              </li>
+            </ul>
+            <div class="treatments">
+              <button class="btn-treatment">
+                <a href="#">Multi Organ Transplant</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Orthoppedics Expert</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Infertility Treatment</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Dentistry</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Cardiology</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Cancer</a>
+              </button>
+              <button class="btn-treatment" id="extra">
+                <a href="#">+40 more</a>
+              </button>
+            </div>
           </div>
-          <input
-            type="checkbox"
-            name="option1-treatment"
-            id="option1-treatment"
-            value="Multi Organ Transplant"
-          />
-          <label for="option1-treatment">Multi Organ Transplant</label>
-          <input
-            type="checkbox"
-            name="option2-treatment"
-            id="option2-treatment"
-            value="Orthopedics Surgery"
-          />
-          <label for="option2-treatment">Orthopedics Surgery</label>
-          <input
-            type="checkbox"
-            name="option3-treatment"
-            id="option3-treatment"
-            value="Infertility Treatment"
-          />
-          <label for="option3-treatment">Infertility Treatment</label>
-          <input
-            type="checkbox"
-            name="option4-treatment"
-            id="option4-treatment"
-            value="Dentistry"
-          />
-          <label for="option4-treatment">Dentistry</label>
-          <input
-            type="checkbox"
-            name="option5-treatment"
-            id="option5-treatment"
-            value="cardiology"
-          />
-          <label for="option5-treatment">Cardiology</label>
-          <input
-            type="checkbox"
-            name="option6-treatment"
-            id="option6-treatment"
-            value="Cancer"
-          />
-          <label for="option6-treatment">Cancer</label>
-          <a href="#">+ Show more</a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- section4 -->
-    <section class="hospital-card">
-      <div id="card-1" class="card">
-        <ul class="card-details">
-          <li id="name">Apollo Hospital</li>
-          <li id="address">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Delhi Mathura Road, Sarita Vihar, Delhi-110076</span>
-          </li>
-          <li id="beds">
-            <i class="fas fa-bed"></i>
-            <span>135 beds</span>
-          </li>
-          <li id="treatments">
-            <i class="fas fa-stethoscope"></i>
-            <span>Famous Treatments</span>
-            <ul class="listedTreatments">
-              <li>Multi Organ Transplant</li>
-              <li>Orthopedics Surgery</li>
-              <li>Infertility Treatment</li>
-              <li>Dentistry</li>
-              <li>Cardiology</li>
-              <li>Cancer</li>
-              <li id="additional">+40 more</li>
+          <button id="accent-btn">
+            <a href="#">Call Now</a>
+          </button>
+          <figure>
+            <img
+              src="https://hindi.gyaanghantaa.com/wp-content/uploads/sites/2/2018/07/rockland-hospital-delhi-1469694553-5799c259346c8.jpg"
+              alt=""
+            />
+          </figure>
+        </div>
+  
+        <div id="card4" class="card">
+          <div class="content">
+            <ul class="card-details">
+              <li id="name">Primus Super Speciality Hospital</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Delhi Mathura Road, Sarita Vihar, Delhi 110076</span>
+              </li>
+              <li>
+                <i class="fas fa-bed"></i>
+                <span>100 beds</span>
+              </li>
+              <li>
+                <i class="fas fa-stethoscope"></i>
+                <span>Famous Treatments</span>
+              </li>
             </ul>
-          </li>
-        </ul>
-        <a href="#"><button id="accent-btn">Call Now</button></a>
-        <figure>
-          <img
-            src="https://api.allhospital.info/storage/images/5cd95f4e3c007.jpeg"
-            alt=""
-          />
-        </figure>
-      </div>
-
-      <div id="card-2" class="card">
-        <ul class="card-details">
-          <li id="name">Fortis Hospital</li>
-          <li id="address">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Delhi Mathura Road, Sarita Vihar, Delhi-110076</span>
-          </li>
-          <li id="beds">
-            <i class="fas fa-bed"></i>
-            <span>135 beds</span>
-          </li>
-          <li id="treatments">
-            <i class="fas fa-stethoscope"></i>
-            <span>Famous Treatments</span>
-            <ul class="listedTreatments">
-              <li>Multi Organ Transplant</li>
-              <li>Orthopedics Surgery</li>
-              <li>Infertility Treatment</li>
-              <li>Dentistry</li>
-              <li>Cardiology</li>
-              <li>Cancer</li>
-              <li id="additional">+40 more</li>
-            </ul>
-          </li>
-        </ul>
-        <a href="#"><button id="accent-btn">Call Now</button></a>
-        <figure>
-          <img
-            src="https://sys.mediflam.com/OfflineUploads/HospitalImage/Fortis_Hospital_Shalimar_Bagh.JPG"
-            alt=""
-          />
-        </figure>
-      </div>
-
-      <div id="card-3" class="card">
-        <ul class="card-details">
-          <li id="name">Rockland Hospital</li>
-          <li id="address">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Delhi Mathura Road, Sarita Vihar, Delhi-110076</span>
-          </li>
-          <li id="beds">
-            <i class="fas fa-bed"></i>
-            <span>135 beds</span>
-          </li>
-          <li id="treatments">
-            <i class="fas fa-stethoscope"></i>
-            <span>Famous Treatments</span>
-            <ul class="listedTreatments">
-              <li>Multi Organ Transplant</li>
-              <li>Orthopedics Surgery</li>
-              <li>Infertility Treatment</li>
-              <li>Dentistry</li>
-              <li>Cardiology</li>
-              <li>Cancer</li>
-              <li id="additional">+40 more</li>
-            </ul>
-          </li>
-        </ul>
-        <a href="#"><button id="accent-btn">Call Now</button></a>
-        <figure>
-          <img
-            src="https://hindi.gyaanghantaa.com/wp-content/uploads/sites/2/2018/07/rockland-hospital-delhi-1469694553-5799c259346c8.jpg";
-            alt=""
-          />
-        </figure>
-      </div>
-
-      <div id="card-4" class="card">
-        <ul class="card-details">
-          <li id="name">Primus Super Speciality Hospital</li>
-          <li id="address">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Delhi Mathura Road, Sarita Vihar, Delhi-110076</span>
-          </li>
-          <li id="beds">
-            <i class="fas fa-bed"></i>
-            <span>135 beds</span>
-          </li>
-          <li id="treatments">
-            <i class="fas fa-stethoscope"></i>
-            <span>Famous Treatments</span>
-            <ul class="listedTreatments">
-              <li>Multi Organ Transplant</li>
-              <li>Orthopedics Surgery</li>
-              <li>Infertility Treatment</li>
-              <li>Dentistry</li>
-              <li>Cardiology</li>
-              <li>Cancer</li>
-              <li id="additional">+40 more</li>
-            </ul>
-          </li>
-        </ul>
-        <a href="#"><button id="accent-btn">Call Now</button></a>
-        <figure>
-          <img
-            src="https://www.anavara.com/wp-content/uploads/2020/05/Primus-Super-Speciality-Hospital-Delhi.jpg"
-            alt=""
-          />
-        </figure>
-      </div>
-    </section>
+            <div class="treatments">
+              <button class="btn-treatment">
+                <a href="#">Multi Organ Transplant</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Orthoppedics Expert</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Infertility Treatment</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Dentistry</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Cardiology</a>
+              </button>
+              <button class="btn-treatment">
+                <a href="#">Cancer</a>
+              </button>
+              <button class="btn-treatment" id="extra">
+                <a href="#">+40 more</a>
+              </button>
+            </div>
+          </div>
+          <button id="accent-btn">
+            <a href="#">Call Now</a>
+          </button>
+          <figure>
+            <img
+              src="https://www.tourmyindia.com/medical-tourism/uploads/hospital/images/0a1d38ba54c0506bbd7d6b9ccc4ae392.jpg"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+    </div>
     <!-- section5 -->
     <section class="needHelp">
       <div class="container">

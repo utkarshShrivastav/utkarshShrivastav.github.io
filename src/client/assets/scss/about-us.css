@@ -1,0 +1,353 @@
+.livingHealthyMatters {
+  background: url(https://workspace.konfinity.com/swapnil/tvastra-wiki/-/wikis/uploads/2669210401b13f31567350af785a25b1/aboutUs_hero.jpeg);
+  height: 480px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.livingHealthyMatters .pseudo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-faded-dark-blue);
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 0.8rem;
+}
+.livingHealthyMatters .pseudo-container h1,
+.livingHealthyMatters .pseudo-container p {
+  color: var(--white);
+}
+
+.storyOfLife h2,
+.storyOfLife p {
+  margin-bottom: 0;
+}
+.storyOfLife p {
+  margin-top: 2rem;
+}
+.storyOfLife figure {
+  margin: 2rem 0 0 0;
+}
+.storyOfLife .signature img {
+  width: 65%;
+}
+
+.wellness {
+  background: var(--black);
+}
+.wellness video {
+  display: none;
+}
+.wellness h3,
+.wellness p {
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+.wellness p {
+  font-size: 1rem;
+}
+.wellness #field-btn {
+  font-family: nexa-bold;
+  margin-bottom: 1.5rem;
+}
+.wellness .stats li {
+  padding: 2rem;
+  border: 0.12rem solid var(--grey);
+  border-radius: 0.25rem;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wellness .stats li #value {
+  color: var(--white);
+  font-size: 1.7rem;
+}
+.wellness .stats li #key {
+  font-size: 0.75rem;
+}
+
+.joinOurTeam {
+  background-color: var(--light-blue);
+}
+.joinOurTeam h2 {
+  color: var(--white);
+}
+.joinOurTeam #field-btn {
+  font-family: nexa-bold;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .storyOfLife .container {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    grid-template-areas: "h2 figure" "p1 figure" "p2 figure" "p3 figure" "sign figure";
+  }
+  .storyOfLife .container h2 {
+    grid-area: h2;
+  }
+  .storyOfLife .container p {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+  }
+  .storyOfLife .container #p1 {
+    grid-area: p1;
+  }
+  .storyOfLife .container #p2 {
+    grid-area: p2;
+  }
+  .storyOfLife .container #p3 {
+    grid-area: p3;
+  }
+  .storyOfLife .container .signature {
+    grid-area: sign;
+  }
+  .storyOfLife .container .signature img {
+    height: auto;
+    width: 65%;
+  }
+  .storyOfLife .container .model {
+    grid-area: figure;
+  }
+  .storyOfLife .container .model img {
+    height: auto;
+  }
+
+  .wellness {
+    text-align: left;
+  }
+  .wellness .container p {
+    margin: 0;
+  }
+  .wellness .container #field-btn {
+    margin: 4rem 0;
+  }
+  .wellness .container .stats {
+    display: grid;
+    grid-gap: 0.75rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .wellness .container .stats li {
+    text-align: center;
+    margin: 0;
+    padding: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1350px) {
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .storyOfLife .container {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    grid-column-gap: 5rem;
+    grid-template-areas: "h2 figure" "p1 figure" "p2 figure" "p3 figure" "sign figure";
+  }
+  .storyOfLife .container h2 {
+    grid-area: h2;
+  }
+  .storyOfLife .container p {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+  }
+  .storyOfLife .container #p1 {
+    grid-area: p1;
+  }
+  .storyOfLife .container #p2 {
+    grid-area: p2;
+  }
+  .storyOfLife .container #p3 {
+    grid-area: p3;
+  }
+  .storyOfLife .container .signature {
+    grid-area: sign;
+  }
+  .storyOfLife .container .signature img {
+    height: auto;
+    width: 65%;
+  }
+  .storyOfLife .container .model {
+    grid-area: figure;
+  }
+  .storyOfLife .container .model img {
+    height: auto;
+  }
+
+  .wellness {
+    text-align: left;
+  }
+  .wellness .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-template-areas: "h2 stats" "p stats" "button stats";
+  }
+  .wellness .container h2 {
+    grid-area: h2;
+  }
+  .wellness .container p {
+    grid-area: p;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+  }
+  .wellness .container #field-btn {
+    grid-area: button;
+    margin: 4rem 0;
+  }
+  .wellness .container .stats {
+    grid-area: stats;
+    display: grid;
+    grid-gap: 0.75rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .wellness .container .stats li {
+    text-align: center;
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  .joinOurTeam .container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .joinOurTeam .container h2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: var(--white);
+    text-align: left;
+    padding: 0 0 2rem 0;
+  }
+  .joinOurTeam .container #field-btn {
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 2/2;
+    margin: 0 0 0 auto;
+    height: 100%;
+  }
+  .joinOurTeam .container p {
+    text-align: left;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media only screen and (min-width: 1351px) {
+  .container {
+    max-width: 1340px;
+    margin: auto;
+  }
+
+  .storyOfLife .container {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    grid-column-gap: 4rem;
+    grid-template-areas: "h2 figure" "p1 figure" "p2 figure" "p3 figure" "sign figure";
+  }
+  .storyOfLife .container h2 {
+    grid-area: h2;
+  }
+  .storyOfLife .container p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  .storyOfLife .container #p1 {
+    grid-area: p1;
+  }
+  .storyOfLife .container #p2 {
+    grid-area: p2;
+  }
+  .storyOfLife .container #p3 {
+    grid-area: p3;
+  }
+  .storyOfLife .container .signature {
+    grid-area: sign;
+  }
+  .storyOfLife .container .signature img {
+    height: auto;
+    width: 35%;
+  }
+  .storyOfLife .container .model {
+    grid-area: figure;
+  }
+  .storyOfLife .container .model img {
+    height: auto;
+    width: 65%;
+    display: block;
+    margin: auto;
+  }
+
+  .wellness {
+    text-align: left;
+  }
+  .wellness .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-template-areas: "h2 stats" "p stats" "button stats";
+  }
+  .wellness .container h2 {
+    grid-area: h2;
+  }
+  .wellness .container p {
+    grid-area: p;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+  }
+  .wellness .container #field-btn {
+    grid-area: button;
+    margin: 4rem 0;
+  }
+  .wellness .container .stats {
+    grid-area: stats;
+    display: grid;
+    grid-gap: 0.75rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .wellness .container .stats li {
+    text-align: center;
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  .joinOurTeam .container {
+    max-width: 1340px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .joinOurTeam .container h2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: var(--white);
+    text-align: left;
+    padding: 0 0 2rem 0;
+  }
+  .joinOurTeam .container #field-btn {
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 2/2;
+    margin: 0 0 0 auto;
+    height: 100%;
+  }
+  .joinOurTeam .container p {
+    text-align: left;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+}/*# sourceMappingURL=about-us.css.map */

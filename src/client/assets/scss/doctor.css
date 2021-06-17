@@ -64,6 +64,11 @@
 .doctor-card .card figure {
   margin-top: 1rem !important;
 }
+.doctor-card .card figure img {
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .doctor-card #card-6 {
   margin-bottom: 0;
 }
@@ -85,9 +90,13 @@
     transform: rotateY(180deg);
     padding: 0;
   }
-  .image-section .container {
-    padding: 2rem;
+  .image-section .pseudo-container {
     background-color: var(--background-faded-blue);
+    width: 100%;
+    height: 100%;
+  }
+  .image-section .pseudo-container .container {
+    padding: 2rem;
     width: 100%;
     height: 100%;
     transform: rotateY(180deg);
@@ -95,10 +104,10 @@
     justify-content: left;
     align-items: center;
   }
-  .image-section .container h1 {
+  .image-section .pseudo-container .container h1 {
     font-family: nexa-light;
   }
-  .image-section .container h1 a {
+  .image-section .pseudo-container .container h1 a {
     color: var(--dark-blue);
     text-decoration: underline;
   }
@@ -119,30 +128,56 @@
     width: 100%;
     text-align: left;
   }
-  .main-section .container .filter-section .heading {
+  .main-section .container .filter-section .filters li {
+    margin-bottom: 1rem;
+  }
+  .main-section .container .filter-section .filters li .heading {
     display: grid;
+    margin-bottom: 0.8rem;
     grid-template-columns: 1fr auto;
     position: relative;
   }
-  .main-section .container .filter-section .heading span {
+  .main-section .container .filter-section .filters li .heading span {
     font-size: 1.4rem;
     font-family: nexa-light;
     color: var(--dark-blue);
     text-align: left;
   }
-  .main-section .container .filter-section .heading i {
+  .main-section .container .filter-section .filters li .heading i {
     font-size: 1.4rem;
     color: var(--blue);
     margin-right: 2rem;
     display: flex;
     align-self: center;
   }
-  .main-section .container .filter-section .heading::after {
+  .main-section .container .filter-section .filters li .heading::after {
     position: absolute;
     content: "-";
     right: 0;
     font-family: nexa-bold;
     color: var(--light-grey);
+  }
+  .main-section .container .filter-section .filters li .option-box {
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+  }
+  .main-section .container .filter-section .filters li .option-box label {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 1.4rem;
+  }
+  .main-section .container .filter-section .filters li .option-box input {
+    display: flex;
+    align-self: center;
+  }
+  .main-section .container .filter-section .filters li a {
+    color: var(--blue);
+    font-size: 1rem;
+    display: flex;
+    justify-self: left;
   }
   .main-section .container .doctor-card {
     display: block;
@@ -153,6 +188,7 @@
     display: grid;
     grid-column-gap: 0.5rem;
     grid-template-columns: 5fr 1.5fr;
+    grid-auto-rows: 18rem 4.5rem;
     grid-template-areas: "ul image" "button image";
   }
   .main-section .container .doctor-card .card .card-details {
@@ -165,6 +201,7 @@
   .main-section .container .doctor-card .card figure img {
     -o-object-fit: cover;
        object-fit: cover;
+    height: 100%;
   }
   .main-section .container .doctor-card .card #accent-btn {
     grid-area: button;
@@ -197,5 +234,399 @@
   }
   .main-section .container .doctor-card .card .card-details li span {
     line-height: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1350px) {
+  .image-section {
+    display: block;
+    background-image: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    transform: rotateY(180deg);
+    padding: 0;
+  }
+  .image-section .pseudo-container {
+    background-color: var(--background-faded-blue);
+    width: 100%;
+    height: 100%;
+  }
+  .image-section .pseudo-container .container {
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .image-section .pseudo-container .container h1 {
+    font-family: nexa-light;
+    max-width: 1100px;
+  }
+  .image-section .pseudo-container .container h1 a {
+    color: var(--dark-blue);
+    text-decoration: underline;
+  }
+
+  .sorting-section .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+  .sorting-section .container span {
+    font-size: 1.4rem;
+  }
+
+  .main-section .container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-column-gap: 2rem;
+  }
+  .main-section .container .filter-section {
+    display: block;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .main-section .container .filter-section h6 {
+    padding: 0.8rem;
+    background-color: var(--light-grey);
+    width: 100%;
+    text-align: left;
+  }
+  .main-section .container .filter-section .filters li {
+    margin-bottom: 1rem;
+  }
+  .main-section .container .filter-section .filters li .heading {
+    display: grid;
+    margin-bottom: 0.8rem;
+    grid-template-columns: 1fr auto;
+    position: relative;
+  }
+  .main-section .container .filter-section .filters li .heading span {
+    font-size: 1.4rem;
+    font-family: nexa-light;
+    color: var(--dark-blue);
+    text-align: left;
+  }
+  .main-section .container .filter-section .filters li .heading i {
+    font-size: 1.4rem;
+    color: var(--blue);
+    margin-right: 2rem;
+    display: flex;
+    align-self: center;
+  }
+  .main-section .container .filter-section .filters li .heading::after {
+    position: absolute;
+    content: "-";
+    right: 0;
+    font-family: nexa-bold;
+    color: var(--light-grey);
+  }
+  .main-section .container .filter-section .filters li .option-box {
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+  }
+  .main-section .container .filter-section .filters li .option-box label {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 1.4rem;
+  }
+  .main-section .container .filter-section .filters li .option-box input {
+    display: flex;
+    align-self: center;
+  }
+  .main-section .container .filter-section .filters li a {
+    color: var(--blue);
+    font-size: 1rem;
+    display: flex;
+    justify-self: left;
+  }
+  .main-section .container .doctor-card {
+    display: block;
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .main-section .container .doctor-card .card {
+    display: grid;
+    grid-column-gap: 0.5rem;
+    grid-template-columns: 5fr 1.5fr;
+    grid-auto-rows: 14rem 4.5rem;
+    grid-template-areas: "ul image" "button image";
+  }
+  .main-section .container .doctor-card .card .card-details {
+    grid-area: ul;
+  }
+  .main-section .container .doctor-card .card figure {
+    grid-area: image;
+    margin: 0 !important;
+  }
+  .main-section .container .doctor-card .card figure img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  .main-section .container .doctor-card .card #accent-btn {
+    grid-area: button;
+    margin: 0 auto 1rem 1rem;
+  }
+  .main-section .container .doctor-card .card .card-details {
+    grid-area: ul;
+    display: grid;
+    grid-template-columns: 1rem 1fr 1fr;
+    grid-row-gap: 1rem;
+    grid-template-areas: "name-list name-list name-list" " . practice hospital" " . specialization address" " . experience experience";
+  }
+  .main-section .container .doctor-card .card .card-details #name {
+    grid-area: name-list;
+  }
+  .main-section .container .doctor-card .card .card-details #practice {
+    grid-area: practice;
+  }
+  .main-section .container .doctor-card .card .card-details #hospital {
+    grid-area: hospital;
+  }
+  .main-section .container .doctor-card .card .card-details #specialization {
+    grid-area: specialization;
+  }
+  .main-section .container .doctor-card .card .card-details #address {
+    grid-area: address;
+  }
+  .main-section .container .doctor-card .card .card-details .experience {
+    grid-area: experience;
+  }
+  .main-section .container .doctor-card .card .card-details li span {
+    line-height: 1.4rem;
+  }
+
+  .needHelp .container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .needHelp .container h2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: var(--white);
+    text-align: left;
+    padding: 0 0 2rem 0;
+  }
+  .needHelp .container #field-btn {
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 2/2;
+    margin: 0 0 0 auto;
+    height: 100%;
+  }
+  .needHelp .container p {
+    text-align: left;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media only screen and (min-width: 1351px) {
+  .image-section {
+    display: block;
+    background-image: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    transform: rotateY(180deg);
+    padding: 0;
+  }
+  .image-section .pseudo-container {
+    background-color: var(--background-faded-blue);
+    width: 100%;
+    height: 100%;
+  }
+  .image-section .pseudo-container .container {
+    max-width: 1340px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .image-section .pseudo-container .container h1 {
+    font-family: nexa-light;
+    max-width: 1100px;
+  }
+  .image-section .pseudo-container .container h1 a {
+    color: var(--dark-blue);
+    text-decoration: underline;
+  }
+
+  .sorting-section .container {
+    max-width: 1340px;
+    margin: auto;
+  }
+  .sorting-section .container span {
+    font-size: 1.4rem;
+  }
+
+  .main-section .container {
+    max-width: 1340px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-column-gap: 2rem;
+  }
+  .main-section .container .filter-section {
+    display: block;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .main-section .container .filter-section h6 {
+    padding: 0.8rem;
+    background-color: var(--light-grey);
+    width: 100%;
+    text-align: left;
+  }
+  .main-section .container .filter-section .filters li {
+    margin-bottom: 1rem;
+  }
+  .main-section .container .filter-section .filters li .heading {
+    display: grid;
+    margin-bottom: 0.8rem;
+    grid-template-columns: 1fr auto;
+    position: relative;
+  }
+  .main-section .container .filter-section .filters li .heading span {
+    font-size: 1.4rem;
+    font-family: nexa-light;
+    color: var(--dark-blue);
+    text-align: left;
+  }
+  .main-section .container .filter-section .filters li .heading i {
+    font-size: 1.4rem;
+    color: var(--blue);
+    margin-right: 2rem;
+    display: flex;
+    align-self: center;
+  }
+  .main-section .container .filter-section .filters li .heading::after {
+    position: absolute;
+    content: "-";
+    right: 0;
+    font-family: nexa-bold;
+    color: var(--light-grey);
+  }
+  .main-section .container .filter-section .filters li .option-box {
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+  }
+  .main-section .container .filter-section .filters li .option-box label {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 1.4rem;
+  }
+  .main-section .container .filter-section .filters li .option-box input {
+    display: flex;
+    align-self: center;
+  }
+  .main-section .container .filter-section .filters li a {
+    color: var(--blue);
+    font-size: 1rem;
+    display: flex;
+    justify-self: left;
+  }
+  .main-section .container .doctor-card {
+    display: block;
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .main-section .container .doctor-card .card {
+    display: grid;
+    grid-column-gap: 0.5rem;
+    grid-template-columns: 5fr 1.5fr;
+    grid-auto-rows: 14rem 4.5rem;
+    grid-template-areas: "ul image" "button image";
+  }
+  .main-section .container .doctor-card .card .card-details {
+    grid-area: ul;
+  }
+  .main-section .container .doctor-card .card figure {
+    grid-area: image;
+    margin: 0 !important;
+  }
+  .main-section .container .doctor-card .card figure img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  .main-section .container .doctor-card .card #accent-btn {
+    grid-area: button;
+    margin: 0 auto 1rem 1rem;
+  }
+  .main-section .container .doctor-card .card .card-details {
+    grid-area: ul;
+    display: grid;
+    grid-template-columns: 1rem 1fr 1fr;
+    grid-row-gap: 1rem;
+    grid-template-areas: "name-list name-list name-list" " . practice hospital" " . specialization address" " . experience experience";
+  }
+  .main-section .container .doctor-card .card .card-details #name {
+    grid-area: name-list;
+  }
+  .main-section .container .doctor-card .card .card-details #practice {
+    grid-area: practice;
+  }
+  .main-section .container .doctor-card .card .card-details #hospital {
+    grid-area: hospital;
+  }
+  .main-section .container .doctor-card .card .card-details #specialization {
+    grid-area: specialization;
+  }
+  .main-section .container .doctor-card .card .card-details #address {
+    grid-area: address;
+  }
+  .main-section .container .doctor-card .card .card-details .experience {
+    grid-area: experience;
+  }
+  .main-section .container .doctor-card .card .card-details li span {
+    line-height: 1.4rem;
+  }
+
+  .needHelp .container {
+    max-width: 1340px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .needHelp .container h2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: var(--white);
+    text-align: left;
+    padding: 0 0 2rem 0;
+  }
+  .needHelp .container #field-btn {
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 2/2;
+    margin: 0 0 0 auto;
+    height: 100%;
+  }
+  .needHelp .container p {
+    text-align: left;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
   }
 }/*# sourceMappingURL=doctor.css.map */

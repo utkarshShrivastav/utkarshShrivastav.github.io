@@ -1,0 +1,524 @@
+.image-section {
+  display: none;
+}
+
+.sorting-section {
+  padding-bottom: 0;
+}
+.sorting-section .container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.sorting-section .container span {
+  font-family: nexa-light;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  color: var(--dark-blue);
+}
+.sorting-section .container select {
+  width: auto;
+  margin-bottom: 0;
+}
+
+.filter-section {
+  display: none;
+}
+
+.hospital-details .card {
+  border: 0.12rem solid var(--light-grey);
+  margin-bottom: 1rem;
+}
+.hospital-details .card .content {
+  padding: 1rem 0;
+}
+.hospital-details .card .content .card-details li {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 2.5rem auto;
+  margin-bottom: 0.5rem;
+}
+.hospital-details .card .content .card-details li i {
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.hospital-details .card .content .card-details li span {
+  font-family: nexa-light;
+  display: flex;
+  font-size: 1.2rem;
+  align-self: center;
+}
+.hospital-details .card .content .card-details #name {
+  display: block;
+  color: var(--blue);
+  font-size: 1.8rem;
+  margin-left: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.hospital-details .card .content .card-details #name::before {
+  position: absolute;
+  content: "__";
+  font-weight: 900;
+  left: -2.5rem;
+  bottom: 30%;
+}
+.hospital-details .card .content .treatments {
+  padding-left: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hospital-details .card .content .treatments button {
+  background: var(--white);
+  border: 0.1rem solid var(--light-grey);
+  margin: 0 0.5rem 0.5rem 0;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+.hospital-details .card .content .treatments button a {
+  color: var(--dark-grey);
+}
+.hospital-details .card .content .treatments #extra {
+  background: var(--light-grey);
+}
+.hospital-details .card #accent-btn a {
+  color: var(--white);
+}
+.hospital-details .card figure {
+  margin-top: 1rem;
+  border: 0;
+  margin-bottom: 0;
+}
+.hospital-details .card figure img {
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hospital-details #card4 {
+  margin-bottom: 0;
+}
+
+.needHelp {
+  background: var(--light-blue);
+}
+.needHelp h2 {
+  color: var(--white);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .sorting-section {
+    padding-top: 0;
+  }
+  .sorting-section span {
+    font-size: 1.4rem !important;
+  }
+
+  .hospital-details .card {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1.5rem;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-areas: "content figure" "btn figure";
+  }
+  .hospital-details .card .content {
+    grid-area: content;
+  }
+  .hospital-details .card .content .card-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-template-areas: "name name" "detail1 detail2" "detail3 detail3";
+  }
+  .hospital-details .card .content .card-details #name {
+    grid-area: name;
+  }
+  .hospital-details .card .content .card-details #detail-1 {
+    grid-area: detail1;
+  }
+  .hospital-details .card .content .card-details #detail-2 {
+    grid-area: detail2;
+  }
+  .hospital-details .card .content .card-details #detail-3 {
+    grid-area: detail3;
+  }
+  .hospital-details .card #accent-btn {
+    grid-area: btn;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: 3rem;
+  }
+  .hospital-details .card figure {
+    grid-area: figure;
+    margin: 0;
+  }
+  .hospital-details .card figure img {
+    margin-top: 0;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+@media only screen and (min-width: 1351px) {
+  .container {
+    max-width: 1340px;
+    margin: auto;
+    text-align: left;
+  }
+
+  .image-section {
+    display: block;
+    background-image: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    transform: rotateY(180deg);
+    padding: 0;
+  }
+  .image-section .pseudo-container {
+    background-color: var(--background-faded-blue);
+    width: 100%;
+    height: 100%;
+  }
+  .image-section .pseudo-container .container {
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .image-section .pseudo-container .container h1 {
+    font-family: nexa-light;
+    max-width: 1100px;
+  }
+  .image-section .pseudo-container .container h1 a {
+    color: var(--dark-blue);
+    text-decoration: underline;
+  }
+
+  #conjoint-section {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-column-gap: 2rem;
+  }
+  #conjoint-section .filter-section {
+    display: block;
+    padding-right: 0;
+  }
+  #conjoint-section .filter-section h6 {
+    padding: 0.8rem;
+    background-color: var(--light-grey);
+    width: 100%;
+    text-align: left;
+  }
+  #conjoint-section .filter-section .filters li {
+    margin-bottom: 1rem;
+  }
+  #conjoint-section .filter-section .filters li .heading {
+    display: grid;
+    margin-bottom: 0.8rem;
+    grid-template-columns: 1fr auto;
+    position: relative;
+  }
+  #conjoint-section .filter-section .filters li .heading span {
+    font-size: 1.4rem;
+    font-family: nexa-light;
+    color: var(--dark-blue);
+    text-align: left;
+  }
+  #conjoint-section .filter-section .filters li .heading i {
+    font-size: 1.4rem;
+    color: var(--blue);
+    margin-right: 2rem;
+    display: flex;
+    align-self: center;
+  }
+  #conjoint-section .filter-section .filters li .heading::after {
+    position: absolute;
+    content: "-";
+    right: 0;
+    font-family: nexa-bold;
+    color: var(--light-grey);
+  }
+  #conjoint-section .filter-section .filters li .option-box {
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+  }
+  #conjoint-section .filter-section .filters li .option-box label {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 1.4rem;
+  }
+  #conjoint-section .filter-section .filters li .option-box input {
+    display: flex;
+    align-self: center;
+  }
+  #conjoint-section .filter-section .filters li a {
+    color: var(--blue);
+    font-size: 1rem;
+    display: flex;
+    justify-self: left;
+  }
+
+  .hospital-details .card {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1.5rem;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-areas: "content figure" "btn figure";
+  }
+  .hospital-details .card .content {
+    grid-area: content;
+  }
+  .hospital-details .card .content .card-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-template-areas: "name name" "detail1 detail2" "detail3 detail3";
+  }
+  .hospital-details .card .content .card-details #name {
+    grid-area: name;
+  }
+  .hospital-details .card .content .card-details #detail-1 {
+    grid-area: detail1;
+  }
+  .hospital-details .card .content .card-details #detail-2 {
+    grid-area: detail2;
+  }
+  .hospital-details .card .content .card-details #detail-3 {
+    grid-area: detail3;
+  }
+  .hospital-details .card #accent-btn {
+    grid-area: btn;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: 3rem;
+  }
+  .hospital-details .card figure {
+    grid-area: figure;
+    margin: 0;
+  }
+  .hospital-details .card figure img {
+    margin-top: 0;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+  }
+
+  .needHelp .container {
+    max-width: 1340px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .needHelp .container h2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: var(--white);
+    text-align: left;
+    padding: 0 0 2rem 0;
+  }
+  .needHelp .container #field-btn {
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 2/2;
+    margin: 0 0 0 auto;
+    height: 100%;
+  }
+  .needHelp .container p {
+    text-align: left;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1351px) {
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: left;
+  }
+
+  .image-section {
+    display: block;
+    background-image: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    transform: rotateY(180deg);
+    padding: 0;
+  }
+  .image-section .pseudo-container {
+    background-color: var(--background-faded-blue);
+    width: 100%;
+    height: 100%;
+  }
+  .image-section .pseudo-container .container {
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .image-section .pseudo-container .container h1 {
+    font-family: nexa-light;
+    max-width: 1100px;
+  }
+  .image-section .pseudo-container .container h1 a {
+    color: var(--dark-blue);
+    text-decoration: underline;
+  }
+
+  #conjoint-section {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-column-gap: 2rem;
+  }
+  #conjoint-section .filter-section {
+    display: block;
+    padding-right: 0;
+  }
+  #conjoint-section .filter-section h6 {
+    padding: 0.8rem;
+    background-color: var(--light-grey);
+    width: 100%;
+    text-align: left;
+  }
+  #conjoint-section .filter-section .filters li {
+    margin-bottom: 1rem;
+  }
+  #conjoint-section .filter-section .filters li .heading {
+    display: grid;
+    margin-bottom: 0.8rem;
+    grid-template-columns: 1fr auto;
+    position: relative;
+  }
+  #conjoint-section .filter-section .filters li .heading span {
+    font-size: 1.4rem;
+    font-family: nexa-light;
+    color: var(--dark-blue);
+    text-align: left;
+  }
+  #conjoint-section .filter-section .filters li .heading i {
+    font-size: 1.4rem;
+    color: var(--blue);
+    margin-right: 2rem;
+    display: flex;
+    align-self: center;
+  }
+  #conjoint-section .filter-section .filters li .heading::after {
+    position: absolute;
+    content: "-";
+    right: 0;
+    font-family: nexa-bold;
+    color: var(--light-grey);
+  }
+  #conjoint-section .filter-section .filters li .option-box {
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+  }
+  #conjoint-section .filter-section .filters li .option-box label {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 1.4rem;
+  }
+  #conjoint-section .filter-section .filters li .option-box input {
+    display: flex;
+    align-self: center;
+  }
+  #conjoint-section .filter-section .filters li a {
+    color: var(--blue);
+    font-size: 1rem;
+    display: flex;
+    justify-self: left;
+  }
+
+  .hospital-details .card {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1.5rem;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-areas: "content figure" "btn figure";
+  }
+  .hospital-details .card .content {
+    grid-area: content;
+  }
+  .hospital-details .card .content .card-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-template-areas: "name name" "detail1 detail2" "detail3 detail3";
+  }
+  .hospital-details .card .content .card-details #name {
+    grid-area: name;
+  }
+  .hospital-details .card .content .card-details #detail-1 {
+    grid-area: detail1;
+  }
+  .hospital-details .card .content .card-details #detail-2 {
+    grid-area: detail2;
+  }
+  .hospital-details .card .content .card-details #detail-3 {
+    grid-area: detail3;
+  }
+  .hospital-details .card #accent-btn {
+    grid-area: btn;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: 3rem;
+  }
+  .hospital-details .card figure {
+    grid-area: figure;
+    margin: 0;
+  }
+  .hospital-details .card figure img {
+    margin-top: 0;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+  }
+
+  .needHelp .container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .needHelp .container h2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: var(--white);
+    text-align: left;
+    padding: 0 0 2rem 0;
+  }
+  .needHelp .container #field-btn {
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 2/2;
+    margin: 0 0 0 auto;
+    height: 100%;
+  }
+  .needHelp .container p {
+    text-align: left;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+}/*# sourceMappingURL=hospital.css.map */
