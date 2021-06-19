@@ -149,8 +149,17 @@
           #detail-3 {
             grid-area: detail3;
           }
+          li {
+            font-size: 1.2rem;
+          }
+        }
+        .treatments {
+          button {
+            padding: 0.8rem 0.8rem 0.75rem;
+          }
         }
       }
+
       #accent-btn {
         grid-area: btn;
         margin-bottom: 1rem;
@@ -170,7 +179,7 @@
   }
 }
 
-@media only screen and (min-width: 1351px){
+@media only screen and (min-width: 1351px) {
   .container {
     max-width: 1340px;
     margin: auto;
@@ -208,7 +217,7 @@
       }
     }
   }
-  #conjoint-section{
+  #conjoint-section {
     display: grid;
     grid-template-columns: 2fr 6fr;
     grid-column-gap: 2rem;
@@ -308,6 +317,19 @@
           #detail-3 {
             grid-area: detail3;
           }
+          li {
+            i {
+              font-size: 1.25rem;
+            }
+            span{
+              font-size: 1.35rem;
+            }
+          }
+        }
+        .treatments {
+          button {
+            padding: 1rem 1rem 0.9rem;
+          }
         }
       }
       #accent-btn {
@@ -329,8 +351,8 @@
   }
   .needHelp {
     .container {
-        max-width:1340px;
-        margin: auto;
+      max-width: 1340px;
+      margin: auto;
       display: grid;
       grid-template-columns: 1fr auto;
       h2 {
@@ -398,7 +420,7 @@
       }
     }
   }
-  #conjoint-section{
+  #conjoint-section {
     display: grid;
     grid-template-columns: 2fr 6fr;
     grid-column-gap: 2rem;
@@ -519,8 +541,8 @@
   }
   .needHelp {
     .container {
-        max-width:1100px;
-        margin: auto;
+      max-width: 1100px;
+      margin: auto;
       display: grid;
       grid-template-columns: 1fr auto;
       h2 {

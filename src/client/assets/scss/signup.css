@@ -24,12 +24,50 @@ body .signup {
 .signup .container .signup-details {
   padding: 0.75rem;
 }
-.signup .container .signup-details input, .signup .container .signup-details select {
+.signup .container .signup-details input,
+.signup .container .signup-details select {
   border: 0.12rem solid var(--light-grey);
 }
-.signup .container .signup-details select, .signup .container .signup-details input[type=date] {
+.signup .container .signup-details input::-moz-placeholder, .signup .container .signup-details select::-moz-placeholder {
+  color: var(--grey);
+  font-size: 1.1rem;
+}
+.signup .container .signup-details input:-ms-input-placeholder, .signup .container .signup-details select:-ms-input-placeholder {
+  color: var(--grey);
+  font-size: 1.1rem;
+}
+.signup .container .signup-details input::placeholder,
+.signup .container .signup-details select::placeholder {
+  color: var(--grey);
+  font-size: 1.1rem;
+}
+.signup .container .signup-details select,
+.signup .container .signup-details input[type=date] {
   background: var(--white);
-  color: var(--light-grey);
+  color: var(--grey);
+}
+.signup .container .signup-details .select-box {
+  position: relative;
+  margin-bottom: 0.625rem;
+}
+.signup .container .signup-details .select-box select {
+  margin: 0;
+}
+.signup .container .signup-details .select-box span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--light-grey);
+  height: 100%;
+  width: 2rem;
+  pointer-events: none;
+}
+.signup .container .signup-details .select-box span i {
+  color: var(--dark-blue);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .signup .container .signup-details .inputBox {
   display: grid;

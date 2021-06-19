@@ -142,6 +142,10 @@
     margin: auto;
   }
 
+  .livingHealthyMatters {
+    height: 80vh;
+  }
+
   .storyOfLife .container {
     text-align: left;
     display: grid;
@@ -180,37 +184,66 @@
   }
 
   .wellness {
+    padding: 0;
     text-align: left;
   }
-  .wellness .container {
+  .wellness .pseudo-container {
+    display: grid;
+    align-items: center;
+  }
+  .wellness .pseudo-container .video-container {
+    grid-column: 1/span1;
+    grid-row: 1/span1;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  .wellness .pseudo-container .video-container video {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    bottom: -100px;
+  }
+  .wellness .pseudo-container .container {
+    height: 350px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    grid-column: 1/span1;
+    z-index: 5;
+    grid-row: 1/span1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
-    grid-template-areas: "h2 stats" "p stats" "button stats";
+    grid-template-areas: "h3 stats" "p stats" "button stats";
   }
-  .wellness .container h2 {
-    grid-area: h2;
+  .wellness .pseudo-container .container h3 {
+    grid-area: h3;
+    font-size: 1.8rem;
   }
-  .wellness .container p {
+  .wellness .pseudo-container .container p {
     grid-area: p;
     margin: 0;
     font-size: 1.25rem;
     line-height: 1.8rem;
   }
-  .wellness .container #field-btn {
+  .wellness .pseudo-container .container #field-btn {
     grid-area: button;
     margin: 4rem 0;
   }
-  .wellness .container .stats {
+  .wellness .pseudo-container .container .stats {
     grid-area: stats;
     display: grid;
     grid-gap: 0.75rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .wellness .container .stats li {
+  .wellness .pseudo-container .container .stats li {
     text-align: center;
     margin: 0;
-    padding: 1.5rem;
+    padding: 0.5rem;
   }
 
   .joinOurTeam .container {
@@ -246,6 +279,10 @@
   .container {
     max-width: 1340px;
     margin: auto;
+  }
+
+  .livingHealthyMatters {
+    height: 100vh;
   }
 
   .storyOfLife .container {
@@ -289,34 +326,59 @@
   }
 
   .wellness {
+    padding: 0;
     text-align: left;
   }
-  .wellness .container {
+  .wellness .pseudo-container {
+    display: grid;
+    align-items: center;
+  }
+  .wellness .pseudo-container .video-container {
+    grid-column: 1/span1;
+    grid-row: 1/span1;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  .wellness .pseudo-container .video-container video {
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: -150px;
+  }
+  .wellness .pseudo-container .container {
+    width: 100%;
+    height: auto;
+    grid-column: 1/span1;
+    z-index: 5;
+    grid-row: 1/span1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
     grid-template-areas: "h2 stats" "p stats" "button stats";
   }
-  .wellness .container h2 {
+  .wellness .pseudo-container .container h3 {
     grid-area: h2;
   }
-  .wellness .container p {
+  .wellness .pseudo-container .container p {
     grid-area: p;
     margin: 0;
     font-size: 1.25rem;
     line-height: 1.8rem;
   }
-  .wellness .container #field-btn {
+  .wellness .pseudo-container .container #field-btn {
     grid-area: button;
     margin: 4rem 0;
   }
-  .wellness .container .stats {
+  .wellness .pseudo-container .container .stats {
     grid-area: stats;
     display: grid;
     grid-gap: 0.75rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .wellness .container .stats li {
+  .wellness .pseudo-container .container .stats li {
     text-align: center;
     margin: 0;
     padding: 1.5rem;

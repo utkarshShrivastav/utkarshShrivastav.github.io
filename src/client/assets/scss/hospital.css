@@ -143,6 +143,12 @@
   .hospital-details .card .content .card-details #detail-3 {
     grid-area: detail3;
   }
+  .hospital-details .card .content .card-details li {
+    font-size: 1.2rem;
+  }
+  .hospital-details .card .content .treatments button {
+    padding: 0.8rem 0.8rem 0.75rem;
+  }
   .hospital-details .card #accent-btn {
     grid-area: btn;
     margin-bottom: 1rem;
@@ -294,6 +300,15 @@
   }
   .hospital-details .card .content .card-details #detail-3 {
     grid-area: detail3;
+  }
+  .hospital-details .card .content .card-details li i {
+    font-size: 1.25rem;
+  }
+  .hospital-details .card .content .card-details li span {
+    font-size: 1.35rem;
+  }
+  .hospital-details .card .content .treatments button {
+    padding: 1rem 1rem 0.9rem;
   }
   .hospital-details .card #accent-btn {
     grid-area: btn;
