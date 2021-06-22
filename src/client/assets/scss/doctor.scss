@@ -4,7 +4,7 @@
 .sorting-section {
   .container {
     display: grid;
-    grid-template-columns: 1fr 0.65fr;
+    grid-template-columns: 1fr auto;
     span {
       font-family: nexa-light;
       font-size: 1.2rem;
@@ -24,7 +24,7 @@
     border: 0.12rem solid var(--light-grey);
     margin-bottom: 1rem;
     .card-details {
-      padding: 0.8rem 0;
+      padding: 1rem 0;
       text-align: left;
       #name {
         display: block;
@@ -191,7 +191,7 @@
           display: grid;
           grid-column-gap: 0.5rem;
           grid-template-columns: 5fr 1.5fr;
-          grid-auto-rows: 18rem 4.5rem;
+          grid-auto-rows: 13rem 4.5rem;
           grid-template-areas:
             "ul image"
             "button image";
@@ -214,14 +214,22 @@
             grid-area: ul;
             display: grid;
             grid-template-columns: 1rem 1fr 1fr;
-            grid-row-gap: 1rem;
+            grid-template-rows: auto;
+            grid-row-gap: 0.5rem !important;
             grid-template-areas:
               "name-list name-list name-list"
               " . practice hospital"
               " . specialization address"
               " . experience experience";
+              li{
+                margin-bottom: 0;
+              }
             #name {
               grid-area: name-list;
+              margin-bottom: 0;
+              &::before{
+                bottom:40%;
+              }
             }
             #practice {
               grid-area: practice;
@@ -395,14 +403,21 @@
             grid-area: ul;
             display: grid;
             grid-template-columns: 1rem 1fr 1fr;
-            grid-row-gap: 1rem;
+            grid-row-gap: 0.5rem;
             grid-template-areas:
               "name-list name-list name-list"
               " . practice hospital"
               " . specialization address"
               " . experience experience";
+              li{
+                margin-bottom: 0;
+              }
             #name {
               grid-area: name-list;
+              margin-bottom: 0;
+              &::before{
+                bottom:55%;
+              }
             }
             #practice {
               grid-area: practice;
@@ -608,14 +623,21 @@
               grid-area: ul;
               display: grid;
               grid-template-columns: 1rem 1fr 1fr;
-              grid-row-gap: 1rem;
+              grid-row-gap: 0.5rem;
               grid-template-areas:
                 "name-list name-list name-list"
                 " . practice hospital"
                 " . specialization address"
                 " . experience experience";
+                li{
+                  margin-bottom: 0;
+                }
               #name {
                 grid-area: name-list;
+                margin-bottom: 0;
+                &::before{
+                  bottom:55%;
+                }
               }
               #practice {
                 grid-area: practice;

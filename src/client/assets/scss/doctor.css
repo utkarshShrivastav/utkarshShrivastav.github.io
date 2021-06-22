@@ -4,7 +4,7 @@
 
 .sorting-section .container {
   display: grid;
-  grid-template-columns: 1fr 0.65fr;
+  grid-template-columns: 1fr auto;
 }
 .sorting-section .container span {
   font-family: nexa-light;
@@ -25,7 +25,7 @@
   margin-bottom: 1rem;
 }
 .doctor-card .card .card-details {
-  padding: 0.8rem 0;
+  padding: 1rem 0;
   text-align: left;
 }
 .doctor-card .card .card-details #name {
@@ -188,7 +188,7 @@
     display: grid;
     grid-column-gap: 0.5rem;
     grid-template-columns: 5fr 1.5fr;
-    grid-auto-rows: 18rem 4.5rem;
+    grid-auto-rows: 13rem 4.5rem;
     grid-template-areas: "ul image" "button image";
   }
   .main-section .container .doctor-card .card .card-details {
@@ -211,11 +211,19 @@
     grid-area: ul;
     display: grid;
     grid-template-columns: 1rem 1fr 1fr;
-    grid-row-gap: 1rem;
+    grid-template-rows: auto;
+    grid-row-gap: 0.5rem !important;
     grid-template-areas: "name-list name-list name-list" " . practice hospital" " . specialization address" " . experience experience";
+  }
+  .main-section .container .doctor-card .card .card-details li {
+    margin-bottom: 0;
   }
   .main-section .container .doctor-card .card .card-details #name {
     grid-area: name-list;
+    margin-bottom: 0;
+  }
+  .main-section .container .doctor-card .card .card-details #name::before {
+    bottom: 40%;
   }
   .main-section .container .doctor-card .card .card-details #practice {
     grid-area: practice;
@@ -379,11 +387,18 @@
     grid-area: ul;
     display: grid;
     grid-template-columns: 1rem 1fr 1fr;
-    grid-row-gap: 1rem;
+    grid-row-gap: 0.5rem;
     grid-template-areas: "name-list name-list name-list" " . practice hospital" " . specialization address" " . experience experience";
+  }
+  .main-section .container .doctor-card .card .card-details li {
+    margin-bottom: 0;
   }
   .main-section .container .doctor-card .card .card-details #name {
     grid-area: name-list;
+    margin-bottom: 0;
+  }
+  .main-section .container .doctor-card .card .card-details #name::before {
+    bottom: 55%;
   }
   .main-section .container .doctor-card .card .card-details #practice {
     grid-area: practice;
@@ -576,11 +591,18 @@
     grid-area: ul;
     display: grid;
     grid-template-columns: 1rem 1fr 1fr;
-    grid-row-gap: 1rem;
+    grid-row-gap: 0.5rem;
     grid-template-areas: "name-list name-list name-list" " . practice hospital" " . specialization address" " . experience experience";
+  }
+  .main-section .container .doctor-card .card .card-details li {
+    margin-bottom: 0;
   }
   .main-section .container .doctor-card .card .card-details #name {
     grid-area: name-list;
+    margin-bottom: 0;
+  }
+  .main-section .container .doctor-card .card .card-details #name::before {
+    bottom: 55%;
   }
   .main-section .container .doctor-card .card .card-details #practice {
     grid-area: practice;
