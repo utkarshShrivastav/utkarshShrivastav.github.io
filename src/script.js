@@ -133,3 +133,34 @@ function detailSelector2(index1,index2,index3){
     document.getElementById(index2).setAttribute("class","active-detail");
     document.getElementById(index3).setAttribute("class","fas fa-chevron-up");
 }
+
+function questionSelector(input1,input2,input3){
+    document.getElementById("question1").setAttribute("class","inactive");
+    document.getElementById("question2").setAttribute("class","inactive");
+    document.getElementById("question3").setAttribute("class","inactive");
+    document.getElementById("question4").setAttribute("class","inactive");
+    document.getElementById("question5").setAttribute("class","inactive");
+
+    document.getElementById("question1-detail").setAttribute("class","inactive-detail");
+    document.getElementById("question2-detail").setAttribute("class","inactive-detail");
+    document.getElementById("question3-detail").setAttribute("class","inactive-detail");
+    document.getElementById("question4-detail").setAttribute("class","inactive-detail");
+    document.getElementById("question5-detail").setAttribute("class","inactive-detail");
+
+    document.getElementById("icon1").setAttribute("class","fas fa-chevron-down");
+    document.getElementById("icon2").setAttribute("class","fas fa-chevron-down");
+    document.getElementById("icon3").setAttribute("class","fas fa-chevron-down");
+    document.getElementById("icon4").setAttribute("class","fas fa-chevron-down");
+    document.getElementById("icon5").setAttribute("class","fas fa-chevron-down");
+
+    document.getElementById(input1).setAttribute("class","active");
+    document.getElementById(input2).setAttribute("class","active-detail");
+    document.getElementById(input3).setAttribute("class","fas fa-chevron-up");
+}
+
+function change(index){
+    document.getElementById('carousal-1').setAttribute("class","inactive");
+    document.getElementById('carousal-2').setAttribute("class","inactive");
+
+    document.getElementById(index).setAttribute("class","active");
+}
