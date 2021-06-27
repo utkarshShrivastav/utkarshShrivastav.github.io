@@ -4,8 +4,12 @@
   color: var(--white);
   padding: 0.675rem 1.875rem;
   border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
 }
 
@@ -14,8 +18,12 @@
   border: 0.125rem solid var(--blue);
   color: var(--white);
   padding: 0.675rem 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
 }
 
@@ -24,6 +32,11 @@
   color: var(--dark-blue);
   padding: 0.675rem 0.875rem;
   background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-}/*# sourceMappingURL=button.css.map */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=button.css.map */

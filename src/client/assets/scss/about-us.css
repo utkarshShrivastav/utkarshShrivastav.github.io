@@ -6,15 +6,24 @@
   background-repeat: no-repeat;
   padding: 0;
 }
+
 .livingHealthyMatters .pseudo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: var(--background-faded-dark-blue);
   width: 100%;
   height: 100%;
   padding: 1.5rem 0.8rem;
 }
+
 .livingHealthyMatters .pseudo-container h1,
 .livingHealthyMatters .pseudo-container p {
   color: var(--white);
@@ -24,12 +33,15 @@
 .storyOfLife p {
   margin-bottom: 0;
 }
+
 .storyOfLife p {
   margin-top: 2rem;
 }
+
 .storyOfLife figure {
   margin: 2rem 0 0 0;
 }
+
 .storyOfLife .signature img {
   width: 65%;
 }
@@ -37,34 +49,48 @@
 .wellness {
   background: var(--black);
 }
+
 .wellness video {
   display: none;
 }
+
 .wellness h3,
 .wellness p {
   color: var(--white);
   margin-bottom: 1.5rem;
 }
+
 .wellness p {
   font-size: 1rem;
 }
+
 .wellness #field-btn {
   font-family: nexa-bold;
   margin-bottom: 1.5rem;
 }
+
 .wellness .stats li {
   padding: 2rem;
   border: 0.12rem solid var(--grey);
   border-radius: 0.25rem;
   margin-top: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .wellness .stats li #value {
   color: var(--white);
   font-size: 1.7rem;
 }
+
 .wellness .stats li #key {
   font-size: 0.75rem;
 }
@@ -72,9 +98,11 @@
 .joinOurTeam {
   background-color: var(--light-blue);
 }
+
 .joinOurTeam h2 {
   color: var(--white);
 }
+
 .joinOurTeam #field-btn {
   font-family: nexa-bold;
 }
@@ -82,11 +110,15 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .storyOfLife .container {
     text-align: left;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 0.6fr;
-    grid-template-areas: "h2 figure" "p1 figure" "p2 figure" "p3 figure" "sign figure";
+    -ms-grid-columns: 1fr 0.6fr;
+        grid-template-columns: 1fr 0.6fr;
+        grid-template-areas: "h2 figure" "p1 figure" "p2 figure" "p3 figure" "sign figure";
   }
   .storyOfLife .container h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h2;
   }
   .storyOfLife .container p {
@@ -94,15 +126,23 @@
     margin-top: 1.5rem;
   }
   .storyOfLife .container #p1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: p1;
   }
   .storyOfLife .container #p2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: p2;
   }
   .storyOfLife .container #p3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: p3;
   }
   .storyOfLife .container .signature {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: sign;
   }
   .storyOfLife .container .signature img {
@@ -110,12 +150,14 @@
     width: 65%;
   }
   .storyOfLife .container .model {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 2;
     grid-area: figure;
   }
   .storyOfLife .container .model img {
     height: auto;
   }
-
   .wellness {
     text-align: left;
   }
@@ -126,9 +168,11 @@
     margin: 4rem 0;
   }
   .wellness .container .stats {
+    display: -ms-grid;
     display: grid;
     grid-gap: 0.75rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
   .wellness .container .stats li {
     text-align: center;
@@ -136,24 +180,27 @@
     padding: 1.5rem;
   }
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1350px) {
   .container {
     max-width: 1100px;
     margin: auto;
   }
-
   .livingHealthyMatters {
     height: 80vh;
   }
-
   .storyOfLife .container {
     text-align: left;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 0.75fr;
+    -ms-grid-columns: 1fr 0.75fr;
+        grid-template-columns: 1fr 0.75fr;
     grid-column-gap: 5rem;
-    grid-template-areas: "h2 figure" "p1 figure" "p2 figure" "p3 figure" "sign figure";
+        grid-template-areas: "h2 figure" "p1 figure" "p2 figure" "p3 figure" "sign figure";
   }
   .storyOfLife .container h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h2;
   }
   .storyOfLife .container p {
@@ -161,15 +208,23 @@
     margin-top: 1.5rem;
   }
   .storyOfLife .container #p1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: p1;
   }
   .storyOfLife .container #p2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: p2;
   }
   .storyOfLife .container #p3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: p3;
   }
   .storyOfLife .container .signature {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: sign;
   }
   .storyOfLife .container .signature img {
@@ -177,23 +232,28 @@
     width: 65%;
   }
   .storyOfLife .container .model {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 2;
     grid-area: figure;
   }
   .storyOfLife .container .model img {
     height: auto;
   }
-
   .wellness {
     padding: 0;
     text-align: left;
   }
   .wellness .pseudo-container {
+    display: -ms-grid;
     display: grid;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .wellness .pseudo-container .video-container {
-    grid-column: 1/span1;
-    grid-row: 1/span1;
+    grid-column: 1 / span1;
+    grid-row: 1 / span1;
     height: 500px;
     position: relative;
     overflow: hidden;
@@ -209,90 +269,125 @@
   }
   .wellness .pseudo-container .container {
     height: 350px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
     height: auto;
-    grid-column: 1/span1;
+    grid-column: 1 / span1;
     z-index: 5;
-    grid-row: 1/span1;
+    grid-row: 1 / span1;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
-    grid-template-areas: "h3 stats" "p stats" "button stats";
+        grid-template-areas: "h3 stats" "p stats" "button stats";
   }
   .wellness .pseudo-container .container h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h3;
     font-size: 1.8rem;
   }
   .wellness .pseudo-container .container p {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: p;
     margin: 0;
     font-size: 1.25rem;
     line-height: 1.8rem;
   }
   .wellness .pseudo-container .container #field-btn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: button;
     margin: 4rem 0;
   }
   .wellness .pseudo-container .container .stats {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
     grid-area: stats;
+    display: -ms-grid;
     display: grid;
     grid-gap: 0.75rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
   .wellness .pseudo-container .container .stats li {
     text-align: center;
     margin: 0;
     padding: 0.5rem;
   }
-
   .joinOurTeam .container {
     max-width: 1100px;
     margin: auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr auto;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
   }
   .joinOurTeam .container h2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     color: var(--white);
     text-align: left;
     padding: 0 0 2rem 0;
   }
   .joinOurTeam .container #field-btn {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 2;
     grid-column: 2/2;
     margin: 0 0 0 auto;
     height: 100%;
   }
   .joinOurTeam .container p {
     text-align: left;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
+
 @media only screen and (min-width: 1351px) {
   .container {
     max-width: 1340px;
     margin: auto;
   }
-
   .livingHealthyMatters {
     height: 100vh;
   }
-
   .storyOfLife .container {
     text-align: left;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 0.75fr;
+    -ms-grid-columns: 1fr 0.75fr;
+        grid-template-columns: 1fr 0.75fr;
     grid-column-gap: 4rem;
-    grid-template-areas: "h2 figure" "p1 figure" "p2 figure" "p3 figure" "sign figure";
+        grid-template-areas: "h2 figure" "p1 figure" "p2 figure" "p3 figure" "sign figure";
   }
   .storyOfLife .container h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h2;
   }
   .storyOfLife .container p {
@@ -300,15 +395,23 @@
     margin-top: 1rem;
   }
   .storyOfLife .container #p1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: p1;
   }
   .storyOfLife .container #p2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: p2;
   }
   .storyOfLife .container #p3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: p3;
   }
   .storyOfLife .container .signature {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: sign;
   }
   .storyOfLife .container .signature img {
@@ -316,6 +419,9 @@
     width: 35%;
   }
   .storyOfLife .container .model {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 2;
     grid-area: figure;
   }
   .storyOfLife .container .model img {
@@ -324,18 +430,20 @@
     display: block;
     margin: auto;
   }
-
   .wellness {
     padding: 0;
     text-align: left;
   }
   .wellness .pseudo-container {
+    display: -ms-grid;
     display: grid;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .wellness .pseudo-container .video-container {
-    grid-column: 1/span1;
-    grid-row: 1/span1;
+    grid-column: 1 / span1;
+    grid-row: 1 / span1;
     height: 500px;
     position: relative;
     overflow: hidden;
@@ -351,65 +459,97 @@
   .wellness .pseudo-container .container {
     width: 100%;
     height: auto;
-    grid-column: 1/span1;
+    grid-column: 1 / span1;
     z-index: 5;
-    grid-row: 1/span1;
+    grid-row: 1 / span1;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
-    grid-template-areas: "h2 stats" "p stats" "button stats";
+        grid-template-areas: "h2 stats" "p stats" "button stats";
   }
   .wellness .pseudo-container .container h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h2;
   }
   .wellness .pseudo-container .container p {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: p;
     margin: 0;
     font-size: 1.25rem;
     line-height: 1.8rem;
   }
   .wellness .pseudo-container .container #field-btn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: button;
     margin: 4rem 0;
   }
   .wellness .pseudo-container .container .stats {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
     grid-area: stats;
+    display: -ms-grid;
     display: grid;
     grid-gap: 0.75rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
   .wellness .pseudo-container .container .stats li {
     text-align: center;
     margin: 0;
     padding: 1.5rem;
   }
-
   .joinOurTeam .container {
     max-width: 1340px;
     margin: auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr auto;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
   }
   .joinOurTeam .container h2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     color: var(--white);
     text-align: left;
     padding: 0 0 2rem 0;
   }
   .joinOurTeam .container #field-btn {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 2;
     grid-column: 2/2;
     margin: 0 0 0 auto;
     height: 100%;
   }
   .joinOurTeam .container p {
     text-align: left;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
-}/*# sourceMappingURL=about-us.css.map */
+}
+/*# sourceMappingURL=about-us.css.map */

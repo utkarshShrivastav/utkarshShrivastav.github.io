@@ -1,58 +1,90 @@
-@charset "UTF-8";
 body {
   background: var(--light-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
 }
+
 body .signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .signup .container {
   background-color: var(--white);
 }
+
 .signup .container h3 {
   border-bottom: 0.12rem solid var(--light-grey);
   color: var(--blue);
   padding: 1rem 0;
   margin: 0;
 }
+
 .signup .container .signup-details {
   padding: 0.75rem;
 }
+
 .signup .container .signup-details input,
 .signup .container .signup-details select {
   border: 0.12rem solid var(--light-grey);
 }
-.signup .container .signup-details input::-moz-placeholder, .signup .container .signup-details select::-moz-placeholder {
+
+.signup .container .signup-details input::-webkit-input-placeholder,
+.signup .container .signup-details select::-webkit-input-placeholder {
   color: var(--grey);
   font-size: 1.1rem;
 }
-.signup .container .signup-details input:-ms-input-placeholder, .signup .container .signup-details select:-ms-input-placeholder {
+
+.signup .container .signup-details input:-ms-input-placeholder,
+.signup .container .signup-details select:-ms-input-placeholder {
   color: var(--grey);
   font-size: 1.1rem;
 }
+
+.signup .container .signup-details input::-ms-input-placeholder,
+.signup .container .signup-details select::-ms-input-placeholder {
+  color: var(--grey);
+  font-size: 1.1rem;
+}
+
 .signup .container .signup-details input::placeholder,
 .signup .container .signup-details select::placeholder {
   color: var(--grey);
   font-size: 1.1rem;
 }
+
 .signup .container .signup-details select,
-.signup .container .signup-details input[type=date] {
+.signup .container .signup-details input[type="date"] {
   background: var(--white);
   color: var(--grey);
 }
+
 .signup .container .signup-details .select-box {
   position: relative;
   margin-bottom: 0.625rem;
 }
+
 .signup .container .signup-details .select-box select {
   margin: 0;
 }
+
 .signup .container .signup-details .select-box span {
   position: absolute;
   top: 0;
@@ -62,18 +94,29 @@ body .signup {
   width: 2rem;
   pointer-events: none;
 }
+
 .signup .container .signup-details .select-box span i {
   color: var(--dark-blue);
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .signup .container .signup-details .inputBox {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-column-gap: 0.3125rem;
 }
+
 .signup .container .signup-details #accent-btn {
   font-family: nexa-bold;
   letter-spacing: 0.125rem;
@@ -81,32 +124,47 @@ body .signup {
   position: relative;
   margin-bottom: 2rem;
 }
+
 .signup .container .signup-details #accent-btn::after {
   font-family: "Font Awesome 5 Free";
-  content: "";
+  content: "\f061";
   font-weight: 700;
   position: absolute;
   right: 0;
   padding: 0 0.5rem 0 0;
 }
+
 .signup .container .signup-details span {
   font-size: 1rem;
 }
+
 .signup .container .signup-details span a {
   color: var(--blue);
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-grow: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
+
 footer span {
   padding: 0rem 0.8rem 1.5rem;
   font-size: 1rem;
   color: var(--dark-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -115,15 +173,18 @@ footer span {
     margin: auto;
   }
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1350x) {
   .signup {
     width: 50%;
     margin: auto;
   }
 }
+
 @media only screen and (min-width: 1351px) {
   .signup {
     width: 45%;
     margin: auto;
   }
-}/*# sourceMappingURL=signup.css.map */
+}
+/*# sourceMappingURL=signup.css.map */

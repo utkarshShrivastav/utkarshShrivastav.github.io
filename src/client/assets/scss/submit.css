@@ -1,32 +1,50 @@
-@charset "UTF-8";
 body {
   background: var(--light-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
 }
+
 body .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .submit .container {
   background-color: var(--white);
 }
+
 .submit .container h3 {
   border-bottom: 0.12rem solid var(--light-grey);
   color: var(--blue);
   padding: 1rem 0;
   margin: 0;
 }
+
 .submit .container .submit-details {
   padding: 0.75rem 0.75rem 0;
 }
+
 .submit .container .submit-details input {
   border: 0.12rem solid var(--light-grey);
 }
+
 .submit .container .submit-details #accent-btn {
   font-family: nexa-bold;
   letter-spacing: 0.125rem;
@@ -34,9 +52,10 @@ body .submit {
   position: relative;
   margin-bottom: 2rem;
 }
+
 .submit .container .submit-details #accent-btn::after {
   font-family: "Font Awesome 5 Free";
-  content: "";
+  content: "\f061";
   font-weight: 700;
   position: absolute;
   right: 0;
@@ -44,16 +63,28 @@ body .submit {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-grow: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
+
 footer span {
   padding: 0rem 0.8rem 1.5rem;
   font-size: 1rem;
   color: var(--dark-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -65,6 +96,7 @@ footer span {
     padding: 1.25rem 1.25rem 0 !important;
   }
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1350x) {
   .submit {
     width: 50%;
@@ -74,6 +106,7 @@ footer span {
     padding: 1.75rem 1.75rem 0 !important;
   }
 }
+
 @media only screen and (min-width: 1351px) {
   .submit {
     width: 45%;
@@ -82,4 +115,5 @@ footer span {
   .submit .submit-details {
     padding: 2rem 2rem 0 !important;
   }
-}/*# sourceMappingURL=submit.css.map */
+}
+/*# sourceMappingURL=submit.css.map */

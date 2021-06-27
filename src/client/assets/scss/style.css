@@ -1,77 +1,109 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .findAffordableHealthcare {
   background-color: var(--light-blue);
 }
+
 .findAffordableHealthcare .container .findAffordableHealthcare-form #inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: var(--white);
   margin-bottom: 0.625rem;
 }
+
 .findAffordableHealthcare .container .findAffordableHealthcare-form #inputBox i {
   font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   padding: 0 0.5rem;
 }
+
 .findAffordableHealthcare .container .findAffordableHealthcare-form #inputBox #location {
   margin-bottom: 0;
   padding-left: 0;
 }
 
 .howItWorks .container #steps .active {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 2rem 1fr;
+  -ms-grid-columns: 2rem 1fr;
+      grid-template-columns: 2rem 1fr;
   grid-column-gap: 1rem;
   border: 0.12rem solid var(--dark-blue);
   padding: 0.8rem 0.75rem 0.75rem;
   border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .howItWorks .container #steps .active h5 {
   text-align: left;
   margin-bottom: 0;
 }
+
 .howItWorks .container #steps .active span {
   color: var(--blue);
 }
+
 .howItWorks .container #steps .active:hover {
   cursor: pointer;
 }
+
 .howItWorks .container #steps .inactive {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 2rem 1fr;
+  -ms-grid-columns: 2rem 1fr;
+      grid-template-columns: 2rem 1fr;
   grid-column-gap: 1rem;
   border: 0.12rem solid var(--grey);
   padding: 0.8rem 0.75rem 0.75rem;
   border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 0.625rem;
 }
+
 .howItWorks .container #steps .inactive:hover {
   cursor: pointer;
 }
+
 .howItWorks .container #steps .inactive h5 {
   text-align: left;
   margin-bottom: 0;
   color: var(--light-grey);
 }
+
 .howItWorks .container #steps .inactive span {
   color: var(--light-grey);
 }
+
 .howItWorks .container #steps .inactive-figure {
   display: none;
 }
+
 .howItWorks .container #steps .active-figure {
   margin: 0.625rem 0;
 }
+
 .howItWorks .container #steps .active-figure p {
   margin: 0;
 }
+
 .howItWorks .container #steps #step7,
 .howItWorks .container #steps #step7-figure {
   margin-bottom: 0;
@@ -80,29 +112,35 @@
 .worldClassExpertDoctors {
   background-color: var(--dark-blue);
 }
+
 .worldClassExpertDoctors .container h2,
 .worldClassExpertDoctors .container p {
   color: var(--white);
 }
+
 .worldClassExpertDoctors .container .doctors .active .doctor {
   margin-bottom: 1rem;
   background-color: var(--white);
   border-bottom: 0.3rem solid var(--light-blue);
 }
+
 .worldClassExpertDoctors .container .doctors .active figure img {
   height: 45vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .worldClassExpertDoctors .container .doctors .active .doctor-info {
   padding-bottom: 1rem;
 }
+
 .worldClassExpertDoctors .container .doctors .active .doctor-info li {
   font-size: 1rem;
   text-align: left;
   margin: 0 0 0.35rem 2.5rem;
   line-height: 1.1rem;
 }
+
 .worldClassExpertDoctors .container .doctors .active .doctor-info #name {
   font-size: 1.4rem;
   font-family: nexa-bold;
@@ -110,56 +148,84 @@
   color: var(--blue);
   position: relative;
 }
+
 .worldClassExpertDoctors .container .doctors .active .doctor-info #name::before {
   position: absolute;
   content: "___";
   left: -2.5rem;
   bottom: 50%;
 }
+
 .worldClassExpertDoctors .container .doctors .active #doctor4 {
   margin-bottom: 0;
 }
+
 .worldClassExpertDoctors .container .doctors .inactive {
   display: none;
 }
+
 .worldClassExpertDoctors .container .radio-btns-doctor {
   display: none;
 }
 
 .featuredMedicalTreatment .container .treatments .active .treatment {
+  display: -ms-grid;
   display: grid;
   margin-bottom: 1rem;
   height: 40vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .featuredMedicalTreatment .container .treatments .active .treatment figure {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
   grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
   grid-column: 1/2;
 }
+
 .featuredMedicalTreatment .container .treatments .active .treatment ul {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
   grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
   grid-column: 1/2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(var(--dark-blue)));
   background-image: linear-gradient(transparent, var(--dark-blue));
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   text-align: left;
   padding: 0 0 1rem 1rem;
 }
+
 .featuredMedicalTreatment .container .treatments .active .treatment ul li {
   color: var(--white);
 }
+
 .featuredMedicalTreatment .container .treatments .active .treatment ul #name {
   font-family: nexa-bold;
   margin-bottom: 0.5rem;
 }
+
 .featuredMedicalTreatment .container .treatments .active #treatment-6 {
   margin-bottom: 0;
 }
+
 .featuredMedicalTreatment .container .treatments .inactive {
   display: none;
 }
+
 .featuredMedicalTreatment .container .radio-btns-treatment {
   display: none;
 }
@@ -167,20 +233,26 @@
 .exclusiveServices {
   background-color: var(--background-grey);
 }
+
 .exclusiveServices .container .services {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-gap: 0.8rem;
 }
+
 .exclusiveServices .container .services .service {
   background-color: var(--white);
   border-radius: 1rem;
   padding: 1rem 0;
 }
+
 .exclusiveServices .container .services .service img {
   width: 55%;
   height: auto;
 }
+
 .exclusiveServices .container .services .service figcaption {
   font-size: 1rem;
   margin: 0;
@@ -190,12 +262,15 @@
 .needHelp {
   background-color: var(--light-blue);
 }
+
 .needHelp .container h2 {
   color: var(--white);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .findAffordableHealthcare .container .findAffordableHealthcare-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .findAffordableHealthcare .container .findAffordableHealthcare-form #inputBox {
@@ -204,40 +279,61 @@
   .findAffordableHealthcare .container #facilities {
     margin: 0 0 0 0.15rem;
   }
-
   .howItWorks .container #steps {
+    display: -ms-grid;
     display: grid;
     grid-column-gap: 1rem;
-    grid-template-areas: "step1 figure" "step2 figure" "step3 figure" "step4 figure" "step5 figure" "step6 figure" "step7 figure";
+        grid-template-areas: "step1 figure" "step2 figure" "step3 figure" "step4 figure" "step5 figure" "step6 figure" "step7 figure";
   }
   .howItWorks .container #step1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: step1;
   }
   .howItWorks .container #step2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: step2;
   }
   .howItWorks .container #step3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: step3;
   }
   .howItWorks .container #step4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: step4;
   }
   .howItWorks .container #step5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: step5;
   }
   .howItWorks .container #step6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
     grid-area: step6;
   }
   .howItWorks .container #step7 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
     grid-area: step7;
   }
   .howItWorks .container .active {
     margin-bottom: 0.8rem;
   }
   .howItWorks .container .active-figure {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 2;
     grid-area: figure;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
   }
   .howItWorks .container .active-figure img {
@@ -249,37 +345,40 @@
   .howItWorks .container #step7 {
     margin: 0 !important;
   }
-
   .worldClassExpertDoctors .container .doctors .active {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
   .worldClassExpertDoctors .container .doctors .active .doctor {
     margin: 0;
   }
-
   .featuredMedicalTreatment .container .treatments .active {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
   .featuredMedicalTreatment .container .treatments .treatment {
     margin: 0 !important;
   }
-
   .exclusiveServices .container .services {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1350px) {
   .container {
     max-width: 1100px;
     margin: auto;
     text-align: left;
   }
-
   .findAffordableHealthcare {
     background-image: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg);
     background-repeat: no-repeat;
@@ -293,51 +392,76 @@
   }
   .findAffordableHealthcare .findAffordableHealthcare-form {
     margin-top: 2rem;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 2fr auto 1fr;
+    -ms-grid-columns: 1fr 2fr auto 1fr;
+        grid-template-columns: 1fr 2fr auto 1fr;
   }
   .findAffordableHealthcare .findAffordableHealthcare-form #inputBox {
     margin: 0 !important;
   }
   .findAffordableHealthcare .findAffordableHealthcare-form #facilities {
     margin: 0 0 0 0.5rem;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-
   .howItWorks .container #steps {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-column-gap: 5rem;
-    grid-template-areas: "step1 figure" "step2 figure" "step3 figure" "step4 figure" "step5 figure" "step6 figure" "step7 figure";
+        grid-template-areas: "step1 figure" "step2 figure" "step3 figure" "step4 figure" "step5 figure" "step6 figure" "step7 figure";
   }
   .howItWorks .container #step1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: step1;
   }
   .howItWorks .container #step2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: step2;
   }
   .howItWorks .container #step3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: step3;
   }
   .howItWorks .container #step4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: step4;
   }
   .howItWorks .container #step5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: step5;
   }
   .howItWorks .container #step6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
     grid-area: step6;
   }
   .howItWorks .container #step7 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
     grid-area: step7;
   }
   .howItWorks .container .active {
     margin-bottom: 0.8rem;
   }
   .howItWorks .container .active-figure {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 2;
     grid-area: figure;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
     text-align: center;
   }
@@ -350,41 +474,47 @@
   .howItWorks .container #step7 {
     margin: 0 !important;
   }
-
   .worldClassExpertDoctors .doctors .active {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1rem;
   }
   .worldClassExpertDoctors .doctors .active .doctor {
     margin: 0 !important;
   }
   .worldClassExpertDoctors .radio-btns-doctor {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     padding-top: 3rem;
   }
-  .worldClassExpertDoctors .radio-btns-doctor input[type=radio] {
+  .worldClassExpertDoctors .radio-btns-doctor input[type="radio"] {
     margin: 0;
     width: auto;
     height: 2rem;
     margin-right: 1.5rem;
   }
-  .worldClassExpertDoctors .radio-btns-doctor input[type=radio]:hover {
+  .worldClassExpertDoctors .radio-btns-doctor input[type="radio"]:hover {
     cursor: pointer;
   }
-
   .featuredMedicalTreatment .container .treatments .active {
+    display: -ms-grid;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 15rem 2rem 1rem;
-    grid-template-areas: "treatment1 treatment2 treatment3" "treatment4 treatment2 treatment3" "treatment4 treatment2 treatment6" "treatment4 treatment5 treatment6" "treatment4 treatment5 treatment6" "treatment4 treatment5 treatment6";
+        grid-template-areas: "treatment1 treatment2 treatment3" "treatment4 treatment2 treatment3" "treatment4 treatment2 treatment6" "treatment4 treatment5 treatment6" "treatment4 treatment5 treatment6" "treatment4 treatment5 treatment6";
   }
   .featuredMedicalTreatment .container .treatments .active .treatment {
     margin: 0;
     height: auto;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: treatment1;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-1 img {
@@ -394,6 +524,9 @@
        object-fit: cover;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
     grid-area: treatment2;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-2 img {
@@ -401,6 +534,9 @@
     height: 100%;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-3 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
     grid-area: treatment3;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-3 img {
@@ -408,6 +544,9 @@
     height: 100%;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-4 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
     grid-area: treatment4;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-4 img {
@@ -415,6 +554,9 @@
     height: 100%;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-5 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
     grid-area: treatment5;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-5 img {
@@ -422,6 +564,9 @@
     height: 100%;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-6 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 3;
     grid-area: treatment6;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-6 img {
@@ -429,64 +574,92 @@
     height: 100%;
   }
   .featuredMedicalTreatment .container .radio-btns-treatment {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     padding-top: 3rem;
   }
-  .featuredMedicalTreatment .container .radio-btns-treatment input[type=radio] {
+  .featuredMedicalTreatment .container .radio-btns-treatment input[type="radio"] {
     margin: 0;
     width: auto;
     height: 2rem;
     margin-right: 1.5rem;
   }
-  .featuredMedicalTreatment .container .radio-btns-treatment input[type=radio]:hover {
+  .featuredMedicalTreatment .container .radio-btns-treatment input[type="radio"]:hover {
     cursor: pointer;
   }
-
   .exclusiveServices .container .services {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
   }
   .exclusiveServices .container .services .service {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 2rem 0;
   }
-
   .needHelp .container {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr auto;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
   }
   .needHelp .container h2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     color: var(--white);
     text-align: left;
     padding: 0 0 2rem 0;
   }
   .needHelp .container #field-btn {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 2;
     grid-column: 2/2;
     margin: 0 0 0 auto;
     height: 100%;
   }
   .needHelp .container p {
     text-align: left;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
+
 @media only screen and (min-width: 1351px) {
   .container {
     max-width: 1340px;
     margin: auto;
     text-align: left;
   }
-
   .findAffordableHealthcare {
     background-image: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg);
     background-repeat: no-repeat;
@@ -500,51 +673,76 @@
   }
   .findAffordableHealthcare .findAffordableHealthcare-form {
     margin-top: 2rem;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 2fr auto 1fr;
+    -ms-grid-columns: 1fr 2fr auto 1fr;
+        grid-template-columns: 1fr 2fr auto 1fr;
   }
   .findAffordableHealthcare .findAffordableHealthcare-form #inputBox {
     margin: 0 !important;
   }
   .findAffordableHealthcare .findAffordableHealthcare-form #facilities {
     margin: 0 0 0 0.5rem;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-
   .howItWorks .container #steps {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-column-gap: 5rem;
-    grid-template-areas: "step1 figure" "step2 figure" "step3 figure" "step4 figure" "step5 figure" "step6 figure" "step7 figure";
+        grid-template-areas: "step1 figure" "step2 figure" "step3 figure" "step4 figure" "step5 figure" "step6 figure" "step7 figure";
   }
   .howItWorks .container #step1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: step1;
   }
   .howItWorks .container #step2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: step2;
   }
   .howItWorks .container #step3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: step3;
   }
   .howItWorks .container #step4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: step4;
   }
   .howItWorks .container #step5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: step5;
   }
   .howItWorks .container #step6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
     grid-area: step6;
   }
   .howItWorks .container #step7 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
     grid-area: step7;
   }
   .howItWorks .container .active {
     margin-bottom: 0.8rem;
   }
   .howItWorks .container .active-figure {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 2;
     grid-area: figure;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
     text-align: center;
   }
@@ -557,41 +755,47 @@
   .howItWorks .container #step7 {
     margin: 0 !important;
   }
-
   .worldClassExpertDoctors .doctors .active {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1rem;
   }
   .worldClassExpertDoctors .doctors .active .doctor {
     margin: 0 !important;
   }
   .worldClassExpertDoctors .radio-btns-doctor {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     padding-top: 3rem;
   }
-  .worldClassExpertDoctors .radio-btns-doctor input[type=radio] {
+  .worldClassExpertDoctors .radio-btns-doctor input[type="radio"] {
     margin: 0;
     width: auto;
     height: 2rem;
     margin-right: 1.5rem;
   }
-  .worldClassExpertDoctors .radio-btns-doctor input[type=radio]:hover {
+  .worldClassExpertDoctors .radio-btns-doctor input[type="radio"]:hover {
     cursor: pointer;
   }
-
   .featuredMedicalTreatment .container .treatments .active {
+    display: -ms-grid;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 18.75rem 2rem 1rem;
-    grid-template-areas: "treatment1 treatment2 treatment3" "treatment4 treatment2 treatment3" "treatment4 treatment2 treatment6" "treatment4 treatment5 treatment6" "treatment4 treatment5 treatment6" "treatment4 treatment5 treatment6";
+        grid-template-areas: "treatment1 treatment2 treatment3" "treatment4 treatment2 treatment3" "treatment4 treatment2 treatment6" "treatment4 treatment5 treatment6" "treatment4 treatment5 treatment6" "treatment4 treatment5 treatment6";
   }
   .featuredMedicalTreatment .container .treatments .active .treatment {
     margin: 0;
     height: auto;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: treatment1;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-1 img {
@@ -601,6 +805,9 @@
        object-fit: cover;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
     grid-area: treatment2;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-2 img {
@@ -608,6 +815,9 @@
     height: 100%;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-3 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
     grid-area: treatment3;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-3 img {
@@ -615,6 +825,9 @@
     height: 100%;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-4 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
     grid-area: treatment4;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-4 img {
@@ -622,6 +835,9 @@
     height: 100%;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-5 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
     grid-area: treatment5;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-5 img {
@@ -629,6 +845,9 @@
     height: 100%;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-6 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 3;
     grid-area: treatment6;
   }
   .featuredMedicalTreatment .container .treatments .active #treatment-6 img {
@@ -636,54 +855,83 @@
     height: 100%;
   }
   .featuredMedicalTreatment .container .radio-btns-treatment {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     padding-top: 3rem;
   }
-  .featuredMedicalTreatment .container .radio-btns-treatment input[type=radio] {
+  .featuredMedicalTreatment .container .radio-btns-treatment input[type="radio"] {
     margin: 0;
     width: auto;
     height: 2rem;
     margin-right: 1.5rem;
   }
-  .featuredMedicalTreatment .container .radio-btns-treatment input[type=radio]:hover {
+  .featuredMedicalTreatment .container .radio-btns-treatment input[type="radio"]:hover {
     cursor: pointer;
   }
-
   .exclusiveServices .container .services {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
   }
   .exclusiveServices .container .services .service {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 2rem 0;
   }
-
   .needHelp .container {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr auto;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
   }
   .needHelp .container h2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     color: var(--white);
     text-align: left;
     padding: 0 0 2rem 0;
   }
   .needHelp .container #field-btn {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 2;
     grid-column: 2/2;
     margin: 0 0 0 auto;
     height: 100%;
   }
   .needHelp .container p {
     text-align: left;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

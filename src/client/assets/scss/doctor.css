@@ -3,15 +3,23 @@
 }
 
 .sorting-section .container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr auto;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
 }
+
 .sorting-section .container span {
   font-family: nexa-light;
   font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .sorting-section .container select {
   margin: 0;
 }
@@ -24,10 +32,12 @@
   border: 0.12rem solid var(--light-grey);
   margin-bottom: 1rem;
 }
+
 .doctor-card .card .card-details {
   padding: 1rem 0;
   text-align: left;
 }
+
 .doctor-card .card .card-details #name {
   display: block;
   font-family: nexa-bold;
@@ -36,39 +46,56 @@
   margin: 0 0 0.625rem 2.5rem;
   position: relative;
 }
+
 .doctor-card .card .card-details #name::before {
   position: absolute;
   content: "___";
   left: -2.5rem;
   bottom: 40%;
 }
+
 .doctor-card .card .card-details li {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 2.5rem 1fr;
+  -ms-grid-columns: 2.5rem 1fr;
+      grid-template-columns: 2.5rem 1fr;
   margin-bottom: 0.5rem;
 }
+
 .doctor-card .card .card-details li i {
   font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-self: center;
-  justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--blue);
 }
+
 .doctor-card .card .card-details li span {
   font-size: 1.1rem;
   font-family: nexa-light;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   color: var(--dark-blue);
 }
+
 .doctor-card .card figure {
   margin-top: 1rem !important;
 }
+
 .doctor-card .card figure img {
   height: 40vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .doctor-card #card-6 {
   margin-bottom: 0;
 }
@@ -76,6 +103,7 @@
 .needHelp {
   background-color: var(--light-blue);
 }
+
 .needHelp .container h2 {
   color: var(--white);
 }
@@ -87,7 +115,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vh;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     padding: 0;
   }
   .image-section .pseudo-container {
@@ -99,10 +128,17 @@
     padding: 2rem;
     width: 100%;
     height: 100%;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .image-section .pseudo-container .container h1 {
     font-family: nexa-light;
@@ -111,10 +147,11 @@
     color: var(--dark-blue);
     text-decoration: underline;
   }
-
   .main-section .container {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    -ms-grid-columns: 2fr 5fr;
+        grid-template-columns: 2fr 5fr;
     grid-column-gap: 2rem;
   }
   .main-section .container .filter-section {
@@ -132,9 +169,11 @@
     margin-bottom: 1rem;
   }
   .main-section .container .filter-section .filters li .heading {
+    display: -ms-grid;
     display: grid;
     margin-bottom: 0.8rem;
-    grid-template-columns: 1fr auto;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
     position: relative;
   }
   .main-section .container .filter-section .filters li .heading span {
@@ -147,8 +186,11 @@
     font-size: 1.4rem;
     color: var(--blue);
     margin-right: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .main-section .container .filter-section .filters li .heading::after {
     position: absolute;
@@ -158,8 +200,10 @@
     color: var(--light-grey);
   }
   .main-section .container .filter-section .filters li .option-box {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1rem 1fr;
+    -ms-grid-columns: 1rem 1fr;
+        grid-template-columns: 1rem 1fr;
     grid-column-gap: 1rem;
     grid-row-gap: 0.5rem;
   }
@@ -170,12 +214,17 @@
     line-height: 1.4rem;
   }
   .main-section .container .filter-section .filters li .option-box input {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .main-section .container .filter-section .filters li a {
     color: var(--blue);
     font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-self: left;
   }
@@ -185,16 +234,23 @@
     padding-top: 0;
   }
   .main-section .container .doctor-card .card {
+    display: -ms-grid;
     display: grid;
     grid-column-gap: 0.5rem;
-    grid-template-columns: 5fr 1.5fr;
+    -ms-grid-columns: 5fr 1.5fr;
+        grid-template-columns: 5fr 1.5fr;
     grid-auto-rows: 13rem 4.5rem;
-    grid-template-areas: "ul image" "button image";
+        grid-template-areas: "ul image" "button image";
   }
   .main-section .container .doctor-card .card .card-details {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: ul;
   }
   .main-section .container .doctor-card .card figure {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: image;
     margin: 0 !important;
   }
@@ -204,21 +260,31 @@
     height: 100%;
   }
   .main-section .container .doctor-card .card #accent-btn {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: button;
     margin: 0 auto 1rem 1rem;
   }
   .main-section .container .doctor-card .card .card-details {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: ul;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1rem 1fr 1fr;
-    grid-template-rows: auto;
+    -ms-grid-columns: 1rem 1fr 1fr;
+        grid-template-columns: 1rem 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     grid-row-gap: 0.5rem !important;
-    grid-template-areas: "name-list name-list name-list" " . practice hospital" " . specialization address" " . experience experience";
+        grid-template-areas: "name-list name-list name-list" " . practice hospital" " . specialization address" " . experience experience";
   }
   .main-section .container .doctor-card .card .card-details li {
     margin-bottom: 0;
   }
   .main-section .container .doctor-card .card .card-details #name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: name-list;
     margin-bottom: 0;
   }
@@ -226,24 +292,36 @@
     bottom: 40%;
   }
   .main-section .container .doctor-card .card .card-details #practice {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: practice;
   }
   .main-section .container .doctor-card .card .card-details #hospital {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
     grid-area: hospital;
   }
   .main-section .container .doctor-card .card .card-details #specialization {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: specialization;
   }
   .main-section .container .doctor-card .card .card-details #address {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
     grid-area: address;
   }
   .main-section .container .doctor-card .card .card-details .experience {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: experience;
   }
   .main-section .container .doctor-card .card .card-details li span {
     line-height: 1.4rem;
   }
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1350px) {
   .image-section {
     display: block;
@@ -251,7 +329,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vh;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     padding: 0;
   }
   .image-section .pseudo-container {
@@ -264,10 +343,17 @@
     margin: auto;
     width: 100%;
     height: 100%;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .image-section .pseudo-container .container h1 {
     font-family: nexa-light;
@@ -277,7 +363,6 @@
     color: var(--dark-blue);
     text-decoration: underline;
   }
-
   .sorting-section .container {
     max-width: 1100px;
     margin: auto;
@@ -285,12 +370,13 @@
   .sorting-section .container span {
     font-size: 1.4rem;
   }
-
   .main-section .container {
     max-width: 1100px;
     margin: auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    -ms-grid-columns: 2fr 5fr;
+        grid-template-columns: 2fr 5fr;
     grid-column-gap: 2rem;
   }
   .main-section .container .filter-section {
@@ -308,9 +394,11 @@
     margin-bottom: 1rem;
   }
   .main-section .container .filter-section .filters li .heading {
+    display: -ms-grid;
     display: grid;
     margin-bottom: 0.8rem;
-    grid-template-columns: 1fr auto;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
     position: relative;
   }
   .main-section .container .filter-section .filters li .heading span {
@@ -323,8 +411,11 @@
     font-size: 1.4rem;
     color: var(--blue);
     margin-right: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .main-section .container .filter-section .filters li .heading::after {
     position: absolute;
@@ -334,8 +425,10 @@
     color: var(--light-grey);
   }
   .main-section .container .filter-section .filters li .option-box {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1rem 1fr;
+    -ms-grid-columns: 1rem 1fr;
+        grid-template-columns: 1rem 1fr;
     grid-column-gap: 1rem;
     grid-row-gap: 0.5rem;
   }
@@ -346,12 +439,17 @@
     line-height: 1.4rem;
   }
   .main-section .container .filter-section .filters li .option-box input {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .main-section .container .filter-section .filters li a {
     color: var(--blue);
     font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-self: left;
   }
@@ -361,16 +459,23 @@
     padding-top: 0;
   }
   .main-section .container .doctor-card .card {
+    display: -ms-grid;
     display: grid;
     grid-column-gap: 0.5rem;
-    grid-template-columns: 5fr 1.5fr;
+    -ms-grid-columns: 5fr 1.5fr;
+        grid-template-columns: 5fr 1.5fr;
     grid-auto-rows: 14rem 4.5rem;
-    grid-template-areas: "ul image" "button image";
+        grid-template-areas: "ul image" "button image";
   }
   .main-section .container .doctor-card .card .card-details {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: ul;
   }
   .main-section .container .doctor-card .card figure {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: image;
     margin: 0 !important;
   }
@@ -380,20 +485,29 @@
     height: 100%;
   }
   .main-section .container .doctor-card .card #accent-btn {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: button;
     margin: 0 auto 1rem 1rem;
   }
   .main-section .container .doctor-card .card .card-details {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: ul;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1rem 1fr 1fr;
+    -ms-grid-columns: 1rem 1fr 1fr;
+        grid-template-columns: 1rem 1fr 1fr;
     grid-row-gap: 0.5rem;
-    grid-template-areas: "name-list name-list name-list" " . practice hospital" " . specialization address" " . experience experience";
+        grid-template-areas: "name-list name-list name-list" " . practice hospital" " . specialization address" " . experience experience";
   }
   .main-section .container .doctor-card .card .card-details li {
     margin-bottom: 0;
   }
   .main-section .container .doctor-card .card .card-details #name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: name-list;
     margin-bottom: 0;
   }
@@ -401,53 +515,83 @@
     bottom: 55%;
   }
   .main-section .container .doctor-card .card .card-details #practice {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: practice;
   }
   .main-section .container .doctor-card .card .card-details #hospital {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
     grid-area: hospital;
   }
   .main-section .container .doctor-card .card .card-details #specialization {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: specialization;
   }
   .main-section .container .doctor-card .card .card-details #address {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
     grid-area: address;
   }
   .main-section .container .doctor-card .card .card-details .experience {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: experience;
   }
   .main-section .container .doctor-card .card .card-details li span {
     line-height: 1.4rem;
   }
-
   .needHelp .container {
     max-width: 1100px;
     margin: auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr auto;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
   }
   .needHelp .container h2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     color: var(--white);
     text-align: left;
     padding: 0 0 2rem 0;
   }
   .needHelp .container #field-btn {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 2;
     grid-column: 2/2;
     margin: 0 0 0 auto;
     height: 100%;
   }
   .needHelp .container p {
     text-align: left;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
+
 @media only screen and (min-width: 1351px) {
   .image-section {
     display: block;
@@ -455,7 +599,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vh;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     padding: 0;
   }
   .image-section .pseudo-container {
@@ -468,10 +613,17 @@
     margin: auto;
     width: 100%;
     height: 100%;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .image-section .pseudo-container .container h1 {
     font-family: nexa-light;
@@ -481,7 +633,6 @@
     color: var(--dark-blue);
     text-decoration: underline;
   }
-
   .sorting-section .container {
     max-width: 1340px;
     margin: auto;
@@ -489,12 +640,13 @@
   .sorting-section .container span {
     font-size: 1.4rem;
   }
-
   .main-section .container {
     max-width: 1340px;
     margin: auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    -ms-grid-columns: 2fr 5fr;
+        grid-template-columns: 2fr 5fr;
     grid-column-gap: 2rem;
   }
   .main-section .container .filter-section {
@@ -512,9 +664,11 @@
     margin-bottom: 1rem;
   }
   .main-section .container .filter-section .filters li .heading {
+    display: -ms-grid;
     display: grid;
     margin-bottom: 0.8rem;
-    grid-template-columns: 1fr auto;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
     position: relative;
   }
   .main-section .container .filter-section .filters li .heading span {
@@ -527,8 +681,11 @@
     font-size: 1.4rem;
     color: var(--blue);
     margin-right: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .main-section .container .filter-section .filters li .heading::after {
     position: absolute;
@@ -538,8 +695,10 @@
     color: var(--light-grey);
   }
   .main-section .container .filter-section .filters li .option-box {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1rem 1fr;
+    -ms-grid-columns: 1rem 1fr;
+        grid-template-columns: 1rem 1fr;
     grid-column-gap: 1rem;
     grid-row-gap: 0.5rem;
   }
@@ -550,12 +709,17 @@
     line-height: 1.4rem;
   }
   .main-section .container .filter-section .filters li .option-box input {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .main-section .container .filter-section .filters li a {
     color: var(--blue);
     font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-self: left;
   }
@@ -565,16 +729,23 @@
     padding-top: 0;
   }
   .main-section .container .doctor-card .card {
+    display: -ms-grid;
     display: grid;
     grid-column-gap: 0.5rem;
-    grid-template-columns: 5fr 1.5fr;
+    -ms-grid-columns: 5fr 1.5fr;
+        grid-template-columns: 5fr 1.5fr;
     grid-auto-rows: 14rem 4.5rem;
-    grid-template-areas: "ul image" "button image";
+        grid-template-areas: "ul image" "button image";
   }
   .main-section .container .doctor-card .card .card-details {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: ul;
   }
   .main-section .container .doctor-card .card figure {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: image;
     margin: 0 !important;
   }
@@ -584,20 +755,29 @@
     height: 100%;
   }
   .main-section .container .doctor-card .card #accent-btn {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: button;
     margin: 0 auto 1rem 1rem;
   }
   .main-section .container .doctor-card .card .card-details {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: ul;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1rem 1fr 1fr;
+    -ms-grid-columns: 1rem 1fr 1fr;
+        grid-template-columns: 1rem 1fr 1fr;
     grid-row-gap: 0.5rem;
-    grid-template-areas: "name-list name-list name-list" " . practice hospital" " . specialization address" " . experience experience";
+        grid-template-areas: "name-list name-list name-list" " . practice hospital" " . specialization address" " . experience experience";
   }
   .main-section .container .doctor-card .card .card-details li {
     margin-bottom: 0;
   }
   .main-section .container .doctor-card .card .card-details #name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: name-list;
     margin-bottom: 0;
   }
@@ -605,50 +785,80 @@
     bottom: 55%;
   }
   .main-section .container .doctor-card .card .card-details #practice {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: practice;
   }
   .main-section .container .doctor-card .card .card-details #hospital {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
     grid-area: hospital;
   }
   .main-section .container .doctor-card .card .card-details #specialization {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: specialization;
   }
   .main-section .container .doctor-card .card .card-details #address {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
     grid-area: address;
   }
   .main-section .container .doctor-card .card .card-details .experience {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: experience;
   }
   .main-section .container .doctor-card .card .card-details li span {
     line-height: 1.4rem;
   }
-
   .needHelp .container {
     max-width: 1340px;
     margin: auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr auto;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
   }
   .needHelp .container h2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     color: var(--white);
     text-align: left;
     padding: 0 0 2rem 0;
   }
   .needHelp .container #field-btn {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 2;
     grid-column: 2/2;
     margin: 0 0 0 auto;
     height: 100%;
   }
   .needHelp .container p {
     text-align: left;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
-}/*# sourceMappingURL=doctor.css.map */
+}
+/*# sourceMappingURL=doctor.css.map */

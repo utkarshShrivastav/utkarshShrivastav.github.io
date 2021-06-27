@@ -1,48 +1,75 @@
-@charset "UTF-8";
 body {
   background: var(--light-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
 }
+
 body .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .login .container {
   background-color: var(--white);
 }
+
 .login .container h3 {
   border-bottom: 0.12rem solid var(--light-grey);
   color: var(--blue);
   padding: 1rem 0;
   margin: 0;
 }
+
 .login .container .login-details {
   padding: 0.75rem;
 }
+
 .login .container .login-details .inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 0.12rem solid var(--light-grey);
   margin-bottom: 0.625rem;
 }
+
 .login .container .login-details .inputBox input {
   border: 0;
   margin: 0;
 }
+
 .login .container .login-details .inputBox i {
   padding: 0 0.5rem;
   font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--light-grey);
 }
+
 .login .container .login-details #otp {
   border: 0.12rem solid var(--light-grey);
 }
+
 .login .container .login-details #accent-btn {
   font-family: nexa-bold;
   letter-spacing: 0.125rem;
@@ -50,32 +77,47 @@ body .login {
   position: relative;
   margin-bottom: 2rem;
 }
+
 .login .container .login-details #accent-btn::after {
   font-family: "Font Awesome 5 Free";
-  content: "";
+  content: "\f061";
   font-weight: 700;
   position: absolute;
   right: 0;
   padding: 0 0.5rem 0 0;
 }
+
 .login .container .login-details span {
   font-size: 1rem;
 }
+
 .login .container .login-details span a {
   color: var(--blue);
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-grow: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
+
 footer span {
   padding: 0rem 0.8rem 1.5rem;
   font-size: 1rem;
   color: var(--dark-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -84,15 +126,18 @@ footer span {
     margin: auto;
   }
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1350x) {
   .login {
     width: 50%;
     margin: auto;
   }
 }
+
 @media only screen and (min-width: 1351px) {
   .login {
     width: 45%;
     margin: auto;
   }
-}/*# sourceMappingURL=login.css.map */
+}
+/*# sourceMappingURL=login.css.map */

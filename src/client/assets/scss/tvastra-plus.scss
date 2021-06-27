@@ -87,6 +87,7 @@
         background-image: linear-gradient(var(--light-blue), var(--white));
 
         .container-li {
+          padding: 0.5rem 0 0;
           position: relative;
           #top {
             position: absolute;
@@ -290,7 +291,7 @@
     }
   }
   figure {
-    height: 15rem;
+    
     object-fit: cover;
     img {
       border-radius: 1rem;
@@ -482,6 +483,7 @@
         #advance {
           padding: 0;
           .container-li {
+            padding-top:0.5rem;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -681,11 +683,11 @@
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1350px) {
+@media only screen and (min-width:1025px) and (max-width:1350px) {
 
   .container {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     display: block;
   }
   .introduction {
@@ -700,8 +702,8 @@
     .container {
       position: absolute;
       top: 22rem;
-      left: 50%;
-      margin-left: -550px;
+      
+      
       p {
         font-size: 1.3rem;
         line-height: 1.5rem;
@@ -740,7 +742,7 @@
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: 1rem;
+      grid-column-gap:3rem;
       grid-template-areas:
         "h3 h3"
         "p p"
@@ -754,16 +756,19 @@
         grid-area: p;
         font-size: 1.3rem;
         line-height: 1.6rem;
+        margin-bottom: 3rem;
       }
       .stars {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items:flex-end;
       }
       .progress {
+        width:40%;
         margin: 0 auto 0 0;
       }
       .benefits {
+        margin-top: 3rem;
         grid-area: benefits;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -781,7 +786,8 @@
   .consultation {
     .container {
       display: grid;
-      grid-gap: 1rem;
+      grid-template-columns: 1fr 0.5fr;
+      grid-column-gap: 3rem;
       grid-template-areas:
         "h3 h6"
         "profile logos"
@@ -789,6 +795,7 @@
       h3 {
         grid-area: h3;
         text-align: left;
+        margin-bottom: 2rem;
       }
       h6 {
         grid-area: h6;
@@ -804,6 +811,11 @@
       }
       .hospital-logos {
         grid-area: logos;
+        figure{
+          img{
+            width: 50%;
+          }
+        }
       }
       span {
         grid-area: closer;
@@ -815,7 +827,8 @@
   .onlineConsultation {
     .container {
       display: grid;
-      grid-column-gap: 1rem;
+      grid-column-gap: 3rem;
+      grid-auto-rows: 3.5rem auto;
       grid-template-areas:
         "figure h3"
         "figure profile";
@@ -829,6 +842,7 @@
         grid-area: h3;
         font-size: 1.8rem;
         text-align: left;
+        margin-bottom:0;
       }
       .profile {
         margin: 0;
@@ -844,7 +858,8 @@
   .discounts {
     .container {
       display: grid;
-      grid-column-gap: 1rem;
+      grid-column-gap: 3rem;
+      grid-auto-rows:6rem auto !important;
       grid-template-areas:
         "h3 figure"
         "profile figure";
@@ -855,6 +870,7 @@
         grid-area: h3;
         font-size: 1.8rem;
         text-align: left;
+        margin-bottom: 0;
       }
       .profile {
         margin: 0;
@@ -869,7 +885,8 @@
   .checkups {
     .container {
       display: grid;
-      grid-column-gap: 1rem;
+      grid-column-gap: 3rem;
+      grid-auto-rows: 3.5rem auto auto auto auto;
       grid-template-areas:
         "figure h3"
         "figure profile"
@@ -885,6 +902,7 @@
       h3 {
         grid-area: h3;
         text-align: left;
+        margin-bottom: 0
       }
       .profile {
         margin: 0;
@@ -896,15 +914,17 @@
       }
       h6 {
         grid-area: h6;
-        padding: 2rem 0;
+        padding: 3rem 0;
         text-align: left;
       }
       .test-carousal {
         grid-area: test;
         .active {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
           li {
             figure {
-              height: 240px;
+              height: 200px;
               img {
                 width: 20%;
               }
@@ -929,7 +949,7 @@
         grid-gap: 1rem;
         li {
           display: grid;
-          grid-template-columns: 0.2fr 1fr;
+          grid-template-columns: 0.15fr 1fr;
           margin: 0;
           p{
             font-size: 1.3rem;
@@ -1015,7 +1035,7 @@
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: 1rem;
+      grid-column-gap:3rem;
       grid-template-areas:
         "h3 h3"
         "p p"
@@ -1029,16 +1049,19 @@
         grid-area: p;
         font-size: 1.3rem;
         line-height: 1.6rem;
+        margin-bottom: 3rem;
       }
       .stars {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items:flex-end;
       }
       .progress {
+        width:40%;
         margin: 0 auto 0 0;
       }
       .benefits {
+        margin-top: 3rem;
         grid-area: benefits;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -1056,7 +1079,8 @@
   .consultation {
     .container {
       display: grid;
-      grid-gap: 1rem;
+      grid-template-columns: 1fr 0.5fr;
+      grid-column-gap: 3rem;
       grid-template-areas:
         "h3 h6"
         "profile logos"
@@ -1064,6 +1088,7 @@
       h3 {
         grid-area: h3;
         text-align: left;
+        margin-bottom: 2rem;
       }
       h6 {
         grid-area: h6;
@@ -1079,6 +1104,11 @@
       }
       .hospital-logos {
         grid-area: logos;
+        figure{
+          img{
+            width: 50%;
+          }
+        }
       }
       span {
         grid-area: closer;
@@ -1090,7 +1120,8 @@
   .onlineConsultation {
     .container {
       display: grid;
-      grid-column-gap: 1rem;
+      grid-column-gap: 3rem;
+      grid-auto-rows: 3.5rem auto;
       grid-template-areas:
         "figure h3"
         "figure profile";
@@ -1104,6 +1135,7 @@
         grid-area: h3;
         font-size: 1.8rem;
         text-align: left;
+        margin-bottom:0;
       }
       .profile {
         margin: 0;
@@ -1119,7 +1151,8 @@
   .discounts {
     .container {
       display: grid;
-      grid-column-gap: 1rem;
+      grid-column-gap: 3rem;
+      grid-auto-rows:3.5rem auto !important;
       grid-template-areas:
         "h3 figure"
         "profile figure";
@@ -1130,6 +1163,7 @@
         grid-area: h3;
         font-size: 1.8rem;
         text-align: left;
+        margin-bottom: 0;
       }
       .profile {
         margin: 0;
@@ -1144,7 +1178,8 @@
   .checkups {
     .container {
       display: grid;
-      grid-column-gap: 1rem;
+      grid-column-gap: 3rem;
+      grid-auto-rows: 3.5rem auto auto auto auto;
       grid-template-areas:
         "figure h3"
         "figure profile"
@@ -1160,6 +1195,7 @@
       h3 {
         grid-area: h3;
         text-align: left;
+        margin-bottom: 0
       }
       .profile {
         margin: 0;
@@ -1171,15 +1207,17 @@
       }
       h6 {
         grid-area: h6;
-        padding: 2rem 0;
+        padding: 3rem 0;
         text-align: left;
       }
       .test-carousal {
         grid-area: test;
         .active {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
           li {
             figure {
-              height: 240px;
+              height: 200px;
               img {
                 width: 20%;
               }
@@ -1204,7 +1242,7 @@
         grid-gap: 1rem;
         li {
           display: grid;
-          grid-template-columns: 0.2fr 1fr;
+          grid-template-columns: 0.15fr 1fr;
           margin: 0;
           p{
             font-size: 1.3rem;
