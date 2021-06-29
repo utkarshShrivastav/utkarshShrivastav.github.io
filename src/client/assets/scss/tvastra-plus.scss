@@ -1043,6 +1043,9 @@
       }
       #comprehensive {
         padding: 1rem !important;
+        .details{
+          margin-top: 1.6rem;
+        }
       }
     }
   }
@@ -1258,7 +1261,7 @@
         grid-gap: 1rem;
         li {
           display: grid;
-          grid-template-columns: 0.15fr 1fr;
+          grid-template-columns: 0.3fr 1fr;
           margin: 0;
           p{
             font-size: 1.3rem;

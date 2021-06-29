@@ -34,10 +34,8 @@
   color: var(--white);
 }
 
-.introduction .pseudo-container .container #main-idea {
-  font-family: nexa-bold;
-  font-size: 2rem;
-  margin-bottom: 1.4rem;
+.introduction .pseudo-container .container #main-idea h1 {
+  color: var(--white);
 }
 
 .vaccination {
@@ -358,6 +356,18 @@
   .introduction {
     height: 30vh;
   }
+  .introduction .pseudo-container .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .vaccination .container {
     display: -ms-grid;
     display: grid;
@@ -482,6 +492,18 @@
   }
   .introduction {
     height: 30vh;
+  }
+  .introduction .pseudo-container .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .vaccination .container {
     display: -ms-grid;

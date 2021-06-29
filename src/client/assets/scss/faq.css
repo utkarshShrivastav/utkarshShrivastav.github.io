@@ -21,10 +21,8 @@
           justify-content: center;
 }
 
-.about-section .container .content #title {
-  font-family: nexa-bold;
-  font-size: 1.6rem;
-  margin-bottom: 0.625rem;
+.about-section .container .content #title h1 {
+  color: var(--white);
 }
 
 .about-section .container .content li {
@@ -127,7 +125,7 @@
     height: 25vh;
   }
   .about-section .container {
-    text-align: center;
+    text-align: left;
   }
   .about-section .container .content #title {
     font-size: 2.2rem;
@@ -216,7 +214,7 @@
     height: 25vh;
   }
   .about-section .container {
-    text-align: center;
+    text-align: left;
   }
   .about-section .container .content #title {
     font-size: 2.2rem;

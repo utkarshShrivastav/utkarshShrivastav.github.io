@@ -4,25 +4,21 @@
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 15rem;
-  position: relative;
-  #introduction {
-    position: absolute;
-    width: 100%;
+  .container{
+  
     height: 100%;
-    top: 0;
-    left: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    li {
-      color: var(--white);
-    }
-    #heading {
-      font-size: 1.8rem;
-      font-family: nexa-bold;
-      margin-bottom: 1rem;
+    align-items: center;
+    #introduction{
+      #heading{
+        h1{
+          color:var(--white);
+        }
+      }
     }
   }
+  
 }
 .map {
   iframe {
@@ -132,6 +128,11 @@
     max-width: 1100px;
     margin: auto;
   }
+  .contact-us-section{
+    .container{
+      justify-content: flex-start;
+    }    
+  }
   .contact{
     display: grid;
     grid-template-columns: auto auto;
@@ -192,6 +193,11 @@
   .container {
     max-width: 1340px;
     margin: auto;
+  }
+  .contact-us-section{
+    .container{
+      justify-content: flex-start;
+    }
   }
   .contact{
     display: grid;

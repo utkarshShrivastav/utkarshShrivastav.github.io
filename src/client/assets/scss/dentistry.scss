@@ -20,9 +20,12 @@
         color: var(--white);
       }
       #main-idea {
-        font-family: nexa-bold;
-        font-size: 2rem;
-        margin-bottom: 1.4rem;
+        // font-family: nexa-bold;
+        // font-size: 2rem;
+        // margin-bottom: 1.4rem;
+        h1{
+          color:var(--white)
+        }
       }
     }
   }
@@ -288,6 +291,13 @@
   }
   .introduction {
     height: 30vh;
+    .pseudo-container{
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   }
   .vaccination {
     .container {
@@ -390,6 +400,13 @@
   }
   .introduction {
     height: 30vh;
+    .pseudo-container{
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   }
   .vaccination {
     .container {

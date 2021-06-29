@@ -13,9 +13,12 @@
     justify-content: center;
     .content {
       #title {
-        font-family: nexa-bold;
-        font-size: 1.6rem;
-        margin-bottom: 0.625rem;
+        // font-family: nexa-bold;
+        // font-size: 1.6rem;
+        // margin-bottom: 0.625rem;
+        h1{
+          color: var(--white);
+        }
       }
       li {
         font-size: 1.1rem;
@@ -120,10 +123,9 @@
     text-align: left;
   }
   .about-section {
-   
     height: 25vh;
     .container {
-      text-align: center;
+      text-align: left;
       .content {
         #title {
           font-size: 2.2rem;
@@ -200,7 +202,7 @@
   .about-section {
     height: 25vh;
     .container {
-      text-align: center;
+      text-align: left;
       .content {
         #title {
           font-size: 2.2rem;

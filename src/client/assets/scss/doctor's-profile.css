@@ -21,10 +21,8 @@
           justify-content: center;
 }
 
-.about-section .container .content #title {
-  font-family: nexa-bold;
-  font-size: 1.6rem;
-  margin-bottom: 0.625rem;
+.about-section .container .content #title h1 {
+  color: var(--white);
 }
 
 .about-section .container .content li {
@@ -49,13 +47,13 @@
   border-bottom: 0.125rem dotted var(--light-grey);
 }
 
-.details-section .container .details-list #doctor-details h2 {
+.details-section .container .details-list #doctor-details h3 {
   color: var(--blue);
   margin-left: 2.5rem;
   position: relative;
 }
 
-.details-section .container .details-list #doctor-details h2::before {
+.details-section .container .details-list #doctor-details h3::before {
   position: absolute;
   content: "__";
   left: -2.5rem;
@@ -272,7 +270,7 @@
     height: 25vh;
   }
   .about-section .container {
-    text-align: center;
+    text-align: left;
   }
   .about-section .container .content #title {
     font-size: 2.2rem;
